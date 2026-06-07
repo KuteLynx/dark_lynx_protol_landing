@@ -1,0 +1,21 @@
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.interactive-hover {
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+  
+  &:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}

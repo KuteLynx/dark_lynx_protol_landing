@@ -1,0 +1,21 @@
+.fx-text-glow {
+  text-shadow: 0 0 8px rgba(0, 255, 65, 0.5);
+}
+
+.fx-border-glow {
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.15);
+  border-color: var(--color-accent);
+}
+
+.fx-panel-glow {
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.1), inset 0 0 10px rgba(0, 255, 65, 0.05);
+}
+
+.fx-glow-accent {
+  transition: box-shadow var(--transition-normal), border-color var(--transition-normal);
+  
+  &:hover {
+    box-shadow: var(--shadow-glow-strong);
+    border-color: var(--color-accent);
+  }
+}

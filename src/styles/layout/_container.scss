@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-page-mobile);
+  padding-right: var(--space-page-mobile);
+
+  @media (min-width: 640px) {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: var(--space-page-desktop);
+    padding-right: var(--space-page-desktop);
+  }
+}
