@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .fx-cursor-blink {
   display: inline-block;
   width: 8px;
@@ -99,8 +101,8 @@
 @keyframes glitch-anim {
   $steps: 20;
   @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
-      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+    #{math.percentage(math.div($i, $steps))} {
+      clip: rect(#{math.random(100)}px, 9999px, #{math.random(100)}px, 0);
     }
   }
 }
@@ -108,8 +110,8 @@
 @keyframes glitch-anim-2 {
   $steps: 20;
   @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
-      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+    #{math.percentage(math.div($i, $steps))} {
+      clip: rect(#{math.random(100)}px, 9999px, #{math.random(100)}px, 0);
     }
   }
 }
