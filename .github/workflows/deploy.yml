@@ -29,10 +29,18 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      - name: Validate Vite public env
+        run: |
+          test -n "$VITE_TURNSTILE_SITE_KEY" || { echo "Missing GitHub Actions variable: VITE_TURNSTILE_SITE_KEY"; exit 1; }
+          test -n "$VITE_CONTACT_API_URL" || { echo "Missing GitHub Actions variable: VITE_CONTACT_API_URL"; exit 1; }
+        env:
+          VITE_TURNSTILE_SITE_KEY: ${{ vars.VITE_TURNSTILE_SITE_KEY }}
+          VITE_CONTACT_API_URL: ${{ vars.VITE_CONTACT_API_URL }}
+
       - run: pnpm build
         env:
-          VITE_TURNSTILE_SITE_KEY: ${{ secrets.VITE_TURNSTILE_SITE_KEY }}
-          VITE_CONTACT_API_URL: ${{ secrets.VITE_CONTACT_API_URL }}
+          VITE_TURNSTILE_SITE_KEY: ${{ vars.VITE_TURNSTILE_SITE_KEY }}
+          VITE_CONTACT_API_URL: ${{ vars.VITE_CONTACT_API_URL }}
           VITE_JOURNAL_API_URL: ${{ vars.VITE_JOURNAL_API_URL || 'https://dark-lynx-protol-landing.onrender.com/api/journal' }}
 
       - name: Add .nojekyll
