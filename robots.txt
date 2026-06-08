@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /diario
+Allow: /
+
+Sitemap: https://darklynxprotocol.com/sitemap.xml

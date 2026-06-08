@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Dark Lynx Protocol</title>
+  <desc id="desc">Estudio de desarrollo web en Querétaro</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050505" />
+      <stop offset="0.45" stop-color="#10160f" />
+      <stop offset="1" stop-color="#02140a" />
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="35%" r="55%">
+      <stop offset="0" stop-color="#00ff41" stop-opacity="0.28" />
+      <stop offset="1" stop-color="#00ff41" stop-opacity="0" />
+    </radialGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#00ff41" stroke-opacity="0.09" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+
+  <g opacity="0.7">
+    <path d="M80 120 H1120" stroke="#00ff41" stroke-opacity="0.22" />
+    <path d="M80 510 H1120" stroke="#00ff41" stroke-opacity="0.16" />
+  </g>
+
+  <g transform="translate(84 92)">
+    <rect width="1032" height="446" rx="28" fill="#080b08" fill-opacity="0.84" stroke="#00ff41" stroke-opacity="0.36" />
+    <rect x="0" y="0" width="1032" height="66" rx="28" fill="#101510" />
+    <circle cx="42" cy="33" r="9" fill="#ff5f56" />
+    <circle cx="72" cy="33" r="9" fill="#ffbd2e" />
+    <circle cx="102" cy="33" r="9" fill="#27c93f" />
+
+    <text x="54" y="150" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8cffaa" letter-spacing="4">DESARROLLO WEB EN QUERÉTARO</text>
+    <text x="54" y="244" font-family="Geist, Inter, Arial, sans-serif" font-size="76" font-weight="800" fill="#f2fff5">Dark Lynx Protocol</text>
+    <text x="58" y="314" font-family="Geist, Inter, Arial, sans-serif" font-size="34" fill="#d7ffe0">Sitios rápidos, SEO técnico y sistemas a medida</text>
+
+    <g transform="translate(58 370)" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#00ff41" filter="url(#softGlow)">
+      <text x="0" y="0">&gt; core_web_vitals: optimized</text>
+      <text x="0" y="44">&gt; mantenible: true</text>
+    </g>
+  </g>
+
+  <g transform="translate(965 408)" opacity="0.9">
+    <path d="M72 8 C34 8 12 36 12 74 C12 120 48 148 82 148 C118 148 150 119 150 76 C150 39 121 8 82 8 Z" fill="none" stroke="#00ff41" stroke-width="6" />
+    <path d="M36 30 L22 0 L58 20" fill="#050505" stroke="#00ff41" stroke-width="6" stroke-linejoin="round" />
+    <path d="M116 20 L152 0 L138 34" fill="#050505" stroke="#00ff41" stroke-width="6" stroke-linejoin="round" />
+    <circle cx="60" cy="76" r="7" fill="#00ff41" />
+    <circle cx="104" cy="76" r="7" fill="#00ff41" />
+    <path d="M73 102 Q82 111 92 102" fill="none" stroke="#00ff41" stroke-width="5" stroke-linecap="round" />
+  </g>
+</svg>
