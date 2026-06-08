@@ -119,7 +119,7 @@
 <Section size="sm">
 	<Card class="contact-card" glow>
 		{#if success}
-			<div class="contact-success fx-glitch" data-text={t('contact.form.success')}>
+			<div class="contact-success">
 				<p class="mono text-accent">{t('contact.form.success')}</p>
 			</div>
 		{:else}
