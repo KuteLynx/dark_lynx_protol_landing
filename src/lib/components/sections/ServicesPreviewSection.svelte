@@ -3,18 +3,18 @@
 	import Card from '$lib/components/ui/Card.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 	import IconBox from '$lib/components/ui/IconBox.svelte';
-	import { servicePreviews } from '$lib/data/services';
+	import { t, tObj } from '$lib/i18n';
 </script>
 
 <div class="services-preview-section">
 	<SectionHeader 
-		overline="QUÉ HACEMOS"
-		title="Servicios prácticos sin sobrecarga"
-		description="Diseñamos protocolos técnicos específicos para cada problema. Sin envoltorios comerciales innecesarios, directo al grano."
+		overline={t('home.services.overline')}
+		title={t('home.services.title')}
+		description={t('home.services.description')}
 	/>
 
 	<div class="grid-3">
-		{#each servicePreviews as service}
+		{#each tObj<any[]>('home.services.list') as service}
 			<Card interactive class="service-preview-card">
 				<div class="service-preview-card__icon">
 					<IconBox name={service.icon} />
@@ -27,7 +27,7 @@
 
 	<div class="services-preview-section__actions">
 		<Button variant="outline" href="/servicios">
-			Ver todos los servicios y stack técnico
+			{t('cta.viewAllServices')}
 		</Button>
 	</div>
 </div>

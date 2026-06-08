@@ -3,11 +3,12 @@
 	import HomeHero from '$lib/components/sections/HomeHero.svelte';
 	import ProblemSection from '$lib/components/sections/ProblemSection.svelte';
 	import ServicesPreviewSection from '$lib/components/sections/ServicesPreviewSection.svelte';
+	import { t } from '$lib/i18n';
 </script>
 
 <svelte:head>
-	<title>Dark Lynx Protocol — Ingeniería y Desarrollo Frontend Premium</title>
-	<meta name="description" content="Estudio boutique de desarrollo frontend. Construimos landing pages rápidas, optimizadas para Core Web Vitals, con SCSS limpio y componentes Svelte mantenibles." />
+	<title>Dark Lynx Protocol — {t('seo.home.title')}</title>
+	<meta name="description" content={t('seo.home.desc')} />
 </svelte:head>
 
 <Section size="lg">

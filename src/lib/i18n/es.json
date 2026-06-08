@@ -1,0 +1,265 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "philosophy": "Filosofía",
+    "about": "Sobre Mí",
+    "contact": "Contacto"
+  },
+  "seo": {
+    "home": {
+      "title": "Ingeniería y Desarrollo Frontend Premium",
+      "desc": "Estudio boutique de desarrollo frontend. Construimos landing pages rápidas, optimizadas para Core Web Vitals, con SCSS limpio y componentes Svelte mantenibles."
+    },
+    "services": {
+      "desc": "Nuestros servicios de desarrollo frontend: desarrollo web premium, integraciones, auditoría y refactorización técnica con tecnologías modernas."
+    },
+    "philosophy": {
+      "desc": "Nuestra filosofía de ingeniería: desarrollo directo, rendimiento prioritario, código limpio y mantenible."
+    },
+    "about": {
+      "desc": "Conoce a Gerardo Martínez, Fundador de Dark Lynx Protocol: Desarrollador Fullstack & Ingeniero de Automatización con IA enfocado en rendimiento y código limpio."
+    }
+  },
+  "cta": {
+    "startProtocol": "INICIAR_PROTOCOLO",
+    "tellMeProject": "Cuéntame tu proyecto",
+    "viewPhilosophy": "Ver Filosofía",
+    "viewAllServices": "Ver todos los servicios y stack técnico",
+    "sendData": "TRANSMITIR_DATOS",
+    "sending": "TRANSMITIENDO..."
+  },
+  "footer": {
+    "brand": "DARK LYNX PROTOCOL",
+    "status": "[SYSTEM_STABLE]"
+  },
+  "home": {
+    "hero": {
+      "badge": "AVAILABLE_FOR_BUILD",
+      "title": "Construimos software <span class=\"text-accent text-glow\">mantenible</span>, directo y técnicamente <span class=\"text-accent text-glow\">sólido</span>.",
+      "desc": "Dark Lynx Protocol es un estudio boutique de ingeniería web. Creamos landing pages de alto rendimiento, optimizamos Core Web Vitals al extremo y eliminamos la deuda técnica de raíz. Sin rodeos comerciales."
+    },
+    "problem": {
+      "overline": "EL PROBLEMA",
+      "title": "La Trampa de la Reparación Barata",
+      "description": "Comprar plantillas prediseñadas o delegar en agencias tradicionales que pegan miles de utilidades CSS suele terminar igual: un código frágil que nadie puede mantener y un rendimiento web deficiente.",
+      "alert": "[SÍNTOMA_DE_ALERTA]",
+      "alertList": [
+        "Páginas que tardan más de 3 segundos en cargar, perdiendo un 40% de visitas.",
+        "Código espagueti con clases duplicadas e imposibles de leer o refactorizar.",
+        "Dependencia absoluta de plugins externos y scripts pesados que rompen el diseño.",
+        "Presupuestos que se desvanecen en parches continuos sin solucionar el fondo."
+      ],
+      "protocol": "[EL_PROTOCOLO]",
+      "protocolList": [
+        "Optimización obsesiva para Core Web Vitals (LCP, INP, CLS) y tiempos sub-segundo.",
+        "Componentes Svelte limpios, organizados y con estilos SCSS encapsulados.",
+        "Carga mínima de dependencias: solo lo estrictamente necesario.",
+        "Código propietario que puedes extender y mantener en el futuro de forma autónoma."
+      ]
+    },
+    "services": {
+      "overline": "QUÉ HACEMOS",
+      "title": "Servicios prácticos sin sobrecarga",
+      "description": "Diseñamos protocolos técnicos específicos para cada problema. Sin envoltorios comerciales innecesarios, directo al grano.",
+      "list": [
+        {
+          "icon": "Layout",
+          "title": "Desarrollo Frontend Premium",
+          "description": "Interfaces interactivas, fluidas y de alto rendimiento que cautivan a los usuarios desde el primer milisegundo."
+        },
+        {
+          "icon": "Cpu",
+          "title": "Arquitectura Limpia y Escalable",
+          "description": "Código limpio, tipado, estructurado y sin dependencias inútiles que ralenticen tu negocio."
+        },
+        {
+          "icon": "Zap",
+          "title": "Optimización Web Extrema",
+          "description": "Maximiza tus métricas de Core Web Vitals y velocidad para mejorar conversión y SEO orgánico."
+        }
+      ]
+    }
+  },
+  "services": {
+    "hero": {
+      "overline": "SERVICIOS",
+      "title": "Módulos de Ejecución Técnica",
+      "description": "Soluciones concretas y estructuradas diseñadas para corregir deficiencias de rendimiento, experiencia de usuario y arquitectura."
+    },
+    "modules": [
+      {
+        "icon": "Globe",
+        "title": "Landing Pages & Sitios Corporativos",
+        "description": "Sitios web optimizados al máximo para conversión y posicionamiento. Cero plantillas genéricas. Todo hecho a medida.",
+        "tags": ["Angular", "Svelte", "Vite", "Rendimiento"]
+      },
+      {
+        "icon": "Layers",
+        "title": "Aplicaciones Web Full-Stack",
+        "description": "Desarrollo ágil de plataformas interactivas con arquitecturas modernas, garantizando mantenimiento a largo plazo.",
+        "tags": ["SvelteKit", "TypeScript", "Node.js", "APIs"]
+      },
+      {
+        "icon": "Search",
+        "title": "Auditoría Técnica & Refactorización",
+        "description": "Inspección profunda de código heredado, eliminación de deuda técnica y mejora del rendimiento general de la aplicación.",
+        "tags": ["Performance", "Core Web Vitals", "CSS/SCSS", "Refactoring"]
+      },
+      {
+        "icon": "Shield",
+        "title": "Integraciones & Protocolos Seguros",
+        "description": "Conexión de pasarelas de pago, sistemas de autenticación y bases de datos bajo estándares estrictos de seguridad.",
+        "tags": ["Auth", "Databases", "Stripe", "Security"]
+      }
+    ],
+    "tech": {
+      "overline": "EL ARSENAL",
+      "title": "Stack tecnológico moderno y optimizado",
+      "description": "Seleccionamos herramientas que favorecen la velocidad, la escalabilidad y la facilidad de mantenimiento."
+    },
+    "cta": {
+      "title": "¿Listo para elevar tus estándares web?",
+      "description": "Agenda una llamada diagnóstica sin compromisos. Evaluamos la velocidad de tu web actual, identificamos problemas de código y te proponemos un protocolo técnico claro."
+    }
+  },
+  "philosophy": {
+    "hero": {
+      "overline": "FILOSOFÍA",
+      "title": "El Manifiesto de Dark Lynx",
+      "description": "Creemos en el software honesto, construido sobre bases firmes, libre de dependencias infladas y diseñado para durar."
+    },
+    "principles": [
+      {
+        "number": "01",
+        "title": "Desarrollo Directo y Sin Rodeos",
+        "description": "No vendemos humo ni metodologías infladas. Hablamos en código y resultados tangibles. Diseñamos e implementamos software que resuelve problemas reales sin añadir complejidad innecesaria.",
+        "span": "col-span-3"
+      },
+      {
+        "number": "02",
+        "title": "Rendimiento como Prioridad Absoluta",
+        "description": "La velocidad web no es un lujo, es una métrica de conversión crítica. Optimizamos cada byte, imagen y petición para que la experiencia sea instantánea en cualquier pantalla y conexión.",
+        "span": "col-span-3"
+      },
+      {
+        "number": "03",
+        "title": "Arquitectura Mantenible",
+        "description": "Escribimos CSS/SCSS con tokens claros y componentes Svelte con responsabilidades únicas. Si un desarrollador inspecciona tu proyecto meses después, sabrá exactamente dónde tocar sin romper nada.",
+        "span": "col-span-4"
+      },
+      {
+        "number": "04",
+        "title": "Honestidad Técnica",
+        "description": "Si una solución sencilla funciona, no te recomendaremos una arquitectura compleja de miles de dólares. Tu éxito y tranquilidad a largo plazo es nuestra meta principal.",
+        "span": "col-span-2"
+      }
+    ],
+    "comparison": {
+      "traditional": {
+        "title": "Agencia Tradicional",
+        "items": [
+          "Clases infinitas de Tailwind pegadas sin estructura.",
+          "Decenas de frameworks y dependencias innecesarias.",
+          "Equipos sobredimensionados que diluyen la comunicación.",
+          "Desarrollo lento con capas de burocracia comercial.",
+          "Soporte costoso y dependiente para cambios mínimos."
+        ]
+      },
+      "boutique": {
+        "title": "Estudio Boutique (Dark Lynx)",
+        "items": [
+          "Estructura SCSS limpia, modular y basada en tokens.",
+          "Código nativo libre de librerías inútiles e infladas.",
+          "Contacto directo con el ingeniero que escribe tu código.",
+          "Entrega ágil y enfocada en hitos de negocio claros.",
+          "Autonomía total del cliente con documentación sólida."
+        ]
+      }
+    },
+    "quote": {
+      "text": "El buen software no se mide por cuántas líneas de código tiene, sino por cuántas de ellas se eliminaron para que el sistema funcione de manera elegante, veloz y robusta.",
+      "author": "DARK LYNX PROTOCOL"
+    }
+  },
+  "about": {
+    "profile": {
+      "role": "Fullstack Developer & Ingeniero DevOps",
+      "bio": "Desarrollador Full Stack con más de 10 años de experiencia entregando soluciones empresariales robustas y de alto rendimiento. Especializado en el stack de Angular, Svelte, ASP.NET, C# y bases de datos relacionales. Sólida experiencia en administración de sistemas Linux, despliegues en la nube de Azure y control de versiones avanzado con Git. Trabajo desde Querétaro acompañado de 4 supervisores felinos que garantizan que el código tenga el nivel adecuado de calidad y ronroneo.",
+      "secretButton": "Diario Secreto Dev"
+    },
+    "trajectory": {
+      "overline": "REGISTRO_ACTIVIDAD",
+      "title": "Trayectoria & Experiencia Operativa",
+      "description": "Historial de operaciones técnicas liderando proyectos de software de alto impacto.",
+      "timeline": [
+        {
+          "year": "2026 - Presente",
+          "title": "Fundador & Ingeniero Principal",
+          "company": "Dark Lynx Protocol",
+          "description": "Liderando operaciones de consultoría boutique. Desarrollo de software libre de deuda técnica, optimizaciones de Core Web Vitals al extremo y arquitecturas serverless de alta velocidad."
+        },
+        {
+          "year": "2026 - Actualidad",
+          "title": "Desarrollador de Software",
+          "company": "Ria Money Transfer",
+          "description": "Desarrollador en plataformas y sistemas transaccionales legacy. Diseño e implementación de estrategias de migración hacia arquitecturas modernas y escalables para el líder global en transferencia de remesas."
+        },
+        {
+          "year": "2020 - 2025",
+          "title": "Senior Full Stack Developer",
+          "company": "MTech-Systems",
+          "description": "Mentoría y onboarding de desarrolladores en Angular, .NET Core y SQL Server. Liderazgo del desarrollo del sistema de Boletín Sanitario para regulaciones agrícolas brasileñas y co-desarrollo de la intranet corporativa."
+        },
+        {
+          "year": "2015 - 2020",
+          "title": "Desarrollador Full Stack Freelance",
+          "company": "Proyectos Independientes",
+          "description": "Diseño, desarrollo y lanzamiento de varias plataformas de comercio electrónico con pasarelas de pagos seguros y catálogos dinámicos."
+        },
+        {
+          "year": "2018",
+          "title": "Desarrollador Web",
+          "company": "Probusiness",
+          "description": "Diseño y mantenimiento de portales responsivos de productos utilizando HTML5, CSS3 y JavaScript como único desarrollador."
+        }
+      ]
+    },
+    "status": {
+      "stable": "ACTIVE",
+      "accepting": "TRUE",
+      "integrity": "100% SECURE",
+      "focusTitle": "// ENFOQUE_ACTUAL:",
+      "focus": [
+        "Arquitectura de aplicaciones empresariales escalables con .NET Core, C# y PostgreSQL.",
+        "Interfaces de alto rendimiento y robustas con Angular y Svelte.",
+        "Administración y despliegue avanzado en entornos Linux, Azure y control de versiones con Git.",
+        "Optimización profunda de Core Web Vitals, rendimiento web y eliminación de deuda técnica."
+      ],
+      "connectTitle": ">_ INICIAR_CONEXION",
+      "linkDesc": "Abrir canal seguro en",
+      "journal": "Diario Técnico"
+    }
+  },
+  "contact": {
+    "hero": {
+      "overline": "CONEXIÓN",
+      "title": "Iniciar Canal Seguro",
+      "description": "Completa el protocolo para establecer comunicación. Analizaremos tu solicitud y responderemos a la brevedad."
+    },
+    "form": {
+      "name": "ID_USUARIO (Nombre)",
+      "email": "CORREO_ENCRIPTADO (Email)",
+      "subject": "CÓDIGO_ASUNTO",
+      "message": "PAYLOAD (Mensaje)",
+      "success": "PROTOCOLO COMPLETADO. Mensaje transmitido con éxito.",
+      "error": "ERROR_DE_TRANSMISIÓN. Intenta nuevamente."
+    }
+  },
+  "journal": {
+    "title": "Diario de Desarrollo de Gerardo",
+    "subtitle": "Registros clasificados de desarrollo — solo para ojos autorizados.",
+    "badge": "ACCESO_CONCEDIDO",
+    "emptyState": "No se encontraron entradas en el archivo."
+  }
+}

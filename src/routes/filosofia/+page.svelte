@@ -4,19 +4,19 @@
 	import PrinciplesBentoSection from '$lib/components/sections/PrinciplesBentoSection.svelte';
 	import ComparisonSplitSection from '$lib/components/sections/ComparisonSplitSection.svelte';
 	import QuoteBlock from '$lib/components/ui/QuoteBlock.svelte';
-	import { manifestoQuote } from '$lib/data/philosophy';
+	import { t, tObj } from '$lib/i18n';
 </script>
 
 <svelte:head>
-	<title>Filosofía y Manifiesto — Dark Lynx Protocol</title>
-	<meta name="description" content="Nuestra filosofía de ingeniería: desarrollo directo, rendimiento prioritario, código limpio y mantenible." />
+	<title>{t('nav.philosophy')} — Dark Lynx Protocol</title>
+	<meta name="description" content={t('seo.philosophy.desc')} />
 </svelte:head>
 
 <Section size="md">
 	<PageHero 
-		overline="FILOSOFÍA"
-		title="El Manifiesto de Dark Lynx"
-		description="Creemos en el software honesto, construido sobre bases firmes, libre de dependencias infladas y diseñado para durar."
+		overline={t('philosophy.hero.overline')}
+		title={t('philosophy.hero.title')}
+		description={t('philosophy.hero.description')}
 	/>
 </Section>
 
@@ -30,7 +30,7 @@
 
 <Section size="md" id="manifiesto">
 	<div class="manifesto-quote-wrapper">
-		<QuoteBlock text={manifestoQuote.text} author={manifestoQuote.author} />
+		<QuoteBlock text={t('philosophy.quote.text')} author={t('philosophy.quote.author')} />
 	</div>
 </Section>
 

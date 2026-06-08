@@ -3,13 +3,14 @@
 	import Card from '$lib/components/ui/Card.svelte';
 	import IconBox from '$lib/components/ui/IconBox.svelte';
 	import { techStack } from '$lib/data/tech-stack';
+	import { t } from '$lib/i18n';
 </script>
 
 <div class="tech-stack-section">
 	<SectionHeader 
-		overline="EL ARSENAL"
-		title="Stack tecnológico moderno y optimizado"
-		description="Seleccionamos herramientas que favorecen la velocidad, la escalabilidad y la facilidad de mantenimiento."
+		overline={t('services.tech.overline')}
+		title={t('services.tech.title')}
+		description={t('services.tech.description')}
 		align="center"
 	/>
 

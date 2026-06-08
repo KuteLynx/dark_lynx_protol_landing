@@ -1,20 +1,22 @@
 <script lang="ts">
 	import Card from '$lib/components/ui/Card.svelte';
-	import { profileInfo } from '$lib/data/profile';
+	import SectionHeader from '$lib/components/ui/SectionHeader.svelte';
+	import { t, tObj } from '$lib/i18n';
 </script>
 
 <div class="bio-bento">
-	<h2 class="bio-bento__heading mono text-accent">&gt;_ HISTORIAL_DE_TRAYECTORIA</h2>
-	<div class="bento-grid">
-		{#each profileInfo.trajectory as job, idx}
-			{@const spanClass = idx === 0 ? 'col-span-4' : idx === 1 ? 'col-span-2' : 'col-span-6'}
-			<Card interactive class="job-card {spanClass}">
-				<div class="job-card__meta">
-					<span class="job-card__year mono text-accent">{job.year}</span>
-					<span class="job-card__company mono">// {job.company}</span>
-				</div>
-				<h3 class="job-card__title">{job.title}</h3>
-				<p class="job-card__desc">{job.description}</p>
+	<SectionHeader 
+		overline={t('about.trajectory.overline')}
+		title={t('about.trajectory.title')}
+		description={t('about.trajectory.description')}
+	/>
+
+	<div class="timeline">
+		{#each tObj<any[]>('about.trajectory.timeline') as item}
+			<Card interactive glow class="timeline-card">
+				<div class="timeline-card__year mono text-accent">{item.year}</div>
+				<h3 class="timeline-card__title">{item.title} <span class="text-muted">@ {item.company}</span></h3>
+				<p class="timeline-card__desc">{item.description}</p>
 			</Card>
 		{/each}
 	</div>

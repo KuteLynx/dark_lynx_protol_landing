@@ -1,9 +1,19 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import Card from '$lib/components/ui/Card.svelte';
-	import TerminalText from '$lib/components/ui/TerminalText.svelte';
+	import TypewriterText from '$lib/components/ui/TypewriterText.svelte';
 	import LinkCard from '$lib/components/ui/LinkCard.svelte';
-	import { profileInfo } from '$lib/data/profile';
 	import { socialLinks } from '$lib/data/social-links';
+	import { t, tObj } from '$lib/i18n';
+	import { grantJournalAccess } from '$lib/data/journal-access.svelte';
+
+	function handleLinkClick(e: MouseEvent, link: any) {
+		if (link.internal) {
+			e.preventDefault();
+			grantJournalAccess();
+			goto(link.href);
+		}
+	}
 </script>
 
 <div class="status-panel">
@@ -15,32 +25,36 @@
 				<span class="text-accent">[STABLE]</span>
 			</div>
 			<div class="terminal-panel-card__body flow">
-				<TerminalText prefix=">_ STATUS:" text={profileInfo.systemStatus.status} />
-				<TerminalText prefix=">_ ACCEPTING_NEW_PROJECTS:" text={profileInfo.systemStatus.acceptingProjects} />
-				<TerminalText prefix=">_ INTEGRITY_CHECK:" text={profileInfo.systemStatus.uptime} blink />
+				<TypewriterText prefix=">_ STATUS:" text={t('about.status.stable')} delay={0} />
+				<TypewriterText prefix=">_ ACCEPTING_NEW_PROJECTS:" text={t('about.status.accepting')} delay={500} />
+				<TypewriterText prefix=">_ INTEGRITY_CHECK:" text={t('about.status.integrity')} blink delay={1000} />
 				
 				<div class="focus-list-wrapper">
-					<h4 class="focus-list-title mono text-accent">// ENFOQUE_ACTUAL:</h4>
+					<h4 class="focus-list-title mono text-accent">{t('about.status.focusTitle')}</h4>
 					<ul class="focus-list">
-						{#each profileInfo.currentFocus as focus}
-							<li>{focus}</li>
+						{#each tObj<string[]>('about.status.focus') as focusItem}
+							<li>{focusItem}</li>
 						{/each}
 					</ul>
 				</div>
 			</div>
 		</Card>
 
-		<!-- Social Link Connections -->
-		<div class="status-panel__links flow">
-			<h4 class="links-title mono">&gt;_ INICIAR_CONEXION</h4>
-			{#each socialLinks as link}
-				<LinkCard 
-					href={link.href}
-					title={link.name}
-					description="Abrir canal seguro en {link.name}"
-					iconName={link.icon}
-				/>
-			{/each}
+		<!-- Direct Connect Links -->
+		<div class="direct-connect flow">
+			<h3 class="direct-connect__title mono text-accent">{t('about.status.connectTitle')}</h3>
+			<div class="direct-connect__links">
+				{#each socialLinks as link}
+					<LinkCard 
+						href={link.href} 
+						title={link.i18nKey ? t(link.i18nKey) : link.name} 
+						description="{t('about.status.linkDesc')} {link.i18nKey ? t(link.i18nKey) : link.name}"
+						iconName={link.icon} 
+						internal={link.internal}
+						onclick={(e) => handleLinkClick(e, link)}
+					/>
+				{/each}
+			</div>
 		</div>
 	</div>
 </div>
@@ -102,10 +116,18 @@
 		}
 	}
 
-	.links-title {
-		font-size: var(--font-size-small);
-		color: var(--color-text);
-		margin-bottom: var(--space-4);
-		margin-top: 0;
+	.direct-connect {
+		&__title {
+			font-size: var(--font-size-small);
+			color: var(--color-text);
+			margin-bottom: var(--space-4);
+			margin-top: 0;
+		}
+
+		&__links {
+			display: flex;
+			flex-direction: column;
+			gap: var(--space-4);
+		}
 	}
 </style>

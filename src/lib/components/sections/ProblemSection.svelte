@@ -1,33 +1,32 @@
 <script lang="ts">
 	import SectionHeader from '$lib/components/ui/SectionHeader.svelte';
 	import Card from '$lib/components/ui/Card.svelte';
+	import { t, tObj } from '$lib/i18n';
 </script>
 
 <div class="problem-section">
 	<SectionHeader 
-		overline="EL PROBLEMA"
-		title="La Trampa de la Reparación Barata"
-		description="Comprar plantillas prediseñadas o delegar en agencias tradicionales que pegan miles de utilidades CSS suele terminar igual: un código frágil que nadie puede mantener y un rendimiento web deficiente."
+		overline={t('home.problem.overline')}
+		title={t('home.problem.title')}
+		description={t('home.problem.description')}
 	/>
 
 	<div class="grid-2">
 		<Card class="problem-card problem-card--red">
-			<h3 class="problem-card__title mono text-danger">[SÍNTOMA_DE_ALERTA]</h3>
+			<h3 class="problem-card__title mono text-danger">{t('home.problem.alert')}</h3>
 			<ul class="problem-card__list">
-				<li>Páginas que tardan más de 3 segundos en cargar, perdiendo un 40% de visitas.</li>
-				<li>Código espagueti con clases duplicadas e imposibles de leer o refactorizar.</li>
-				<li>Dependencia absoluta de plugins externos y scripts pesados que rompen el diseño.</li>
-				<li>Presupuestos que se desvanecen en parches continuos sin solucionar el fondo.</li>
+				{#each tObj<string[]>('home.problem.alertList') as item}
+					<li>{item}</li>
+				{/each}
 			</ul>
 		</Card>
 
 		<Card class="problem-card problem-card--green">
-			<h3 class="problem-card__title mono text-accent">[EL_PROTOCOLO]</h3>
+			<h3 class="problem-card__title mono text-accent">{t('home.problem.protocol')}</h3>
 			<ul class="problem-card__list">
-				<li>Optimización obsesiva para Core Web Vitals (LCP, INP, CLS) y tiempos sub-segundo.</li>
-				<li>Componentes Svelte limpios, organizados y con estilos SCSS encapsulados.</li>
-				<li>Carga mínima de dependencias: solo lo estrictamente necesario.</li>
-				<li>Código propietario que puedes extender y mantener en el futuro de forma autónoma.</li>
+				{#each tObj<string[]>('home.problem.protocolList') as item}
+					<li>{item}</li>
+				{/each}
 			</ul>
 		</Card>
 	</div>

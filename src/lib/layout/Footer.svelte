@@ -1,25 +1,21 @@
 <script lang="ts">
 	import { socialLinks } from '$lib/data/social-links';
-	import * as Icons from '@lucide/svelte';
-
-	function getIconComponent(name: string) {
-		return (Icons as any)[name] || Icons.HelpCircle;
-	}
+	import SocialIcon from '$lib/components/ui/SocialIcon.svelte';
+	import { t } from '$lib/i18n';
 </script>
 
 <footer class="footer">
 	<div class="container footer__container">
 		<div class="footer__brand mono">
-			DARK LYNX PROTOCOL <span class="text-accent">//</span> [SYSTEM_STABLE]
+			{t('footer.brand')} <span class="text-accent">//</span> {t('footer.status')}
 		</div>
 		
 		<div class="footer__right">
 			<ul class="footer__socials">
 				{#each socialLinks as link}
-					{@const Icon = getIconComponent(link.icon)}
 					<li>
 						<a href={link.href} target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label={link.name}>
-							<Icon size={18} />
+							<SocialIcon name={link.icon} size={18} />
 						</a>
 					</li>
 				{/each}

@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { navigationItems, ctaConfig } from '$lib/data/navigation';
 	import { Menu, X } from '@lucide/svelte';
-	import { fade } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
+	import { cubicOut } from 'svelte/easing';
+	import LanguageToggle from '$lib/components/ui/LanguageToggle.svelte';
+	import { t } from '$lib/i18n';
 
 	let isOpen = $state(false);
 
@@ -13,6 +15,14 @@
 	function closeMenu() {
 		isOpen = false;
 	}
+
+	let navItems = $derived([
+		{ label: t('nav.home'), href: '/' },
+		{ label: t('nav.services'), href: '/servicios' },
+		{ label: t('nav.philosophy'), href: '/filosofia' },
+		{ label: t('nav.about'), href: '/sobre-mi' },
+		{ label: t('nav.contact'), href: '/contacto' }
+	]);
 </script>
 
 <header class="navbar fx-glass">
@@ -24,7 +34,7 @@
 		<!-- Desktop Navigation -->
 		<nav class="navbar__nav navbar__nav--desktop">
 			<ul class="navbar__links">
-				{#each navigationItems as item}
+				{#each navItems as item}
 					<li>
 						<a 
 							href={item.href} 
@@ -35,7 +45,10 @@
 					</li>
 				{/each}
 			</ul>
-			<a href={ctaConfig.href} class="btn-cta btn-cta--sm mono">{ctaConfig.label}</a>
+			<div class="navbar__actions">
+				<LanguageToggle />
+				<a href="/contacto" class="btn-cta btn-cta--sm mono">{t('cta.startProtocol')}</a>
+			</div>
 		</nav>
 
 		<!-- Mobile Hamburger -->
@@ -50,10 +63,13 @@
 
 	<!-- Mobile Dropdown Navigation -->
 	{#if isOpen}
-		<nav class="navbar__nav navbar__nav--mobile fx-glass" transition:fade={{ duration: 150 }}>
+		<nav class="navbar__nav navbar__nav--mobile fx-glass" transition:fly={{ y: -20, duration: 300, easing: cubicOut }}>
+			<div in:fly={{ y: 20, duration: 300, delay: 50, easing: cubicOut }} class="navbar__mobile-actions">
+				<LanguageToggle />
+			</div>
 			<ul class="navbar__links">
-				{#each navigationItems as item}
-					<li>
+				{#each navItems as item, i}
+					<li in:fly={{ y: 20, duration: 300, delay: 100 + (i * 50), easing: cubicOut }}>
 						<a 
 							href={item.href} 
 							class="navbar__link mono { $page.url.pathname === item.href ? 'navbar__link--active' : '' }"
@@ -64,9 +80,11 @@
 					</li>
 				{/each}
 			</ul>
-			<a href={ctaConfig.href} class="btn-cta btn-cta--mobile mono" onclick={closeMenu}>
-				{ctaConfig.label}
-			</a>
+			<div in:fly={{ y: 20, duration: 300, delay: 100 + (navItems.length * 50), easing: cubicOut }} class="navbar__cta-mobile-wrapper">
+				<a href="/contacto" class="btn-cta btn-cta--mobile mono" onclick={closeMenu}>
+					{t('cta.startProtocol')}
+				</a>
+			</div>
 		</nav>
 	{/if}
 </header>
@@ -147,6 +165,17 @@
 			}
 		}
 
+		&__actions {
+			display: flex;
+			align-items: center;
+			gap: var(--space-4);
+		}
+
+		&__mobile-actions {
+			display: flex;
+			justify-content: flex-end;
+		}
+
 		&__links {
 			display: flex;
 			flex-direction: column;
@@ -201,5 +230,11 @@
 		&--mobile {
 			width: 100%;
 		}
+	}
+
+	.navbar__cta-mobile-wrapper {
+		margin-top: var(--space-4);
+		padding-top: var(--space-4);
+		border-top: 1px solid var(--color-border-soft);
 	}
 </style>

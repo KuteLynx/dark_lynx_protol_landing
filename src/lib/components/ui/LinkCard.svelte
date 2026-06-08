@@ -1,28 +1,36 @@
 <script lang="ts">
 	import Card from './Card.svelte';
 	import * as Icons from '@lucide/svelte';
+	import SocialIcon from './SocialIcon.svelte';
 
 	interface Props {
 		href: string;
 		title: string;
 		description?: string;
 		iconName: string;
+		internal?: boolean;
+		onclick?: (e: MouseEvent) => void;
 	}
 
-	let { href, title, description = '', iconName }: Props = $props();
+	let { href, title, description = '', iconName, internal = false, onclick }: Props = $props();
 
 	function getIconComponent(name: string) {
 		return (Icons as any)[name] || Icons.ExternalLink;
 	}
 
-	let Icon = $derived(getIconComponent(iconName));
+	let isSocialIcon = $derived(['github', 'linkedin', 'twitter'].includes(iconName.toLowerCase()));
+	let Icon = $derived(!isSocialIcon ? getIconComponent(iconName) : null);
 </script>
 
-<a {href} target="_blank" rel="noopener noreferrer" class="link-card-anchor">
+<a {href} target={internal ? undefined : "_blank"} rel={internal ? undefined : "noopener noreferrer"} class="link-card-anchor" {onclick}>
 	<Card interactive glow class="link-card">
 		<div class="link-card__content">
 			<div class="link-card__icon text-accent">
-				<Icon size={24} />
+				{#if isSocialIcon}
+					<SocialIcon name={iconName} size={24} />
+				{:else}
+					<Icon size={24} />
+				{/if}
 			</div>
 			<div class="link-card__text">
 				<h3 class="link-card__title mono">{title}</h3>

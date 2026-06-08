@@ -1,11 +1,11 @@
 <script lang="ts">
 	import Card from '$lib/components/ui/Card.svelte';
-	import { principles } from '$lib/data/philosophy';
+	import { tObj } from '$lib/i18n';
 </script>
 
 <div class="principles-bento">
 	<div class="bento-grid">
-		{#each principles as principle}
+		{#each tObj<any[]>('philosophy.principles') as principle}
 			<Card interactive class="principle-card {principle.span}">
 				<span class="principle-card__number mono text-accent fx-text-glow">{principle.number}</span>
 				<div class="principle-card__content">

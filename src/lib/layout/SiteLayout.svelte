@@ -3,6 +3,7 @@
 	import Navbar from './Navbar.svelte';
 	import Footer from './Footer.svelte';
 	import PageBackground from './PageBackground.svelte';
+	import GlitchEngine from './GlitchEngine.svelte';
 
 	interface Props {
 		background?: 'dots' | 'grid' | 'cyber';
@@ -13,6 +14,7 @@
 </script>
 
 <div class="site-layout">
+	<GlitchEngine />
 	<PageBackground variant={background} />
 	<Navbar />
 	<main class="site-layout__content">

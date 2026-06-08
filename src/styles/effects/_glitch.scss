@@ -1,0 +1,78 @@
+@use '../abstracts/tokens' as *;
+
+.glitch-active {
+  position: relative;
+  // Use the inline variable set by the engine, or fallback to 600ms
+  animation: glitch-skew calc(var(--glitch-duration, 600ms) * 1) linear alternate-reverse;
+  
+  // We only add pseudo elements if we have data-glitch-text
+  // This allows the effect to work on both text nodes and containers
+  &[data-glitch-text]::before,
+  &[data-glitch-text]::after {
+    content: attr(data-glitch-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    pointer-events: none;
+    z-index: 10; // Keep above original text
+  }
+
+  &[data-glitch-text]::before {
+    left: 2px;
+    text-shadow: -2px 0 red;
+    animation: glitch-anim calc(var(--glitch-duration, 600ms) * 0.8) infinite linear alternate-reverse;
+  }
+  
+  &[data-glitch-text]::after {
+    left: -2px;
+    text-shadow: -2px 0 var(--color-accent);
+    animation: glitch-anim-2 calc(var(--glitch-duration, 600ms) * 0.9) infinite linear alternate-reverse;
+  }
+}
+
+// Skew animation applied to the element itself
+@keyframes glitch-skew {
+  0% { transform: skew(0deg); opacity: 1; }
+  10% { transform: skew(0deg); opacity: 1; }
+  11% { transform: skew(-5deg) translateX(-2px); opacity: 0.8; }
+  12% { transform: skew(5deg) translateX(2px); opacity: 1; }
+  13% { transform: skew(0deg); opacity: 1; }
+  49% { transform: skew(0deg); opacity: 1; }
+  50% { transform: skew(-3deg); opacity: 0.7; }
+  51% { transform: skew(3deg); opacity: 1; }
+  52% { transform: skew(0deg); opacity: 1; }
+  100% { transform: skew(0deg); opacity: 1; }
+}
+
+// Slice animations for the pseudo elements
+@keyframes glitch-anim {
+  0% { clip-path: inset(20% 0 80% 0); }
+  20% { clip-path: inset(60% 0 10% 0); transform: translateX(-2px); }
+  40% { clip-path: inset(40% 0 50% 0); transform: translateX(2px); }
+  60% { clip-path: inset(80% 0 5% 0); transform: translateX(-2px); }
+  80% { clip-path: inset(10% 0 70% 0); transform: translateX(2px); }
+  100% { clip-path: inset(30% 0 50% 0); }
+}
+
+@keyframes glitch-anim-2 {
+  0% { clip-path: inset(10% 0 60% 0); }
+  20% { clip-path: inset(30% 0 20% 0); transform: translateX(2px); }
+  40% { clip-path: inset(70% 0 10% 0); transform: translateX(-2px); }
+  60% { clip-path: inset(20% 0 50% 0); transform: translateX(2px); }
+  80% { clip-path: inset(50% 0 30% 0); transform: translateX(-2px); }
+  100% { clip-path: inset(5% 0 80% 0); }
+}
+
+// Respect user preference
+@media (prefers-reduced-motion: reduce) {
+  .glitch-active {
+    animation: none !important;
+    &::before, &::after {
+      display: none !important;
+      animation: none !important;
+    }
+  }
+}

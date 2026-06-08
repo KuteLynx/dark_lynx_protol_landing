@@ -1,28 +1,55 @@
 <script lang="ts">
-	import Badge from '$lib/components/ui/Badge.svelte';
-	import { profileInfo } from '$lib/data/profile';
+	import profileImg from '$lib/assets/profile-hacker.png';
+	import { t } from '$lib/i18n';
+	import { goto } from '$app/navigation';
+	import { grantJournalAccess } from '$lib/data/journal-access.svelte';
+	import Button from '$lib/components/ui/Button.svelte';
+
+	let hoverTimer: ReturnType<typeof setTimeout> | null = null;
+	let isRevealed = $state(false);
+
+	function handleMouseEnter() {
+		if (!isRevealed) {
+			hoverTimer = setTimeout(() => {
+				isRevealed = true;
+			}, 2000);
+		}
+	}
+
+	function handleMouseLeave() {
+		if (hoverTimer) {
+			clearTimeout(hoverTimer);
+			hoverTimer = null;
+		}
+		isRevealed = false;
+	}
+
+	function handleSecretClick() {
+		grantJournalAccess();
+		goto('/diario');
+	}
 </script>
 
 <div class="profile-hero">
 	<div class="profile-hero__content">
-		<div class="profile-hero__badge">
-			<Badge prefix="ID:">{profileInfo.id}</Badge>
-		</div>
-		<h1 class="profile-hero__name">{profileInfo.name}</h1>
-		<h2 class="profile-hero__role mono text-accent">{profileInfo.role}</h2>
-		<p class="profile-hero__bio">{profileInfo.bio}</p>
+		<div class="profile-hero__badge badge text-accent mono">ROOT_ACCESS_GRANTED</div>
+		<h1 class="profile-hero__name font-glow">Gerardo Martínez</h1>
+		<div class="profile-hero__role text-danger mono">{t('about.profile.role')}</div>
+		<p class="profile-hero__bio">
+			{t('about.profile.bio')}
+		</p>
 	</div>
-
-	<div class="profile-hero__frame">
-		<div class="terminal-frame">
-			<div class="terminal-frame__header">
-				<span class="terminal-frame__dot"></span>
-				<span class="terminal-frame__dot"></span>
-				<span class="terminal-frame__dot"></span>
-				<span class="terminal-frame__title mono">ADMIN_AVATAR.PNG</span>
-			</div>
-			<div class="terminal-frame__body">
-				<img src="/profile_avatar.png" alt="Admin Avatar" class="terminal-frame__image" />
+	<div class="terminal-frame">
+		<div class="terminal-frame__header">
+			<div class="terminal-frame__dot"></div>
+			<div class="terminal-frame__dot"></div>
+			<div class="terminal-frame__dot"></div>
+			<div class="terminal-frame__title">admin@darklynx: ~</div>
+		</div>
+		<div class="terminal-frame__body" onmouseenter={handleMouseEnter} onmouseleave={handleMouseLeave} role="region" aria-label="Terminal Image">
+			<img src={profileImg} alt="Admin Avatar" class="terminal-frame__image" class:faded={isRevealed} />
+			<div class="secret-button-wrapper" class:visible={isRevealed}>
+				<Button variant="primary" onclick={handleSecretClick}>{t('about.profile.secretButton')}</Button>
 			</div>
 		</div>
 	</div>
@@ -110,6 +137,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			position: relative;
 		}
 
 		&__image {
@@ -119,6 +147,27 @@
 			border-radius: var(--radius-sm);
 			border: 1px solid var(--color-border-soft);
 			filter: grayscale(20%) contrast(110%);
+			transition: opacity 1s ease-in-out;
+			z-index: 2;
+
+			&.faded {
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+	}
+
+	.secret-button-wrapper {
+		position: absolute;
+		z-index: 1;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.5s ease-in-out;
+		
+		&.visible {
+			opacity: 1;
+			pointer-events: auto;
+			z-index: 3;
 		}
 	}
 </style>

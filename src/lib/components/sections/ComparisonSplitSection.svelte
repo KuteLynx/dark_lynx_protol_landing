@@ -1,39 +1,44 @@
 <script lang="ts">
 	import Card from '$lib/components/ui/Card.svelte';
 	import SectionHeader from '$lib/components/ui/SectionHeader.svelte';
-	import { comparisonData } from '$lib/data/philosophy';
 	import { AlertTriangle, ShieldCheck } from '@lucide/svelte';
+	import { X, Check } from '@lucide/svelte';
+	import { t, tObj } from '$lib/i18n';
+	
+	let data = $derived(tObj<any>('philosophy.comparison'));
 </script>
 
-<div class="comparison-split">
+<div class="comparison-section">
 	<SectionHeader 
-		overline="DIFERENCIACIÓN"
-		title="Agencia Tradicional vs Estudio Boutique"
-		description="Compara los dos enfoques de desarrollo y decide qué tipo de código y relación profesional prefieres para tu negocio."
+		overline={t('philosophy.comparison.overline') || 'DIFERENCIACIÓN'}
+		title={t('philosophy.comparison.headerTitle') || 'Agencia Tradicional vs Estudio Boutique'}
+		description={t('philosophy.comparison.description') || 'Compara los dos enfoques de desarrollo y decide qué tipo de código y relación profesional prefieres para tu negocio.'}
 		align="center"
 	/>
 
 	<div class="grid-2">
-		<Card class="comp-card comp-card--red">
-			<div class="comp-card__header text-danger">
-				<AlertTriangle size={24} />
-				<h3 class="comp-card__title mono">{comparisonData.traditional.title}</h3>
-			</div>
-			<ul class="comp-card__list">
-				{#each comparisonData.traditional.items as item}
-					<li>{item}</li>
+		<!-- Traditional Approach (Bad) -->
+		<Card class="comparison-card comparison-card--bad">
+			<h3 class="comparison-card__title mono text-danger">{data.traditional.title}</h3>
+			<ul class="comparison-list comparison-list--bad">
+				{#each data.traditional.items as item}
+					<li>
+						<span class="comparison-list__icon"><X size={16} /></span>
+						{item}
+					</li>
 				{/each}
 			</ul>
 		</Card>
 
-		<Card class="comp-card comp-card--green">
-			<div class="comp-card__header text-accent">
-				<ShieldCheck size={24} />
-				<h3 class="comp-card__title mono">{comparisonData.boutique.title}</h3>
-			</div>
-			<ul class="comp-card__list">
-				{#each comparisonData.boutique.items as item}
-					<li>{item}</li>
+		<!-- Boutique Approach (Good) -->
+		<Card glow class="comparison-card comparison-card--good">
+			<h3 class="comparison-card__title mono text-accent">{data.boutique.title}</h3>
+			<ul class="comparison-list comparison-list--good">
+				{#each data.boutique.items as item}
+					<li>
+						<span class="comparison-list__icon"><Check size={16} /></span>
+						{item}
+					</li>
 				{/each}
 			</ul>
 		</Card>

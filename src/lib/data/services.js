@@ -21,7 +21,7 @@ export const serviceModules = [
     icon: 'Globe',
     title: 'Landing Pages & Sitios Corporativos',
     description: 'Sitios web optimizados al máximo para conversión y posicionamiento. Cero plantillas genéricas. Todo hecho a medida.',
-    tags: ['Astro', 'Svelte', 'Vite', 'Rendimiento']
+    tags: ['Angular', 'Svelte', 'Vite', 'Rendimiento']
   },
   {
     icon: 'Layers',

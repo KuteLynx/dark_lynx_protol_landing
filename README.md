@@ -1,42 +1,46 @@
-# sv
+# Dark Lynx Protocol
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Landing page premium para Dark Lynx Protocol, estudio boutique de ingeniería web.
 
-## Creating a project
+**Stack:** SvelteKit 2 + Svelte 5 + TypeScript + SCSS + Neon (PostgreSQL serverless)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Desarrollo
 
-```sh
-# create a new project
-npx sv create my-app
-```
+    pnpm install
+    pnpm dev          # http://localhost:5173
 
-To recreate this project with the same configuration:
+## Variables de entorno
 
-```sh
-# recreate this project
-pnpm dlx sv@0.15.4 create --template minimal --types ts --install pnpm /home/lynx/repos/DarkLynxProtocol
-```
+Copia `.env.example` a `.env` y configura `DATABASE_URL` con la connection string de Neon.
 
-## Developing
+La connection string vive en `/home/lynx/docs/neondb_staging` (local, no commitear).
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Migración de base de datos
 
-```sh
-npm run dev
+Correr el schema contra Neon con psql:
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+    psql "$DATABASE_URL" -f src/lib/server/schema.sql
 
-## Building
+Ver `src/lib/server/README.md` para instrucciones detalladas y cómo probar localmente.
 
-To create a production version of your app:
+## Deploy en Render
 
-```sh
-npm run build
-```
+- **Adapter:** `@sveltejs/adapter-auto` (Render lo detecta como Node.js)
+- **Environment variable requerida:** `DATABASE_URL` (Neon connection string)
+- **Region recomendada:** US East (Neon está en us-east-2, minimiza latencia)
+- **Build command:** `pnpm build`
+- **Start command:** `node build`
 
-You can preview the production build with `npm run preview`.
+## Estructura del Journal
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- **Store client-side:** `src/lib/journal-store.svelte.ts` (warm-on-boot, single-flight)
+- **Endpoint API:** `src/routes/api/journal/+server.ts` (GET + POST)
+- **Página:** `src/routes/journal/+page.svelte` (lee del store)
+- **Layout:** `src/routes/+layout.svelte` (dispara ensureLoaded() al montar)
+- **Cron:** Hermes job `fd718bfd3230` genera entradas y hace POST al endpoint
+
+## No tocar
+
+- `wrangler.toml` — configuración de Cloudflare Turnstile para el form de contacto
+- `ContactForm.svelte` — formulario de contacto (otro task)
+- `/home/lynx/repos/portafolio` — portafolio legacy (no relacionado)

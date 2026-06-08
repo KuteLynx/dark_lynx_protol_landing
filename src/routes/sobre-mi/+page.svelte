@@ -3,11 +3,12 @@
 	import ProfileHero from '$lib/components/sections/ProfileHero.svelte';
 	import BioBentoSection from '$lib/components/sections/BioBentoSection.svelte';
 	import SystemStatusPanel from '$lib/components/sections/SystemStatusPanel.svelte';
+	import { t } from '$lib/i18n';
 </script>
 
 <svelte:head>
-	<title>Sobre Mí — Gerardo — Dark Lynx Protocol</title>
-	<meta name="description" content="Conoce a Gerardo, arquitecto e ingeniero de software fundador de Dark Lynx Protocol. Especializado en desarrollo frontend y optimizaciones de alta velocidad." />
+	<title>{t('nav.about')} — Dark Lynx Protocol</title>
+	<meta name="description" content={t('seo.about.desc')} />
 </svelte:head>
 
 <Section size="lg">

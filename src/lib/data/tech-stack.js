@@ -1,12 +1,12 @@
 export const techStack = [
+  { name: 'Angular', icon: 'Triangle' },
   { name: 'Svelte / SvelteKit', icon: 'Layers' },
-  { name: 'Astro Build', icon: 'Sparkles' },
+  { name: 'C# / ASP.NET', icon: 'Code' },
   { name: 'TypeScript', icon: 'FileCode2' },
-  { name: 'Node.js', icon: 'Server' },
-  { name: 'Git & VCS', icon: 'GitBranch' },
-  { name: 'Vite', icon: 'Zap' },
+  { name: 'Python', icon: 'Terminal' },
+  { name: 'LangChain & Ollama', icon: 'Link' },
+  { name: 'AI Agents & LLMs', icon: 'Brain' },
   { name: 'Bases de Datos SQL', icon: 'Database' },
-  { name: 'SCSS / CSS Moderno', icon: 'Palette' },
-  { name: 'APIs & Webhooks', icon: 'Link' },
-  { name: 'Despliegues Web', icon: 'Cloud' }
+  { name: 'RxJS & LINQ', icon: 'Activity' },
+  { name: 'Git & Linux', icon: 'GitBranch' }
 ];

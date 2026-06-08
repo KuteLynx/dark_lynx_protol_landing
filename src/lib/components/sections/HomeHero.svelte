@@ -1,25 +1,25 @@
 <script lang="ts">
 	import Badge from '$lib/components/ui/Badge.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
-	import { ctaConfig } from '$lib/data/navigation';
+	import { t } from '$lib/i18n';
 </script>
 
 <div class="home-hero fx-fade-in">
 	<div class="home-hero__badge">
-		<Badge dot prefix="STATUS:">AVAILABLE_FOR_BUILD</Badge>
+		<Badge dot prefix="STATUS:">{t('home.hero.badge')}</Badge>
 	</div>
 	<h1 class="home-hero__title">
-		Construimos software <span class="text-accent text-glow">mantenible</span>, directo y técnicamente <span class="text-accent text-glow">sólido</span>.
+		{@html t('home.hero.title')}
 	</h1>
 	<p class="home-hero__desc">
-		Dark Lynx Protocol es un estudio boutique de ingeniería web. Creamos landing pages de alto rendimiento, optimizamos Core Web Vitals al extremo y eliminamos la deuda técnica de raíz. Sin rodeos comerciales.
+		{t('home.hero.desc')}
 	</p>
 	<div class="home-hero__actions">
-		<Button variant="primary" size="lg" href={ctaConfig.href}>
-			Cuéntame tu proyecto
+		<Button variant="primary" size="lg" href="/contacto">
+			{t('cta.tellMeProject')}
 		</Button>
 		<Button variant="outline" size="lg" href="/filosofia">
-			Ver Filosofía
+			{t('cta.viewPhilosophy')}
 		</Button>
 	</div>
 </div>
@@ -57,6 +57,7 @@
 			flex-direction: column;
 			width: 100%;
 			gap: var(--space-4);
+			margin-top: var(--space-4);
 
 			@media (min-width: 640px) {
 				flex-direction: row;

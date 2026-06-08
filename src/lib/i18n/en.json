@@ -1,0 +1,265 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "philosophy": "Philosophy",
+    "about": "About Me",
+    "contact": "Contact"
+  },
+  "seo": {
+    "home": {
+      "title": "Premium Frontend Engineering and Development",
+      "desc": "Boutique frontend development studio. We build fast landing pages, optimized for Core Web Vitals, with clean SCSS and maintainable Svelte components."
+    },
+    "services": {
+      "desc": "Our frontend development services: premium web development, integrations, technical audit and refactoring with modern technologies."
+    },
+    "philosophy": {
+      "desc": "Our engineering philosophy: direct development, priority performance, clean and maintainable code."
+    },
+    "about": {
+      "desc": "Meet Gerardo Martínez, Founder of Dark Lynx Protocol: Fullstack Developer & AI Automation Engineer focused on performance, clean code, and AI agents."
+    }
+  },
+  "cta": {
+    "startProtocol": "START_PROTOCOL",
+    "tellMeProject": "Tell me about your project",
+    "viewPhilosophy": "View Philosophy",
+    "viewAllServices": "View all services and tech stack",
+    "sendData": "TRANSMIT_DATA",
+    "sending": "TRANSMITTING..."
+  },
+  "footer": {
+    "brand": "DARK LYNX PROTOCOL",
+    "status": "[SYSTEM_STABLE]"
+  },
+  "home": {
+    "hero": {
+      "badge": "AVAILABLE_FOR_BUILD",
+      "title": "We build software that is <span class=\"text-accent text-glow\">maintainable</span>, straightforward, and technically <span class=\"text-accent text-glow\">solid</span>.",
+      "desc": "Dark Lynx Protocol is a boutique web engineering studio. We create high-performance landing pages, optimize Core Web Vitals to the extreme, and eliminate technical debt at its roots. No corporate jargon."
+    },
+    "problem": {
+      "overline": "THE PROBLEM",
+      "title": "The Cheap Fix Trap",
+      "description": "Buying pre-made templates or outsourcing to traditional agencies that copy-paste thousands of CSS utilities usually ends the same way: fragile code that no one can maintain and poor web performance.",
+      "alert": "[WARNING_SYMPTOM]",
+      "alertList": [
+        "Pages that take more than 3 seconds to load, losing 40% of visits.",
+        "Spaghetti code with duplicated classes, impossible to read or refactor.",
+        "Absolute reliance on external plugins and heavy scripts that break layouts.",
+        "Budgets fading away in continuous patches without solving the core issue."
+      ],
+      "protocol": "[THE_PROTOCOL]",
+      "protocolList": [
+        "Obsessive optimization for Core Web Vitals (LCP, INP, CLS) and sub-second times.",
+        "Clean, organized Svelte components with encapsulated SCSS styles.",
+        "Minimal dependency footprint: only strictly necessary packages.",
+        "Proprietary code that you can autonomously maintain and extend in the future."
+      ]
+    },
+    "services": {
+      "overline": "WHAT WE DO",
+      "title": "Practical services, zero bloat",
+      "description": "We design specific technical protocols for every problem. No unnecessary corporate wrappers, straight to the point.",
+      "list": [
+        {
+          "icon": "Layout",
+          "title": "Premium Frontend Development",
+          "description": "Interactive, fluid, and high-performance interfaces that captivate users from the very first millisecond."
+        },
+        {
+          "icon": "Cpu",
+          "title": "Clean & Scalable Architecture",
+          "description": "Clean, typed, structured code with no useless dependencies slowing down your business."
+        },
+        {
+          "icon": "Zap",
+          "title": "Extreme Web Optimization",
+          "description": "Maximize your Core Web Vitals metrics and speed to improve conversions and organic SEO."
+        }
+      ]
+    }
+  },
+  "services": {
+    "hero": {
+      "overline": "SERVICES",
+      "title": "Technical Execution Modules",
+      "description": "Concrete, structured solutions designed to fix performance deficiencies, user experience issues, and architectural flaws."
+    },
+    "modules": [
+      {
+        "icon": "Globe",
+        "title": "Landing Pages & Corporate Sites",
+        "description": "Websites heavily optimized for conversion and SEO ranking. Zero generic templates. Fully custom-tailored.",
+        "tags": ["Angular", "Svelte", "Vite", "Performance"]
+      },
+      {
+        "icon": "Layers",
+        "title": "Full-Stack Web Applications",
+        "description": "Agile development of interactive platforms with modern architectures, guaranteeing long-term maintainability.",
+        "tags": ["SvelteKit", "TypeScript", "Node.js", "APIs"]
+      },
+      {
+        "icon": "Search",
+        "title": "Technical Audit & Refactoring",
+        "description": "Deep inspection of legacy code, technical debt elimination, and overall app performance improvement.",
+        "tags": ["Performance", "Core Web Vitals", "CSS/SCSS", "Refactoring"]
+      },
+      {
+        "icon": "Shield",
+        "title": "Integrations & Secure Protocols",
+        "description": "Connection to payment gateways, authentication systems, and databases under strict security standards.",
+        "tags": ["Auth", "Databases", "Stripe", "Security"]
+      }
+    ],
+    "tech": {
+      "overline": "THE ARSENAL",
+      "title": "Modern, optimized tech stack",
+      "description": "We carefully select tools that favor speed, scalability, and ease of maintenance."
+    },
+    "cta": {
+      "title": "Ready to raise your web standards?",
+      "description": "Schedule a diagnostic call with no strings attached. We evaluate your current web speed, identify code flaws, and propose a clear technical protocol."
+    }
+  },
+  "philosophy": {
+    "hero": {
+      "overline": "PHILOSOPHY",
+      "title": "The Dark Lynx Manifesto",
+      "description": "We believe in honest software, built on solid foundations, free of bloated dependencies, and designed to last."
+    },
+    "principles": [
+      {
+        "number": "01",
+        "title": "Direct, No-Nonsense Development",
+        "description": "We don't sell smoke or inflated methodologies. We speak in code and tangible results. We design and implement software that solves real problems without adding unnecessary complexity.",
+        "span": "col-span-3"
+      },
+      {
+        "number": "02",
+        "title": "Performance as an Absolute Priority",
+        "description": "Web speed is not a luxury; it's a critical conversion metric. We optimize every byte, image, and request so the experience is instantaneous on any screen and connection.",
+        "span": "col-span-3"
+      },
+      {
+        "number": "03",
+        "title": "Maintainable Architecture",
+        "description": "We write CSS/SCSS with clear tokens and Svelte components with single responsibilities. If a developer inspects your project months later, they will know exactly what to touch without breaking anything.",
+        "span": "col-span-4"
+      },
+      {
+        "number": "04",
+        "title": "Technical Honesty",
+        "description": "If a simple solution works, we won't recommend a complex multi-thousand dollar architecture. Your long-term success and peace of mind is our main goal.",
+        "span": "col-span-2"
+      }
+    ],
+    "comparison": {
+      "traditional": {
+        "title": "Traditional Agency",
+        "items": [
+          "Endless Tailwind classes pasted with no structure.",
+          "Dozens of unnecessary frameworks and dependencies.",
+          "Oversized teams that dilute technical communication.",
+          "Slow development with layers of commercial bureaucracy.",
+          "Costly and dependent support for minimal changes."
+        ]
+      },
+      "boutique": {
+        "title": "Boutique Studio (Dark Lynx)",
+        "items": [
+          "Clean, modular, token-based SCSS structure.",
+          "Native code free of bloated, useless libraries.",
+          "Direct contact with the engineer writing your code.",
+          "Agile delivery focused on clear business milestones.",
+          "Total client autonomy with solid documentation."
+        ]
+      }
+    },
+    "quote": {
+      "text": "Good software is not measured by how many lines of code it has, but by how many were removed to make the system run elegantly, swiftly, and robustly.",
+      "author": "DARK LYNX PROTOCOL"
+    }
+  },
+  "about": {
+    "profile": {
+      "role": "Fullstack Developer & DevOps Engineer",
+      "bio": "Full Stack Developer with over 10 years of experience delivering robust, high-performance enterprise solutions. Specialized in Angular, Svelte, ASP.NET, C#, and relational databases. Solid experience in Linux systems administration, Azure cloud deployments, and advanced version control with Git. Working from Querétaro alongside 4 feline supervisors who ensure every line of code meets the highest quality and purr-factor standards.",
+      "secretButton": "Secret Dev Diary"
+    },
+    "trajectory": {
+      "overline": "ACTIVITY_LOG",
+      "title": "Trajectory & Operational Experience",
+      "description": "History of technical operations leading high-impact software projects.",
+      "timeline": [
+        {
+          "year": "2026 - Present",
+          "title": "Founder & Principal Engineer",
+          "company": "Dark Lynx Protocol",
+          "description": "Leading boutique consulting operations. Building software free of technical debt, extreme Core Web Vitals optimization, and high-speed serverless architectures."
+        },
+        {
+          "year": "2026 - Present",
+          "title": "Software Developer",
+          "company": "Ria Money Transfer",
+          "description": "Developer on legacy transactional platforms and systems. Designing and implementing migration strategies toward modern, scalable architectures for the global leader in money transfer services."
+        },
+        {
+          "year": "2020 - 2025",
+          "title": "Senior Full Stack Developer",
+          "company": "MTech-Systems",
+          "description": "Mentored and onboarded developers in Angular, .NET Core, and SQL Server. Led development of critical systems like the Sanitary Bulletin and co-developed the corporate intranet."
+        },
+        {
+          "year": "2015 - 2020",
+          "title": "Freelance Full Stack Developer",
+          "company": "Independent Projects",
+          "description": "Designed, developed, and launched several e-commerce platforms with secure payment integrations and dynamic product catalogs."
+        },
+        {
+          "year": "2018",
+          "title": "Web Developer",
+          "company": "Probusiness",
+          "description": "Designed and maintained responsive product portals using HTML5, CSS3, and JavaScript. Sole developer managing all aspects from concept to production."
+        }
+      ]
+    },
+    "status": {
+      "stable": "ACTIVE",
+      "accepting": "TRUE",
+      "integrity": "100% SECURE",
+      "focusTitle": "// CURRENT_FOCUS:",
+      "focus": [
+        "Scalable enterprise application architecture using .NET Core, C#, and PostgreSQL.",
+        "High-performance and robust user interfaces with Angular and Svelte.",
+        "Advanced administration and deployment in Linux environments, Azure, and version control with Git.",
+        "Deep Core Web Vitals optimization, web performance, and technical debt elimination."
+      ],
+      "connectTitle": ">_ INITIATE_CONNECTION",
+      "linkDesc": "Open secure channel on",
+      "journal": "Dev Journal"
+    }
+  },
+  "contact": {
+    "hero": {
+      "overline": "CONNECTION",
+      "title": "Initiate Secure Channel",
+      "description": "Complete the protocol to establish communication. We will analyze your payload and respond promptly."
+    },
+    "form": {
+      "name": "USER_ID (Name)",
+      "email": "ENCRYPTED_MAIL (Email)",
+      "subject": "SUBJECT_CODE",
+      "message": "PAYLOAD (Message)",
+      "success": "PROTOCOL COMPLETED. Data transmitted successfully.",
+      "error": "TRANSMISSION_ERROR. Please try again."
+    }
+  },
+  "journal": {
+    "title": "Gerardo's Dev Journal",
+    "subtitle": "Classified development logs — for authorized eyes only.",
+    "badge": "ACCESS_GRANTED",
+    "emptyState": "No entries found in the archive."
+  }
+}
