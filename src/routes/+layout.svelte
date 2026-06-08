@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import SiteLayout from '$lib/layout/SiteLayout.svelte';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.png';
 	import { ensureLoaded } from '$lib/journal-store.svelte';
 	import '../styles/app.scss';
 
