@@ -33,6 +33,7 @@ jobs:
         env:
           VITE_TURNSTILE_SITE_KEY: ${{ secrets.VITE_TURNSTILE_SITE_KEY }}
           VITE_CONTACT_API_URL: ${{ secrets.VITE_CONTACT_API_URL }}
+          VITE_JOURNAL_API_URL: ${{ vars.VITE_JOURNAL_API_URL || 'https://dark-lynx-protol-landing.onrender.com/api/journal' }}
 
       - name: Add .nojekyll
         run: touch build/.nojekyll

@@ -2,7 +2,7 @@
  * Journal store — singleton with warm-on-boot pattern.
  *
  * Called once from root layout on app mount. The first call to ensureLoaded()
- * triggers a single fetch to /api/journal. Subsequent calls are no-ops if
+ * triggers a single fetch to the journal API. Subsequent calls are no-ops if
  * data is already present or a request is in-flight (single-flight guard).
  */
 
@@ -33,8 +33,11 @@ const state: JournalState = $state({
 
 let inflight: Promise<void> | null = null;
 
+const JOURNAL_API_URL =
+	import.meta.env.VITE_JOURNAL_API_URL || 'https://dark-lynx-protol-landing.onrender.com/api/journal';
+
 async function fetchJournal(): Promise<void> {
-	const res = await fetch('/api/journal');
+	const res = await fetch(JOURNAL_API_URL);
 	if (!res.ok) {
 		throw new Error(`HTTP ${res.status}: ${await res.text()}`);
 	}

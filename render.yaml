@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: dark-lynx-protol-landing
+    runtime: node
+    plan: free
+    buildCommand: corepack enable && pnpm install --frozen-lockfile
+    startCommand: pnpm render:start
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
