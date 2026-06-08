@@ -8,24 +8,24 @@
   },
   "seo": {
     "home": {
-      "title": "Premium Frontend Engineering and Development",
-      "desc": "Boutique frontend development studio. We build fast landing pages, optimized for Core Web Vitals, with clean SCSS and maintainable Svelte components."
+      "title": "Web Development in Querétaro | Dark Lynx Protocol",
+      "desc": "Small web development studio based in Querétaro, Mexico. We build fast, easy-to-maintain websites designed to help your business sell more online."
     },
     "services": {
-      "desc": "Our frontend development services: premium web development, integrations, technical audit and refactoring with modern technologies."
+      "desc": "Four services to solve the most common website problems: custom builds, business systems, speed optimization, and online payments."
     },
     "philosophy": {
-      "desc": "Our engineering philosophy: direct development, priority performance, clean and maintainable code."
+      "desc": "Four simple ideas about how we work: we talk straight, we care about speed, we write organized code, and we recommend what you actually need."
     },
     "about": {
-      "desc": "Meet Gerardo Martínez, Founder of Dark Lynx Protocol: Fullstack Developer & AI Automation Engineer focused on performance, clean code, and AI agents."
+      "desc": "Meet Gerardo Martínez, founder of Dark Lynx Protocol: web developer with over 10 years of experience, based in Querétaro, Mexico."
     }
   },
   "cta": {
     "startProtocol": "START_PROTOCOL",
     "tellMeProject": "Tell me about your project",
-    "viewPhilosophy": "View Philosophy",
-    "viewAllServices": "View all services and tech stack",
+    "viewPhilosophy": "See how we work",
+    "viewAllServices": "See everything we do",
     "sendData": "TRANSMIT_DATA",
     "sending": "TRANSMITTING..."
   },
@@ -36,47 +36,47 @@
   "home": {
     "hero": {
       "badge": "AVAILABLE_FOR_BUILD",
-      "title": "We build software that is <span class=\"text-accent text-glow\">maintainable</span>, straightforward, and technically <span class=\"text-accent text-glow\">solid</span>.",
-      "desc": "Dark Lynx Protocol is a boutique web engineering studio. We create high-performance landing pages, optimize Core Web Vitals to the extreme, and eliminate technical debt at its roots. No corporate jargon."
+      "title": "We build websites that load <span class=\"text-accent text-glow\">fast</span>, are easy to maintain, and designed to <span class=\"text-accent text-glow\">sell</span>.",
+      "desc": "Dark Lynx Protocol is a small web development studio based in Querétaro, Mexico. We build sites that load instantly, show up on Google, and are easy enough to maintain that you don't need to depend on anyone for simple changes."
     },
     "problem": {
       "overline": "THE PROBLEM",
-      "title": "The Cheap Fix Trap",
-      "description": "Buying pre-made templates or outsourcing to traditional agencies that copy-paste thousands of CSS utilities usually ends the same way: fragile code that no one can maintain and poor web performance.",
+      "title": "Why your current website isn't bringing you sales",
+      "description": "Buying generic templates or hiring agencies that paste thousands of lines of copied code usually ends the same way: a slow site that's expensive to maintain, and that nobody, not you, not your provider, can actually explain how it works.",
       "alert": "[WARNING_SYMPTOM]",
       "alertList": [
-        "Pages that take more than 3 seconds to load, losing 40% of visits.",
-        "Spaghetti code with duplicated classes, impossible to read or refactor.",
-        "Absolute reliance on external plugins and heavy scripts that break layouts.",
-        "Budgets fading away in continuous patches without solving the core issue."
+        "Your page takes more than 3 seconds to load, and almost half of visitors leave before seeing it.",
+        "The code is so tangled that any small change costs a fortune or breaks something else.",
+        "You depend on third-party plugins that get outdated, break, or charge you monthly.",
+        "Your budget goes to patches that never actually solve the underlying problem."
       ],
       "protocol": "[THE_PROTOCOL]",
       "protocolList": [
-        "Obsessive optimization for Core Web Vitals (LCP, INP, CLS) and sub-second times.",
-        "Clean, organized Svelte components with encapsulated SCSS styles.",
-        "Minimal dependency footprint: only strictly necessary packages.",
-        "Proprietary code that you can autonomously maintain and extend in the future."
+        "Your page loads in under a second and looks complete on the first try, no jumps or waits.",
+        "Clean, organized code that any developer can read and modify without fear of breaking something.",
+        "Few external dependencies. If something breaks, you don't depend on a third party to fix it.",
+        "We hand you a site you can extend and maintain yourself, with clear documentation."
       ]
     },
     "services": {
       "overline": "WHAT WE DO",
-      "title": "Practical services, zero bloat",
-      "description": "We design specific technical protocols for every problem. No unnecessary corporate wrappers, straight to the point.",
+      "title": "Three clear ways to help you",
+      "description": "We tailor solutions to the problem you want to solve. No inflated packages, no fine print: we tell you what's included, what it costs, and what you get.",
       "list": [
         {
           "icon": "Layout",
-          "title": "Premium Frontend Development",
-          "description": "Interactive, fluid, and high-performance interfaces that captivate users from the very first millisecond."
+          "title": "Websites that sell",
+          "description": "We design and build sites that load fast, look great on mobile, and are built to turn visitors into contacts or customers."
         },
         {
           "icon": "Cpu",
-          "title": "Clean & Scalable Architecture",
-          "description": "Clean, typed, structured code with no useless dependencies slowing down your business."
+          "title": "Custom systems for your business",
+          "description": "We build platforms with their own admin panel, database, and everything your business needs to operate without depending on third parties."
         },
         {
           "icon": "Zap",
-          "title": "Extreme Web Optimization",
-          "description": "Maximize your Core Web Vitals metrics and speed to improve conversions and organic SEO."
+          "title": "Faster sites, better Google ranking",
+          "description": "We review your current site, remove what makes it slow, and shape it up so Google shows it when someone searches for what you offer."
         }
       ]
     }
@@ -84,144 +84,147 @@
   "services": {
     "hero": {
       "overline": "SERVICES",
-      "title": "Technical Execution Modules",
-      "description": "Concrete, structured solutions designed to fix performance deficiencies, user experience issues, and architectural flaws."
+      "title": "What we can do for your business",
+      "description": "Four focused services to solve the most common problems with your online presence. Each one is quoted separately and delivered on a clear timeline."
     },
     "modules": [
       {
         "icon": "Globe",
-        "title": "Landing Pages & Corporate Sites",
-        "description": "Websites heavily optimized for conversion and SEO ranking. Zero generic templates. Fully custom-tailored.",
-        "tags": ["Angular", "Svelte", "Vite", "Performance"]
+        "title": "Websites and corporate sites",
+        "description": "We build your site from scratch, designed to turn visits into customers. No generic templates: everything is tailored to your brand and business.",
+        "tags": ["Custom design", "Fast", "Mobile-ready", "Base SEO"]
       },
       {
         "icon": "Layers",
-        "title": "Full-Stack Web Applications",
-        "description": "Agile development of interactive platforms with modern architectures, guaranteeing long-term maintainability.",
-        "tags": ["SvelteKit", "TypeScript", "Node.js", "APIs"]
+        "title": "Complete platforms and systems",
+        "description": "If your business needs more than an informational page: a booking system, a catalog with payments, a panel for your employees, we build the whole thing and hand it over ready to use.",
+        "tags": ["Bookings", "Catalogs", "Online payments", "Admin panels"]
       },
       {
         "icon": "Search",
-        "title": "Technical Audit & Refactoring",
-        "description": "Deep inspection of legacy code, technical debt elimination, and overall app performance improvement.",
-        "tags": ["Performance", "Core Web Vitals", "CSS/SCSS", "Refactoring"]
+        "title": "Review and fix of your current site",
+        "description": "We take your existing site, tell you exactly what's holding back your sales or your search ranking, and fix it without throwing everything away.",
+        "tags": ["Diagnostics", "Speed", "Google ranking", "Lower costs"]
       },
       {
         "icon": "Shield",
-        "title": "Integrations & Secure Protocols",
-        "description": "Connection to payment gateways, authentication systems, and databases under strict security standards.",
-        "tags": ["Auth", "Databases", "Stripe", "Security"]
+        "title": "Online payments and secure connections",
+        "description": "We connect your site to card and bank transfer payment services, customer login systems, and the tools you already use. All with the security standards banks require.",
+        "tags": ["Card payments", "Logins", "Integrations", "Bank-grade security"]
       }
     ],
     "tech": {
-      "overline": "THE ARSENAL",
-      "title": "Modern, optimized tech stack",
-      "description": "We carefully select tools that favor speed, scalability, and ease of maintenance."
+      "overline": "TOOLBOX",
+      "title": "The right tools for each project",
+      "description": "We choose the technology based on what your business needs, not the other way around. We always aim for a site that's fast, easy to maintain tomorrow, and that doesn't lock you into a single vendor."
     },
     "cta": {
-      "title": "Ready to raise your web standards?",
-      "description": "Schedule a diagnostic call with no strings attached. We evaluate your current web speed, identify code flaws, and propose a clear technical protocol."
+      "title": "Ready to stop fighting with your website?",
+      "description": "Book a no-strings-attached call. We look at your current situation, tell you what makes sense, and give you a clear quote before you decide anything."
     }
   },
   "philosophy": {
     "hero": {
-      "overline": "PHILOSOPHY",
-      "title": "The Dark Lynx Manifesto",
-      "description": "We believe in honest software, built on solid foundations, free of bloated dependencies, and designed to last."
+      "overline": "HOW WE WORK",
+      "title": "How we think about every project",
+      "description": "Four simple ideas that guide everything we do. If you read them and feel they don't match what you need, we're probably not the right studio for you. And that's fine."
     },
     "principles": [
       {
         "number": "01",
-        "title": "Direct, No-Nonsense Development",
-        "description": "We don't sell smoke or inflated methodologies. We speak in code and tangible results. We design and implement software that solves real problems without adding unnecessary complexity.",
+        "title": "We talk straight, no runaround",
+        "description": "We tell you things as they are. If your idea works, we tell you why. If there's a risk, we say so too. And if a simple solution solves your problem, we won't sell you something more expensive just to charge more.",
         "span": "col-span-3"
       },
       {
         "number": "02",
-        "title": "Performance as an Absolute Priority",
-        "description": "Web speed is not a luxury; it's a critical conversion metric. We optimize every byte, image, and request so the experience is instantaneous on any screen and connection.",
+        "title": "Speed matters, a lot",
+        "description": "A fast page isn't vanity: it's more sales, more people who stick around, and better Google ranking. We take care of every technical detail so your site opens well on any phone and connection.",
         "span": "col-span-3"
       },
       {
         "number": "03",
-        "title": "Maintainable Architecture",
-        "description": "We write CSS/SCSS with clear tokens and Svelte components with single responsibilities. If a developer inspects your project months later, they will know exactly what to touch without breaking anything.",
+        "title": "Code you can touch without fear",
+        "description": "We write everything in an organized, documented way. If a year from now another developer, or you yourself, needs to change something, they'll know exactly where to touch and what happens when they do.",
         "span": "col-span-4"
       },
       {
         "number": "04",
-        "title": "Technical Honesty",
-        "description": "If a simple solution works, we won't recommend a complex multi-thousand dollar architecture. Your long-term success and peace of mind is our main goal.",
+        "title": "We recommend what you need, not what makes us the most money",
+        "description": "If what you need is solved by a simple page, we won't push you toward an expensive platform. Your business working well matters more to us than a big project.",
         "span": "col-span-2"
       }
     ],
     "comparison": {
+      "overline": "THE DIFFERENCE",
+      "headerTitle": "How we work, compared to a traditional agency",
+      "description": "Agencies aren't bad. It's that each model works for different things. This is the practical difference between working with a small studio and a large agency.",
       "traditional": {
-        "title": "Traditional Agency",
+        "title": "Large traditional agency",
         "items": [
-          "Endless Tailwind classes pasted with no structure.",
-          "Dozens of unnecessary frameworks and dependencies.",
-          "Oversized teams that dilute technical communication.",
-          "Slow development with layers of commercial bureaucracy.",
-          "Costly and dependent support for minimal changes."
+          "Dozens of people on your project, with several layers between you and the person writing the code.",
+          "Generic templates forced to fit, with duplicated styles and classes everywhere.",
+          "Dozens of external tools installed 'just in case', making your page slow and expensive to run.",
+          "Long delivery times, with internal approval layers that delay every change.",
+          "Any small change is quoted separately and goes through a slow process to be resolved."
         ]
       },
       "boutique": {
-        "title": "Boutique Studio (Dark Lynx)",
+        "title": "Boutique studio (Dark Lynx)",
         "items": [
-          "Clean, modular, token-based SCSS structure.",
-          "Native code free of bloated, useless libraries.",
-          "Direct contact with the engineer writing your code.",
-          "Agile delivery focused on clear business milestones.",
-          "Total client autonomy with solid documentation."
+          "You talk directly to the person writing your code. No middlemen.",
+          "We build from scratch, designed for your business, with no forced adaptations.",
+          "We only install what's actually going to be used. Your page stays clean and fast.",
+          "Deliveries in short milestones, with clear dates and direct communication.",
+          "We leave everything documented and organized so you can make changes yourself."
         ]
       }
     },
     "quote": {
-      "text": "Good software is not measured by how many lines of code it has, but by how many were removed to make the system run elegantly, swiftly, and robustly.",
+      "text": "We prefer taking things out of a project rather than adding them. Every line of code that doesn't need to be there is a line that can break, cost more, or get in the way the day someone needs to understand how it works.",
       "author": "DARK LYNX PROTOCOL"
     }
   },
   "about": {
     "profile": {
-      "role": "Fullstack Developer & DevOps Engineer",
-      "bio": "Full Stack Developer with over 10 years of experience delivering robust, high-performance enterprise solutions. Specialized in Angular, Svelte, ASP.NET, C#, and relational databases. Solid experience in Linux systems administration, Azure cloud deployments, and advanced version control with Git. Working from Querétaro alongside 4 feline supervisors who ensure every line of code meets the highest quality and purr-factor standards.",
+      "role": "Web developer and technical partner",
+      "bio": "I've spent over 10 years building websites, platforms, and systems for businesses of all sizes. I started taking on web projects as a freelancer, and now I run my own studio in Querétaro, where a team of feline supervisors makes sure every project ships with the right quality and purr-level. If your business needs an online presence that actually works, not just looks pretty, reach out and let's talk.",
       "secretButton": "Secret Dev Diary"
     },
     "trajectory": {
-      "overline": "ACTIVITY_LOG",
-      "title": "Trajectory & Operational Experience",
-      "description": "History of technical operations leading high-impact software projects.",
+      "overline": "TRAJECTORY",
+      "title": "Project history and experience",
+      "description": "A timeline of the projects and companies that shaped me as a professional. What I learned at each stop is part of what your business gets when you work with me.",
       "timeline": [
         {
           "year": "2026 - Present",
-          "title": "Founder & Principal Engineer",
+          "title": "Studio founder",
           "company": "Dark Lynx Protocol",
-          "description": "Leading boutique consulting operations. Building software free of technical debt, extreme Core Web Vitals optimization, and high-speed serverless architectures."
+          "description": "I run a small studio focused on building sites and platforms with no technical shortcuts. Every project ships fast, is easy to maintain, and leaves the client in control of what they paid for."
         },
         {
           "year": "2026 - Present",
-          "title": "Software Developer",
+          "title": "Software developer",
           "company": "Ria Money Transfer",
-          "description": "Developer on legacy transactional platforms and systems. Designing and implementing migration strategies toward modern, scalable architectures for the global leader in money transfer services."
+          "description": "I work on money transfer platforms for one of the largest companies in the world. That's where I learned what it means to handle millions of operations without the system falling apart, and I bring that to your projects."
         },
         {
           "year": "2020 - 2025",
-          "title": "Senior Full Stack Developer",
+          "title": "Senior developer",
           "company": "MTech-Systems",
-          "description": "Mentored and onboarded developers in Angular, .NET Core, and SQL Server. Led development of critical systems like the Sanitary Bulletin and co-developed the corporate intranet."
+          "description": "I led the development of regulatory systems for the agricultural sector in Brazil, and mentored other developers. That's where I confirmed that clean code and honest mentoring are the foundation of projects that last."
         },
         {
           "year": "2015 - 2020",
-          "title": "Freelance Full Stack Developer",
-          "company": "Independent Projects",
-          "description": "Designed, developed, and launched several e-commerce platforms with secure payment integrations and dynamic product catalogs."
+          "title": "Freelance developer",
+          "company": "Independent projects",
+          "description": "I designed and launched several online stores with secure payments and dynamic catalogs. That's where I learned to talk to non-technical clients and deliver results without losing my mind."
         },
         {
           "year": "2018",
-          "title": "Web Developer",
+          "title": "Web developer",
           "company": "Probusiness",
-          "description": "Designed and maintained responsive product portals using HTML5, CSS3, and JavaScript. Sole developer managing all aspects from concept to production."
+          "description": "My first formal job in the industry: designing and maintaining product portals. That's where I learned to do a lot with little, and to value every minute of a project."
         }
       ]
     },
@@ -229,23 +232,23 @@
       "stable": "ACTIVE",
       "accepting": "TRUE",
       "integrity": "100% SECURE",
-      "focusTitle": "// CURRENT_FOCUS:",
+      "focusTitle": "RIGHT NOW:",
       "focus": [
-        "Scalable enterprise application architecture using .NET Core, C#, and PostgreSQL.",
-        "High-performance and robust user interfaces with Angular and Svelte.",
-        "Advanced administration and deployment in Linux environments, Azure, and version control with Git.",
-        "Deep Core Web Vitals optimization, web performance, and technical debt elimination."
+        "Building platforms that handle the growth of mid-sized businesses, from Querétaro.",
+        "Designing fast, clear interfaces that work perfectly on mobile, where most of your customers are.",
+        "Connecting sites to payment systems, databases, and the tools your business already uses.",
+        "Helping businesses that already have a site but it's slow, broken, or simply doesn't show up on Google."
       ],
       "connectTitle": ">_ INITIATE_CONNECTION",
-      "linkDesc": "Open secure channel on",
+      "linkDesc": "Reach me on:",
       "journal": "Dev Journal"
     }
   },
   "contact": {
     "hero": {
       "overline": "CONNECTION",
-      "title": "Initiate Secure Channel",
-      "description": "Complete the protocol to establish communication. We will analyze your payload and respond promptly."
+      "title": "Tell us about your project",
+      "description": "Send us a message with the general idea of what you need. We reply within 24 hours to schedule a no-strings-attached call and review together what makes sense."
     },
     "form": {
       "name": "USER_ID (Name)",
@@ -257,8 +260,8 @@
     }
   },
   "journal": {
-    "title": "Gerardo's Dev Journal",
-    "subtitle": "Classified development logs — for authorized eyes only.",
+    "title": "Dev log",
+    "subtitle": "Notes on projects, tools, and things I'm learning along the way.",
     "badge": "ACCESS_GRANTED",
     "emptyState": "No entries found in the archive."
   }

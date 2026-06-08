@@ -1,0 +1,9 @@
+name = "darklynx-contact-form"
+main = "src/index.js"
+compatibility_date = "2025-04-01"
+
+[vars]
+TO_EMAIL = "contact@darklynxprotocol.com"
+FROM_EMAIL = "noreply@darklynxprotocol.com"
+FROM_NAME = "Dark Lynx Protocol"
+ALLOWED_ORIGIN = "https://darklynxprotocol.com"

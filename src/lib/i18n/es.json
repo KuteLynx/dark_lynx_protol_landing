@@ -8,24 +8,24 @@
   },
   "seo": {
     "home": {
-      "title": "Ingeniería y Desarrollo Frontend Premium",
-      "desc": "Estudio boutique de desarrollo frontend. Construimos landing pages rápidas, optimizadas para Core Web Vitals, con SCSS limpio y componentes Svelte mantenibles."
+      "title": "Desarrollo web en Querétaro | Dark Lynx Protocol",
+      "desc": "Estudio de desarrollo web en Querétaro. Hacemos sitios rápidos, fáciles de mantener y pensados para que tu negocio venda más por internet."
     },
     "services": {
-      "desc": "Nuestros servicios de desarrollo frontend: desarrollo web premium, integraciones, auditoría y refactorización técnica con tecnologías modernas."
+      "desc": "Cuatro servicios para resolver los problemas más comunes de tu página: construcción desde cero, sistemas a medida, optimización de velocidad y cobros en línea."
     },
     "philosophy": {
-      "desc": "Nuestra filosofía de ingeniería: desarrollo directo, rendimiento prioritario, código limpio y mantenible."
+      "desc": "Cuatro ideas simples sobre cómo trabajamos: hablamos claro, cuidamos la velocidad, escribimos código ordenado, y te recomendamos lo que de verdad necesitas."
     },
     "about": {
-      "desc": "Conoce a Gerardo Martínez, Fundador de Dark Lynx Protocol: Desarrollador Fullstack & Ingeniero de Automatización con IA enfocado en rendimiento y código limpio."
+      "desc": "Conoce a Gerardo Martínez, fundador de Dark Lynx Protocol: desarrollador web con más de 10 años de experiencia, desde Querétaro."
     }
   },
   "cta": {
     "startProtocol": "INICIAR_PROTOCOLO",
-    "tellMeProject": "Cuéntame tu proyecto",
-    "viewPhilosophy": "Ver Filosofía",
-    "viewAllServices": "Ver todos los servicios y stack técnico",
+    "tellMeProject": "Cuéntame de tu proyecto",
+    "viewPhilosophy": "Conoce cómo trabajamos",
+    "viewAllServices": "Ver todo lo que hacemos",
     "sendData": "TRANSMITIR_DATOS",
     "sending": "TRANSMITIENDO..."
   },
@@ -36,47 +36,47 @@
   "home": {
     "hero": {
       "badge": "AVAILABLE_FOR_BUILD",
-      "title": "Construimos software <span class=\"text-accent text-glow\">mantenible</span>, directo y técnicamente <span class=\"text-accent text-glow\">sólido</span>.",
-      "desc": "Dark Lynx Protocol es un estudio boutique de ingeniería web. Creamos landing pages de alto rendimiento, optimizamos Core Web Vitals al extremo y eliminamos la deuda técnica de raíz. Sin rodeos comerciales."
+      "title": "Creamos sitios web <span class=\"text-accent text-glow\">rápidos</span>, fáciles de mantener y hechos para <span class=\"text-accent text-glow\">vender</span>.",
+      "desc": "Dark Lynx Protocol es un estudio pequeño de desarrollo web en Querétaro. Hacemos sitios que cargan al instante, aparecen en Google, y son tan fáciles de mantener que no necesitas depender de nadie para hacer cambios simples."
     },
     "problem": {
       "overline": "EL PROBLEMA",
-      "title": "La Trampa de la Reparación Barata",
-      "description": "Comprar plantillas prediseñadas o delegar en agencias tradicionales que pegan miles de utilidades CSS suele terminar igual: un código frágil que nadie puede mantener y un rendimiento web deficiente.",
+      "title": "Por qué tu página actual no te está dando ventas",
+      "description": "Comprar plantillas genéricas o contratar agencias que pegan miles de líneas de código copiado suele terminar igual: un sitio lento, caro de mantener, y que nadie, ni tú ni tu proveedor, puede explicar cómo funciona de verdad.",
       "alert": "[SÍNTOMA_DE_ALERTA]",
       "alertList": [
-        "Páginas que tardan más de 3 segundos en cargar, perdiendo un 40% de visitas.",
-        "Código espagueti con clases duplicadas e imposibles de leer o refactorizar.",
-        "Dependencia absoluta de plugins externos y scripts pesados que rompen el diseño.",
-        "Presupuestos que se desvanecen en parches continuos sin solucionar el fondo."
+        "Tu página tarda más de 3 segundos en abrir, y casi la mitad de la gente se va antes de verla.",
+        "El código está tan enredado que cualquier cambio pequeño cuesta una fortuna o rompe otra cosa.",
+        "Dependes de plugins externos que se desactualizan, fallan o te cobran mes a mes.",
+        "El presupuesto se va en parches sin que el problema de fondo se resuelva nunca."
       ],
       "protocol": "[EL_PROTOCOLO]",
       "protocolList": [
-        "Optimización obsesiva para Core Web Vitals (LCP, INP, CLS) y tiempos sub-segundo.",
-        "Componentes Svelte limpios, organizados y con estilos SCSS encapsulados.",
-        "Carga mínima de dependencias: solo lo estrictamente necesario.",
-        "Código propietario que puedes extender y mantener en el futuro de forma autónoma."
+        "Tu página carga en menos de un segundo y se ve completa de la primera vez, sin brincos ni esperas.",
+        "Un código limpio y ordenado que cualquier programador puede leer y modificar sin miedo a romper algo.",
+        "Pocas dependencias externas. Si algo falla, no dependes de que un proveedor externo lo arregle.",
+        "Te entregamos un sitio que puedes extender y mantener tú mismo, con documentación clara."
       ]
     },
     "services": {
-      "overline": "QUÉ HACEMOS",
-      "title": "Servicios prácticos sin sobrecarga",
-      "description": "Diseñamos protocolos técnicos específicos para cada problema. Sin envoltorios comerciales innecesarios, directo al grano.",
+      "overline": "LO QUE HACEMOS",
+      "title": "Tres formas claras de ayudarte",
+      "description": "Diseñamos soluciones a la medida según el problema que quieres resolver. Sin paquetes inflados, sin letra chiquita: te decimos qué incluye, cuánto cuesta, y qué obtienes.",
       "list": [
         {
           "icon": "Layout",
-          "title": "Desarrollo Frontend Premium",
-          "description": "Interfaces interactivas, fluidas y de alto rendimiento que cautivan a los usuarios desde el primer milisegundo."
+          "title": "Páginas web que venden",
+          "description": "Diseñamos y construimos sitios que cargan rápido, se ven bien en el celular, y están pensados para que tus visitantes te contacten o te compren."
         },
         {
           "icon": "Cpu",
-          "title": "Arquitectura Limpia y Escalable",
-          "description": "Código limpio, tipado, estructurado y sin dependencias inútiles que ralenticen tu negocio."
+          "title": "Sistemas a tu medida",
+          "description": "Construimos plataformas con su panel de administración, base de datos, y todo lo que tu negocio necesita para operar sin depender de terceros."
         },
         {
           "icon": "Zap",
-          "title": "Optimización Web Extrema",
-          "description": "Maximiza tus métricas de Core Web Vitals y velocidad para mejorar conversión y SEO orgánico."
+          "title": "Sitios más rápidos y mejor posicionados",
+          "description": "Revisamos tu página actual, le quitamos lo que la hace lenta, y la dejamos en forma para que Google la muestre cuando alguien busca lo que ofreces."
         }
       ]
     }
@@ -84,144 +84,147 @@
   "services": {
     "hero": {
       "overline": "SERVICIOS",
-      "title": "Módulos de Ejecución Técnica",
-      "description": "Soluciones concretas y estructuradas diseñadas para corregir deficiencias de rendimiento, experiencia de usuario y arquitectura."
+      "title": "Lo que podemos hacer por tu negocio",
+      "description": "Cuatro servicios puntuales para resolver los problemas más comunes de tu presencia en internet. Cada uno se cotiza aparte y se entrega con tiempos claros."
     },
     "modules": [
       {
         "icon": "Globe",
-        "title": "Landing Pages & Sitios Corporativos",
-        "description": "Sitios web optimizados al máximo para conversión y posicionamiento. Cero plantillas genéricas. Todo hecho a medida.",
-        "tags": ["Angular", "Svelte", "Vite", "Rendimiento"]
+        "title": "Páginas web y sitios corporativos",
+        "description": "Construimos tu página desde cero, diseñada para convertir visitas en clientes. Sin plantillas genéricas: todo se hace a la medida de tu marca y tu negocio.",
+        "tags": ["Diseño personalizado", "Rápido", "Listo para celular", "SEO base"]
       },
       {
         "icon": "Layers",
-        "title": "Aplicaciones Web Full-Stack",
-        "description": "Desarrollo ágil de plataformas interactivas con arquitecturas modernas, garantizando mantenimiento a largo plazo.",
-        "tags": ["SvelteKit", "TypeScript", "Node.js", "APIs"]
+        "title": "Plataformas y sistemas completos",
+        "description": "Si tu negocio necesita algo más que una página informativa: un sistema de reservas, un catálogo con pagos, un panel para tus empleados, lo desarrollamos completo y te lo entregamos listo para usar.",
+        "tags": ["Reservas", "Catálogos", "Pagos en línea", "Paneles admin"]
       },
       {
         "icon": "Search",
-        "title": "Auditoría Técnica & Refactorización",
-        "description": "Inspección profunda de código heredado, eliminación de deuda técnica y mejora del rendimiento general de la aplicación.",
-        "tags": ["Performance", "Core Web Vitals", "CSS/SCSS", "Refactoring"]
+        "title": "Revisión y arreglo de tu sitio actual",
+        "description": "Tomamos tu página existente, te decimos exactamente qué está frenando tus ventas o tu posicionamiento, y lo arreglamos sin tener que tirarlo todo a la basura.",
+        "tags": ["Diagnóstico", "Velocidad", "Aparece en Google", "Menos costos"]
       },
       {
         "icon": "Shield",
-        "title": "Integraciones & Protocolos Seguros",
-        "description": "Conexión de pasarelas de pago, sistemas de autenticación y bases de datos bajo estándares estrictos de seguridad.",
-        "tags": ["Auth", "Databases", "Stripe", "Security"]
+        "title": "Cobros en línea y conexiones seguras",
+        "description": "Conectamos tu página con servicios de pago con tarjeta o transferencia, sistemas de inicio de sesión para tus clientes, y conexiones a las herramientas que ya usas. Todo con los estándares de seguridad que pide la banca.",
+        "tags": ["Pagos con tarjeta", "Inicios de sesión", "Integraciones", "Seguridad bancaria"]
       }
     ],
     "tech": {
-      "overline": "EL ARSENAL",
-      "title": "Stack tecnológico moderno y optimizado",
-      "description": "Seleccionamos herramientas que favorecen la velocidad, la escalabilidad y la facilidad de mantenimiento."
+      "overline": "HERRAMIENTAS",
+      "title": "Las herramientas correctas para cada proyecto",
+      "description": "Elegimos la tecnología según lo que tu negocio necesita, no al revés. Buscamos siempre que tu sitio sea rápido, fácil de mantener mañana, y que no te ate a un solo proveedor."
     },
     "cta": {
-      "title": "¿Listo para elevar tus estándares web?",
-      "description": "Agenda una llamada diagnóstica sin compromisos. Evaluamos la velocidad de tu web actual, identificamos problemas de código y te proponemos un protocolo técnico claro."
+      "title": "¿Listo para dejar de pelearte con tu página?",
+      "description": "Agenda una llamada sin compromiso. Revisamos tu situación actual, te decimos qué tiene sentido, y te damos un presupuesto claro antes de que decidas algo."
     }
   },
   "philosophy": {
     "hero": {
-      "overline": "FILOSOFÍA",
-      "title": "El Manifiesto de Dark Lynx",
-      "description": "Creemos en el software honesto, construido sobre bases firmes, libre de dependencias infladas y diseñado para durar."
+      "overline": "CÓMO TRABAJAMOS",
+      "title": "Cómo pensamos cada proyecto",
+      "description": "Cuatro ideas simples que guían todo lo que hacemos. Si las lees y sientes que no encajan con lo que necesitas, probablemente no somos el estudio correcto para ti. Y está bien decirlo."
     },
     "principles": [
       {
         "number": "01",
-        "title": "Desarrollo Directo y Sin Rodeos",
-        "description": "No vendemos humo ni metodologías infladas. Hablamos en código y resultados tangibles. Diseñamos e implementamos software que resuelve problemas reales sin añadir complejidad innecesaria.",
+        "title": "Hablamos claro, sin rodeos",
+        "description": "Te decimos las cosas como son. Si tu idea funciona, te decimos por qué. Si tiene un riesgo, también. Y si una solución simple resuelve tu problema, no te vamos a vender algo más caro solo por cobrar más.",
         "span": "col-span-3"
       },
       {
         "number": "02",
-        "title": "Rendimiento como Prioridad Absoluta",
-        "description": "La velocidad web no es un lujo, es una métrica de conversión crítica. Optimizamos cada byte, imagen y petición para que la experiencia sea instantánea en cualquier pantalla y conexión.",
+        "title": "La velocidad importa, y mucho",
+        "description": "Una página rápida no es vanidad: es más ventas, más gente que llega al final, y mejor posición en Google. Cuidamos cada detalle técnico para que tu sitio se abra bien en cualquier celular y conexión.",
         "span": "col-span-3"
       },
       {
         "number": "03",
-        "title": "Arquitectura Mantenible",
-        "description": "Escribimos CSS/SCSS con tokens claros y componentes Svelte con responsabilidades únicas. Si un desarrollador inspecciona tu proyecto meses después, sabrá exactamente dónde tocar sin romper nada.",
+        "title": "Un código que se puede tocar sin miedo",
+        "description": "Escribimos todo de forma ordenada y documentada. Si dentro de un año otro programador, o tú mismo, necesita cambiar algo, va a saber exactamente dónde tocar y qué pasa cuando lo hace.",
         "span": "col-span-4"
       },
       {
         "number": "04",
-        "title": "Honestidad Técnica",
-        "description": "Si una solución sencilla funciona, no te recomendaremos una arquitectura compleja de miles de dólares. Tu éxito y tranquilidad a largo plazo es nuestra meta principal.",
+        "title": "Recomendamos lo que tú necesitas, no lo que nos deja más ganancia",
+        "description": "Si lo que te sirve se resuelve con una página sencilla, no te vamos a empujar una plataforma cara. Tu negocio funcionando bien es más importante que un proyecto grande.",
         "span": "col-span-2"
       }
     ],
     "comparison": {
+      "overline": "LA DIFERENCIA",
+      "headerTitle": "Cómo trabajamos, comparado con una agencia tradicional",
+      "description": "No es que las agencias sean malas. Es que cada modelo sirve para cosas distintas. Esta es la diferencia práctica entre trabajar con un estudio pequeño y con una agencia grande.",
       "traditional": {
-        "title": "Agencia Tradicional",
+        "title": "Agencia tradicional grande",
         "items": [
-          "Clases infinitas de Tailwind pegadas sin estructura.",
-          "Decenas de frameworks y dependencias innecesarias.",
-          "Equipos sobredimensionados que diluyen la comunicación.",
-          "Desarrollo lento con capas de burocracia comercial.",
-          "Soporte costoso y dependiente para cambios mínimos."
+          "Decenas de personas tocando tu proyecto, con varios intermediarios entre tú y quien escribe el código.",
+          "Plantillas genéricas adaptadas a fuerza, con clases y estilos duplicados por todos lados.",
+          "Decenas de herramientas externas instaladas 'por si acaso', que vuelven tu página lenta y cara.",
+          "Tiempos largos de entrega, con capas de aprobaciones internas que retrasan cada cambio.",
+          "Cualquier ajuste pequeño se cotiza aparte y pasa por un proceso lento para resolverse."
         ]
       },
       "boutique": {
-        "title": "Estudio Boutique (Dark Lynx)",
+        "title": "Estudio boutique (Dark Lynx)",
         "items": [
-          "Estructura SCSS limpia, modular y basada en tokens.",
-          "Código nativo libre de librerías inútiles e infladas.",
-          "Contacto directo con el ingeniero que escribe tu código.",
-          "Entrega ágil y enfocada en hitos de negocio claros.",
-          "Autonomía total del cliente con documentación sólida."
+          "Hablas directo con la persona que está escribiendo tu código. Sin intermediarios.",
+          "Construimos desde cero, pensado para tu negocio, sin adaptaciones forzadas.",
+          "Solo instalamos lo que de verdad se va a usar. Tu página queda limpia y rápida.",
+          "Entregas por hitos cortos, con fechas claras y comunicación directa.",
+          "Te dejamos todo documentado y ordenado para que puedas hacer cambios tú mismo."
         ]
       }
     },
     "quote": {
-      "text": "El buen software no se mide por cuántas líneas de código tiene, sino por cuántas de ellas se eliminaron para que el sistema funcione de manera elegante, veloz y robusta.",
+      "text": "Nos gusta más quitarle cosas a un proyecto que agregarle. Cada línea de código que sobra es una línea que puede fallar, costar más, o estorbar el día que alguien necesite entender cómo funciona.",
       "author": "DARK LYNX PROTOCOL"
     }
   },
   "about": {
     "profile": {
-      "role": "Fullstack Developer & Ingeniero DevOps",
-      "bio": "Desarrollador Full Stack con más de 10 años de experiencia entregando soluciones empresariales robustas y de alto rendimiento. Especializado en el stack de Angular, Svelte, ASP.NET, C# y bases de datos relacionales. Sólida experiencia en administración de sistemas Linux, despliegues en la nube de Azure y control de versiones avanzado con Git. Trabajo desde Querétaro acompañado de 4 supervisores felinos que garantizan que el código tenga el nivel adecuado de calidad y ronroneo.",
+      "role": "Desarrollador web y socio técnico",
+      "bio": "Llevo más de 10 años construyendo páginas, plataformas y sistemas para empresas y negocios. Empecé haciendo sitios por encargo y hoy lidero mi propio estudio en Querétaro, donde un equipo de supervisores felinos se asegura de que cada proyecto salga con el nivel de calidad y el ronroneo adecuado. Si tu negocio necesita una presencia en internet que funcione de verdad, no solo que se vea bonita, me escribes y platicamos.",
       "secretButton": "Diario Secreto Dev"
     },
     "trajectory": {
-      "overline": "REGISTRO_ACTIVIDAD",
-      "title": "Trayectoria & Experiencia Operativa",
-      "description": "Historial de operaciones técnicas liderando proyectos de software de alto impacto.",
+      "overline": "TRAYECTORIA",
+      "title": "Historial de proyectos y experiencia",
+      "description": "Una línea de tiempo con los proyectos y empresas que me han formado como profesional. Lo que aprendí en cada lugar es parte de lo que tu negocio se lleva al trabajar conmigo.",
       "timeline": [
         {
           "year": "2026 - Presente",
-          "title": "Fundador & Ingeniero Principal",
+          "title": "Fundador del estudio",
           "company": "Dark Lynx Protocol",
-          "description": "Liderando operaciones de consultoría boutique. Desarrollo de software libre de deuda técnica, optimizaciones de Core Web Vitals al extremo y arquitecturas serverless de alta velocidad."
+          "description": "Lidero un estudio pequeño enfocado en construir sitios y plataformas sin atajos técnicos. Cada proyecto se entrega rápido, se mantiene fácil, y deja al cliente con el control de lo que pagó."
         },
         {
           "year": "2026 - Actualidad",
-          "title": "Desarrollador de Software",
+          "title": "Desarrollador de software",
           "company": "Ria Money Transfer",
-          "description": "Desarrollador en plataformas y sistemas transaccionales legacy. Diseño e implementación de estrategias de migración hacia arquitecturas modernas y escalables para el líder global en transferencia de remesas."
+          "description": "Trabajo en plataformas de transferencias de dinero para una de las empresas más grandes del mundo. Ahí aprendí lo que significa manejar millones de operaciones sin que se caiga el sistema, y lo traigo a tus proyectos."
         },
         {
           "year": "2020 - 2025",
-          "title": "Senior Full Stack Developer",
+          "title": "Desarrollador senior",
           "company": "MTech-Systems",
-          "description": "Mentoría y onboarding de desarrolladores en Angular, .NET Core y SQL Server. Liderazgo del desarrollo del sistema de Boletín Sanitario para regulaciones agrícolas brasileñas y co-desarrollo de la intranet corporativa."
+          "description": "Lideré el desarrollo de sistemas regulatorios para el sector agrícola en Brasil, y formé a otros desarrolladores. Ahí confirmé que el código limpio y la mentoría honesta son la base de los proyectos que duran."
         },
         {
           "year": "2015 - 2020",
-          "title": "Desarrollador Full Stack Freelance",
-          "company": "Proyectos Independientes",
-          "description": "Diseño, desarrollo y lanzamiento de varias plataformas de comercio electrónico con pasarelas de pagos seguros y catálogos dinámicos."
+          "title": "Desarrollador freelance",
+          "company": "Proyectos propios",
+          "description": "Diseñé y lancé varias tiendas en línea con cobros seguros y catálogos dinámicos. Ahí aprendí a hablar con clientes que no son técnicos y a entregar resultados sin perder la cabeza."
         },
         {
           "year": "2018",
-          "title": "Desarrollador Web",
+          "title": "Desarrollador web",
           "company": "Probusiness",
-          "description": "Diseño y mantenimiento de portales responsivos de productos utilizando HTML5, CSS3 y JavaScript como único desarrollador."
+          "description": "Mi primer trabajo formal en la industria: diseñar y mantener portales de productos. Ahí aprendí a hacer mucho con poco, y a valorar cada minuto del proyecto."
         }
       ]
     },
@@ -229,23 +232,23 @@
       "stable": "ACTIVE",
       "accepting": "TRUE",
       "integrity": "100% SECURE",
-      "focusTitle": "// ENFOQUE_ACTUAL:",
+      "focusTitle": "EN ESTE MOMENTO:",
       "focus": [
-        "Arquitectura de aplicaciones empresariales escalables con .NET Core, C# y PostgreSQL.",
-        "Interfaces de alto rendimiento y robustas con Angular y Svelte.",
-        "Administración y despliegue avanzado en entornos Linux, Azure y control de versiones con Git.",
-        "Optimización profunda de Core Web Vitals, rendimiento web y eliminación de deuda técnica."
+        "Construyendo plataformas que aguantan el crecimiento de empresas medianas, desde Querétaro.",
+        "Diseñando interfaces rápidas y claras que funcionan perfecto en celular, donde está la mayoría de tus clientes.",
+        "Conectando páginas con sistemas de cobro, bases de datos, y las herramientas que tu negocio ya usa.",
+        "Ayudando a negocios que ya tienen una página pero está lenta, falla, o simplemente no aparece en Google."
       ],
       "connectTitle": ">_ INICIAR_CONEXION",
-      "linkDesc": "Abrir canal seguro en",
+      "linkDesc": "Escríbeme por:",
       "journal": "Diario Técnico"
     }
   },
   "contact": {
     "hero": {
       "overline": "CONEXIÓN",
-      "title": "Iniciar Canal Seguro",
-      "description": "Completa el protocolo para establecer comunicación. Analizaremos tu solicitud y responderemos a la brevedad."
+      "title": "Cuéntanos de tu proyecto",
+      "description": "Mándanos un mensaje con la idea general de lo que necesitas. Te respondemos en menos de 24 horas para agendar una llamada sin compromiso y revisar juntos qué tiene sentido."
     },
     "form": {
       "name": "ID_USUARIO (Nombre)",
@@ -257,8 +260,8 @@
     }
   },
   "journal": {
-    "title": "Diario de Desarrollo de Gerardo",
-    "subtitle": "Registros clasificados de desarrollo — solo para ojos autorizados.",
+    "title": "Bitácora de desarrollo",
+    "subtitle": "Apuntes sobre proyectos, herramientas y cosas que voy aprendiendo en el camino",
     "badge": "ACCESO_CONCEDIDO",
     "emptyState": "No se encontraron entradas en el archivo."
   }
