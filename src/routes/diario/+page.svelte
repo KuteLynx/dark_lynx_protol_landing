@@ -4,6 +4,7 @@
 	import Card from '$lib/components/ui/Card.svelte';
 	import TagList from '$lib/components/ui/TagList.svelte';
 	import TerminalText from '$lib/components/ui/TerminalText.svelte';
+	import SeoHead from '$lib/components/SeoHead.svelte';
 	import { t, locale } from '$lib/i18n';
 
 	function formatDate(dateStr: string): string {
@@ -33,10 +34,7 @@
 	}
 </script>
 
-<svelte:head>
-	<title>{t('journal.title')} — Dark Lynx Protocol</title>
-	<meta name="robots" content="noindex, nofollow" />
-</svelte:head>
+<SeoHead title={t('seo.journal.title')} description={t('seo.journal.desc')} path="/diario" noindex />
 
 <Section size="md">
 	<div class="journal-header">

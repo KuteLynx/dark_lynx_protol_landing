@@ -3,13 +3,11 @@
 	import ProfileHero from '$lib/components/sections/ProfileHero.svelte';
 	import BioBentoSection from '$lib/components/sections/BioBentoSection.svelte';
 	import SystemStatusPanel from '$lib/components/sections/SystemStatusPanel.svelte';
+	import SeoHead from '$lib/components/SeoHead.svelte';
 	import { t } from '$lib/i18n';
 </script>
 
-<svelte:head>
-	<title>{t('nav.about')} — Dark Lynx Protocol</title>
-	<meta name="description" content={t('seo.about.desc')} />
-</svelte:head>
+<SeoHead title={t('seo.about.title')} description={t('seo.about.desc')} path="/sobre-mi" />
 
 <Section size="lg">
 	<ProfileHero />

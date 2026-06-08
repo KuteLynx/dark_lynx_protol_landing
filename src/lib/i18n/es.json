@@ -8,17 +8,28 @@
   },
   "seo": {
     "home": {
-      "title": "Desarrollo web en Querétaro | Dark Lynx Protocol",
-      "desc": "Estudio de desarrollo web en Querétaro. Hacemos sitios rápidos, fáciles de mantener y pensados para que tu negocio venda más por internet."
+      "title": "Desarrollo web en Querétaro para negocios que necesitan vender | Dark Lynx Protocol",
+      "desc": "Estudio de desarrollo web en Querétaro. Creamos páginas rápidas, SEO técnico, sistemas a medida, tiendas en línea y conexiones seguras para negocios en México."
     },
     "services": {
-      "desc": "Cuatro servicios para resolver los problemas más comunes de tu página: construcción desde cero, sistemas a medida, optimización de velocidad y cobros en línea."
+      "desc": "Servicios de desarrollo web en Querétaro: páginas rápidas, sistemas a medida, optimización SEO, Core Web Vitals, pagos en línea e integraciones seguras.",
+      "title": "Servicios de desarrollo web, SEO técnico y sistemas a medida | Dark Lynx Protocol"
     },
     "philosophy": {
-      "desc": "Cuatro ideas simples sobre cómo trabajamos: hablamos claro, cuidamos la velocidad, escribimos código ordenado, y te recomendamos lo que de verdad necesitas."
+      "desc": "Así trabajamos en Dark Lynx Protocol: comunicación directa, velocidad real, código mantenible, SEO técnico y soluciones web pensadas para crecer sin depender de parches.",
+      "title": "Desarrollo web claro, rápido y sin deuda técnica | Dark Lynx Protocol"
     },
     "about": {
-      "desc": "Conoce a Gerardo Martínez, fundador de Dark Lynx Protocol: desarrollador web con más de 10 años de experiencia, desde Querétaro."
+      "desc": "Conoce a Gerardo Martínez, fundador de Dark Lynx Protocol: desarrollador web fullstack con más de 10 años de experiencia en sitios rápidos, sistemas a medida y plataformas para negocio.",
+      "title": "Gerardo Martínez, desarrollador web en Querétaro | Dark Lynx Protocol"
+    },
+    "contact": {
+      "title": "Cotiza tu sitio web o sistema a medida | Dark Lynx Protocol",
+      "desc": "Cuéntanos tu proyecto web. Te respondemos en menos de 24 horas para revisar tu sitio, sistema, tienda en línea, integración o mejora de SEO técnico."
+    },
+    "journal": {
+      "title": "Bitácora técnica | Dark Lynx Protocol",
+      "desc": "Bitácora privada de desarrollo, herramientas y aprendizajes de Dark Lynx Protocol."
     }
   },
   "cta": {
@@ -37,7 +48,7 @@
     "hero": {
       "badge": "AVAILABLE_FOR_BUILD",
       "title": "Creamos sitios web <span class=\"text-accent text-glow\">rápidos</span>, fáciles de mantener y hechos para <span class=\"text-accent text-glow\">vender</span>.",
-      "desc": "Dark Lynx Protocol es un estudio pequeño de desarrollo web en Querétaro. Hacemos sitios que cargan al instante, aparecen en Google, y son tan fáciles de mantener que no necesitas depender de nadie para hacer cambios simples."
+      "desc": "Dark Lynx Protocol es un estudio pequeño de desarrollo web en Querétaro. Creamos páginas web rápidas, SEO técnico, sistemas a medida y tiendas en línea que cargan al instante, aparecen en Google, y son fáciles de mantener sin depender de parches eternos."
     },
     "problem": {
       "overline": "EL PROBLEMA",
@@ -61,22 +72,22 @@
     "services": {
       "overline": "LO QUE HACEMOS",
       "title": "Tres formas claras de ayudarte",
-      "description": "Diseñamos soluciones a la medida según el problema que quieres resolver. Sin paquetes inflados, sin letra chiquita: te decimos qué incluye, cuánto cuesta, y qué obtienes.",
+      "description": "Diseñamos soluciones a la medida según el problema que quieres resolver: páginas web, sistemas internos, optimización SEO, Core Web Vitals, pagos en línea e integraciones seguras. Sin paquetes inflados, sin letra chiquita: te decimos qué incluye, cuánto cuesta, y qué obtienes.",
       "list": [
         {
           "icon": "Layout",
           "title": "Páginas web que venden",
-          "description": "Diseñamos y construimos sitios que cargan rápido, se ven bien en el celular, y están pensados para que tus visitantes te contacten o te compren."
+          "description": "Diseñamos y construimos sitios web rápidos, responsivos y preparados para SEO local, pensados para que tus visitantes te contacten o te compren."
         },
         {
           "icon": "Cpu",
           "title": "Sistemas a tu medida",
-          "description": "Construimos plataformas con su panel de administración, base de datos, y todo lo que tu negocio necesita para operar sin depender de terceros."
+          "description": "Construimos plataformas con panel de administración, base de datos, automatizaciones e integraciones para que tu negocio opere sin depender de terceros."
         },
         {
           "icon": "Zap",
           "title": "Sitios más rápidos y mejor posicionados",
-          "description": "Revisamos tu página actual, le quitamos lo que la hace lenta, y la dejamos en forma para que Google la muestre cuando alguien busca lo que ofreces."
+          "description": "Revisamos tu página actual, mejoramos Core Web Vitals, arreglamos SEO técnico y la dejamos lista para que Google entienda mejor lo que ofreces."
         }
       ]
     }
@@ -85,38 +96,58 @@
     "hero": {
       "overline": "SERVICIOS",
       "title": "Lo que podemos hacer por tu negocio",
-      "description": "Cuatro servicios puntuales para resolver los problemas más comunes de tu presencia en internet. Cada uno se cotiza aparte y se entrega con tiempos claros."
+      "description": "Servicios puntuales para mejorar tu presencia en internet: desarrollo web, sistemas a medida, SEO técnico, velocidad, pagos en línea e integraciones seguras. Cada proyecto se cotiza aparte y se entrega con tiempos claros."
     },
     "modules": [
       {
         "icon": "Globe",
         "title": "Páginas web y sitios corporativos",
-        "description": "Construimos tu página desde cero, diseñada para convertir visitas en clientes. Sin plantillas genéricas: todo se hace a la medida de tu marca y tu negocio.",
-        "tags": ["Diseño personalizado", "Rápido", "Listo para celular", "SEO base"]
+        "description": "Construimos tu página desde cero, diseñada para convertir visitas en clientes y posicionarse mejor en búsquedas locales. Sin plantillas genéricas: todo se hace a la medida de tu marca y tu negocio.",
+        "tags": [
+          "Diseño personalizado",
+          "Rápido",
+          "Listo para celular",
+          "SEO base"
+        ]
       },
       {
         "icon": "Layers",
         "title": "Plataformas y sistemas completos",
-        "description": "Si tu negocio necesita algo más que una página informativa: un sistema de reservas, un catálogo con pagos, un panel para tus empleados, lo desarrollamos completo y te lo entregamos listo para usar.",
-        "tags": ["Reservas", "Catálogos", "Pagos en línea", "Paneles admin"]
+        "description": "Si tu negocio necesita algo más que una página informativa: un sistema de reservas, un catálogo con pagos, un panel para tus empleados o automatizaciones internas, lo desarrollamos completo y te lo entregamos listo para usar.",
+        "tags": [
+          "Reservas",
+          "Catálogos",
+          "Pagos en línea",
+          "Paneles admin"
+        ]
       },
       {
         "icon": "Search",
-        "title": "Revisión y arreglo de tu sitio actual",
-        "description": "Tomamos tu página existente, te decimos exactamente qué está frenando tus ventas o tu posicionamiento, y lo arreglamos sin tener que tirarlo todo a la basura.",
-        "tags": ["Diagnóstico", "Velocidad", "Aparece en Google", "Menos costos"]
+        "title": "SEO técnico, velocidad y arreglo de tu sitio actual",
+        "description": "Tomamos tu página existente, revisamos rendimiento, indexación, estructura, metadatos y contenido, luego arreglamos lo que está frenando tus ventas o tu posicionamiento sin tener que tirarlo todo a la basura.",
+        "tags": [
+          "Diagnóstico",
+          "Core Web Vitals",
+          "Aparece en Google",
+          "Menos costos"
+        ]
       },
       {
         "icon": "Shield",
         "title": "Cobros en línea y conexiones seguras",
-        "description": "Conectamos tu página con servicios de pago con tarjeta o transferencia, sistemas de inicio de sesión para tus clientes, y conexiones a las herramientas que ya usas. Todo con los estándares de seguridad que pide la banca.",
-        "tags": ["Pagos con tarjeta", "Inicios de sesión", "Integraciones", "Seguridad bancaria"]
+        "description": "Conectamos tu página con pagos con tarjeta o transferencia, sistemas de inicio de sesión para clientes, APIs y herramientas que ya usas. Todo con buenas prácticas de seguridad desde el inicio.",
+        "tags": [
+          "Pagos con tarjeta",
+          "Inicios de sesión",
+          "Integraciones",
+          "Seguridad"
+        ]
       }
     ],
     "tech": {
       "overline": "HERRAMIENTAS",
       "title": "Las herramientas correctas para cada proyecto",
-      "description": "Elegimos la tecnología según lo que tu negocio necesita, no al revés. Buscamos siempre que tu sitio sea rápido, fácil de mantener mañana, y que no te ate a un solo proveedor."
+      "description": "Elegimos la tecnología según lo que tu negocio necesita, no al revés. Buscamos siempre que tu sitio sea rápido, fácil de mantener, preparado para SEO técnico y que no te ate a un solo proveedor."
     },
     "cta": {
       "title": "¿Listo para dejar de pelearte con tu página?",
@@ -187,8 +218,8 @@
   },
   "about": {
     "profile": {
-      "role": "Desarrollador web y socio técnico",
-      "bio": "Llevo más de 10 años construyendo páginas, plataformas y sistemas para empresas y negocios. Empecé haciendo sitios por encargo y hoy lidero mi propio estudio en Querétaro, donde un equipo de supervisores felinos se asegura de que cada proyecto salga con el nivel de calidad y el ronroneo adecuado. Si tu negocio necesita una presencia en internet que funcione de verdad, no solo que se vea bonita, me escribes y platicamos.",
+      "role": "Desarrollador web fullstack y socio técnico",
+      "bio": "Llevo más de 10 años construyendo páginas web, plataformas y sistemas para empresas y negocios. Trabajo desde Querétaro con foco en sitios rápidos, SEO técnico, código mantenible, integraciones seguras y soluciones que puedas seguir usando sin depender de parches eternos. Si tu negocio necesita una presencia en internet que funcione de verdad, no solo que se vea bonita, me escribes y platicamos.",
       "secretButton": "Diario Secreto Dev"
     },
     "trajectory": {

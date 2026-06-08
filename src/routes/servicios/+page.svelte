@@ -4,13 +4,11 @@
 	import ServiceModulesSection from '$lib/components/sections/ServiceModulesSection.svelte';
 	import TechStackSection from '$lib/components/sections/TechStackSection.svelte';
 	import CtaPanel from '$lib/components/sections/CtaPanel.svelte';
+	import SeoHead from '$lib/components/SeoHead.svelte';
 	import { t } from '$lib/i18n';
 </script>
 
-<svelte:head>
-	<title>{t('nav.services')} — Dark Lynx Protocol</title>
-	<meta name="description" content={t('seo.services.desc')} />
-</svelte:head>
+<SeoHead title={t('seo.services.title')} description={t('seo.services.desc')} path="/servicios" />
 
 <Section size="md">
 	<PageHero 

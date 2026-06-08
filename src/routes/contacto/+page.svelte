@@ -3,6 +3,7 @@
 	import PageHero from '$lib/components/sections/PageHero.svelte';
 	import Card from '$lib/components/ui/Card.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
+	import SeoHead from '$lib/components/SeoHead.svelte';
 	import { t } from '$lib/i18n';
 
 	let isSubmitting = $state(false);
@@ -69,9 +70,7 @@
 	}
 </script>
 
-<svelte:head>
-	<title>{t('nav.contact')} — Dark Lynx Protocol</title>
-</svelte:head>
+<SeoHead title={t('seo.contact.title')} description={t('seo.contact.desc')} path="/contacto" />
 
 <Section size="md">
 	<PageHero

@@ -8,15 +8,24 @@ type Translations = typeof es;
 // Create reactive state for locale
 let currentLocale = $state<Locale>('es');
 
-// Initialize from localStorage or browser preference
+// Initialize from URL (?lang=en), localStorage, or browser preference
 if (browser) {
+	const params = new URLSearchParams(window.location.search);
+	const requested = params.get('lang') as Locale | null;
 	const stored = localStorage.getItem('locale') as Locale;
-	if (stored === 'es' || stored === 'en') {
-		currentLocale = stored;
+	let nextLocale: Locale;
+
+	if (requested === 'es' || requested === 'en') {
+		nextLocale = requested;
+		localStorage.setItem('locale', requested);
+	} else if (stored === 'es' || stored === 'en') {
+		nextLocale = stored;
 	} else {
-		const browserLang = navigator.language.startsWith('en') ? 'en' : 'es';
-		currentLocale = browserLang;
+		nextLocale = navigator.language.startsWith('en') ? 'en' : 'es';
 	}
+
+	currentLocale = nextLocale;
+	document.documentElement.lang = nextLocale;
 }
 
 export const locale = {

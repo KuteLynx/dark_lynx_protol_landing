@@ -8,17 +8,28 @@
   },
   "seo": {
     "home": {
-      "title": "Web Development in Querétaro | Dark Lynx Protocol",
-      "desc": "Small web development studio based in Querétaro, Mexico. We build fast, easy-to-maintain websites designed to help your business sell more online."
+      "title": "Web development in Querétaro for businesses that need to sell | Dark Lynx Protocol",
+      "desc": "Web development studio in Querétaro, Mexico. We build fast websites, technical SEO, custom systems, online stores, and secure integrations for businesses."
     },
     "services": {
-      "desc": "Four services to solve the most common website problems: custom builds, business systems, speed optimization, and online payments."
+      "desc": "Web development services in Querétaro: fast websites, custom systems, technical SEO, Core Web Vitals, online payments, and secure integrations.",
+      "title": "Web development, technical SEO, and custom systems | Dark Lynx Protocol"
     },
     "philosophy": {
-      "desc": "Four simple ideas about how we work: we talk straight, we care about speed, we write organized code, and we recommend what you actually need."
+      "desc": "How we work at Dark Lynx Protocol: direct communication, real speed, maintainable code, technical SEO, and web solutions built to grow without endless patches.",
+      "title": "Clear, fast web development with maintainable code | Dark Lynx Protocol"
     },
     "about": {
-      "desc": "Meet Gerardo Martínez, founder of Dark Lynx Protocol: web developer with over 10 years of experience, based in Querétaro, Mexico."
+      "desc": "Meet Gerardo Martínez, founder of Dark Lynx Protocol: fullstack web developer with over 10 years of experience in fast websites, custom systems, and business platforms.",
+      "title": "Gerardo Martínez, web developer in Querétaro | Dark Lynx Protocol"
+    },
+    "contact": {
+      "title": "Quote your website or custom system | Dark Lynx Protocol",
+      "desc": "Tell us about your web project. We reply within 24 hours to review your website, system, online store, integration, or technical SEO improvement."
+    },
+    "journal": {
+      "title": "Technical dev log | Dark Lynx Protocol",
+      "desc": "Private development log with tools, projects, and lessons learned from Dark Lynx Protocol."
     }
   },
   "cta": {
@@ -37,7 +48,7 @@
     "hero": {
       "badge": "AVAILABLE_FOR_BUILD",
       "title": "We build websites that load <span class=\"text-accent text-glow\">fast</span>, are easy to maintain, and designed to <span class=\"text-accent text-glow\">sell</span>.",
-      "desc": "Dark Lynx Protocol is a small web development studio based in Querétaro, Mexico. We build sites that load instantly, show up on Google, and are easy enough to maintain that you don't need to depend on anyone for simple changes."
+      "desc": "Dark Lynx Protocol is a small web development studio based in Querétaro, Mexico. We build fast websites, technical SEO, custom systems, and online stores that load instantly, show up on Google, and stay easy to maintain without endless patchwork."
     },
     "problem": {
       "overline": "THE PROBLEM",
@@ -61,22 +72,22 @@
     "services": {
       "overline": "WHAT WE DO",
       "title": "Three clear ways to help you",
-      "description": "We tailor solutions to the problem you want to solve. No inflated packages, no fine print: we tell you what's included, what it costs, and what you get.",
+      "description": "We tailor solutions to the problem you want to solve: websites, internal systems, technical SEO, Core Web Vitals, online payments, and secure integrations. No inflated packages, no fine print: we tell you what is included, what it costs, and what you get.",
       "list": [
         {
           "icon": "Layout",
           "title": "Websites that sell",
-          "description": "We design and build sites that load fast, look great on mobile, and are built to turn visitors into contacts or customers."
+          "description": "We design and build fast, responsive websites prepared for local SEO, made to turn visitors into contacts or customers."
         },
         {
           "icon": "Cpu",
           "title": "Custom systems for your business",
-          "description": "We build platforms with their own admin panel, database, and everything your business needs to operate without depending on third parties."
+          "description": "We build platforms with admin panels, databases, automation, and integrations so your business can operate without depending on third parties."
         },
         {
           "icon": "Zap",
           "title": "Faster sites, better Google ranking",
-          "description": "We review your current site, remove what makes it slow, and shape it up so Google shows it when someone searches for what you offer."
+          "description": "We review your current site, improve Core Web Vitals, fix technical SEO, and prepare it so Google understands what you offer."
         }
       ]
     }
@@ -85,38 +96,58 @@
     "hero": {
       "overline": "SERVICES",
       "title": "What we can do for your business",
-      "description": "Four focused services to solve the most common problems with your online presence. Each one is quoted separately and delivered on a clear timeline."
+      "description": "Focused services to improve your online presence: web development, custom systems, technical SEO, speed, online payments, and secure integrations. Each project is quoted separately and delivered on a clear timeline."
     },
     "modules": [
       {
         "icon": "Globe",
         "title": "Websites and corporate sites",
-        "description": "We build your site from scratch, designed to turn visits into customers. No generic templates: everything is tailored to your brand and business.",
-        "tags": ["Custom design", "Fast", "Mobile-ready", "Base SEO"]
+        "description": "We build your site from scratch, designed to turn visits into customers and perform better in local search. No generic templates: everything is tailored to your brand and business.",
+        "tags": [
+          "Custom design",
+          "Fast",
+          "Mobile-ready",
+          "Base SEO"
+        ]
       },
       {
         "icon": "Layers",
         "title": "Complete platforms and systems",
-        "description": "If your business needs more than an informational page: a booking system, a catalog with payments, a panel for your employees, we build the whole thing and hand it over ready to use.",
-        "tags": ["Bookings", "Catalogs", "Online payments", "Admin panels"]
+        "description": "If your business needs more than an informational page: a booking system, a catalog with payments, an employee panel, or internal automation, we build the whole thing and hand it over ready to use.",
+        "tags": [
+          "Bookings",
+          "Catalogs",
+          "Online payments",
+          "Admin panels"
+        ]
       },
       {
         "icon": "Search",
-        "title": "Review and fix of your current site",
-        "description": "We take your existing site, tell you exactly what's holding back your sales or your search ranking, and fix it without throwing everything away.",
-        "tags": ["Diagnostics", "Speed", "Google ranking", "Lower costs"]
+        "title": "Technical SEO, speed, and current site fixes",
+        "description": "We take your existing site, review performance, indexing, structure, metadata, and content, then fix what is holding back your sales or search ranking without throwing everything away.",
+        "tags": [
+          "Diagnostics",
+          "Core Web Vitals",
+          "Google ranking",
+          "Lower costs"
+        ]
       },
       {
         "icon": "Shield",
         "title": "Online payments and secure connections",
-        "description": "We connect your site to card and bank transfer payment services, customer login systems, and the tools you already use. All with the security standards banks require.",
-        "tags": ["Card payments", "Logins", "Integrations", "Bank-grade security"]
+        "description": "We connect your site to card and bank transfer payment services, customer login systems, APIs, and the tools you already use. All with good security practices from the start.",
+        "tags": [
+          "Card payments",
+          "Logins",
+          "Integrations",
+          "Security"
+        ]
       }
     ],
     "tech": {
       "overline": "TOOLBOX",
       "title": "The right tools for each project",
-      "description": "We choose the technology based on what your business needs, not the other way around. We always aim for a site that's fast, easy to maintain tomorrow, and that doesn't lock you into a single vendor."
+      "description": "We choose the technology based on what your business needs, not the other way around. We always aim for a site that is fast, easy to maintain, prepared for technical SEO, and does not lock you into a single vendor."
     },
     "cta": {
       "title": "Ready to stop fighting with your website?",
@@ -187,8 +218,8 @@
   },
   "about": {
     "profile": {
-      "role": "Web developer and technical partner",
-      "bio": "I've spent over 10 years building websites, platforms, and systems for businesses of all sizes. I started taking on web projects as a freelancer, and now I run my own studio in Querétaro, where a team of feline supervisors makes sure every project ships with the right quality and purr-level. If your business needs an online presence that actually works, not just looks pretty, reach out and let's talk.",
+      "role": "Fullstack web developer and technical partner",
+      "bio": "I have spent over 10 years building websites, platforms, and systems for companies and businesses. I work from Querétaro with a focus on fast sites, technical SEO, maintainable code, secure integrations, and solutions you can keep using without endless patchwork. If your business needs an online presence that actually works, not just looks pretty, reach out and let us talk.",
       "secretButton": "Secret Dev Diary"
     },
     "trajectory": {

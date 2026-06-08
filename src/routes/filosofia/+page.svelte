@@ -4,13 +4,11 @@
 	import PrinciplesBentoSection from '$lib/components/sections/PrinciplesBentoSection.svelte';
 	import ComparisonSplitSection from '$lib/components/sections/ComparisonSplitSection.svelte';
 	import QuoteBlock from '$lib/components/ui/QuoteBlock.svelte';
+	import SeoHead from '$lib/components/SeoHead.svelte';
 	import { t, tObj } from '$lib/i18n';
 </script>
 
-<svelte:head>
-	<title>{t('nav.philosophy')} — Dark Lynx Protocol</title>
-	<meta name="description" content={t('seo.philosophy.desc')} />
-</svelte:head>
+<SeoHead title={t('seo.philosophy.title')} description={t('seo.philosophy.desc')} path="/filosofia" />
 
 <Section size="md">
 	<PageHero 
