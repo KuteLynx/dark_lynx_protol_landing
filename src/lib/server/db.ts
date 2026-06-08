@@ -1,4 +1,4 @@
-import { neon } from '@neondatabase/serverless';
+import { neon, type NeonQueryFunction } from '@neondatabase/serverless';
 import { env } from '$env/dynamic/private';
 
 /**
@@ -9,9 +9,9 @@ import { env } from '$env/dynamic/private';
  * but subsequent calls reuse the module-level singleton.
  */
 
-let _sql: ReturnType<typeof neon> | null = null;
+let _sql: NeonQueryFunction<false, false> | null = null;
 
-function getSql() {
+function getSql(): NeonQueryFunction<false, false> {
 	if (!_sql) {
 		const connectionString = env.DATABASE_URL;
 		if (!connectionString) {
@@ -22,11 +22,13 @@ function getSql() {
 	return _sql;
 }
 
-export const sql = new Proxy({} as ReturnType<typeof neon>, {
-	get(_target, prop, receiver) {
-		return Reflect.get(getSql(), prop, receiver);
-	},
-	apply(_target, thisArg, args) {
-		return Reflect.apply(getSql() as unknown as (...args: unknown[]) => unknown, thisArg, args);
-	}
-});
+/**
+ * Tagged template SQL function. Use as:
+ *   const rows = await sql`SELECT * FROM journal_entries`;
+ */
+export async function sql<T = unknown>(
+	strings: TemplateStringsArray,
+	...values: unknown[]
+): Promise<T[]> {
+	return getSql()(strings, ...values) as Promise<T[]>;
+}
