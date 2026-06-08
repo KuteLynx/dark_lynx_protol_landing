@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import Section from '$lib/layout/Section.svelte';
 	import PageHero from '$lib/components/sections/PageHero.svelte';
 	import Card from '$lib/components/ui/Card.svelte';
@@ -12,6 +13,41 @@
 
 	const TURNSTILE_SITE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY || '';
 	const CONTACT_API_URL = import.meta.env.VITE_CONTACT_API_URL || '';
+
+	let turnstileContainer!: HTMLDivElement;
+	let widgetId: string | undefined;
+
+	onMount(() => {
+		if (!TURNSTILE_SITE_KEY) return;
+
+		let cancelled = false;
+
+		function renderTurnstile() {
+			if (cancelled) return;
+			const turnstile = (window as any).turnstile;
+			if (!turnstile) {
+				// Script not yet loaded — poll until it is
+				setTimeout(renderTurnstile, 100);
+				return;
+			}
+			widgetId = turnstile.render(turnstileContainer, {
+				sitekey: TURNSTILE_SITE_KEY,
+				theme: 'dark'
+			});
+		}
+
+		renderTurnstile();
+
+		return () => {
+			cancelled = true;
+			if (widgetId !== undefined) {
+				const turnstile = (window as any).turnstile;
+				if (turnstile) {
+					turnstile.remove(widgetId);
+				}
+			}
+		};
+	});
 
 	async function handleSubmit(event: SubmitEvent) {
 		event.preventDefault();
@@ -115,7 +151,7 @@
 				</div>
 
 				{#if TURNSTILE_SITE_KEY}
-					<div class="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY} data-theme="dark"></div>
+					<div bind:this={turnstileContainer}></div>
 				{:else}
 					<div class="contact-error mono text-danger">
 						Missing VITE_TURNSTILE_SITE_KEY.
