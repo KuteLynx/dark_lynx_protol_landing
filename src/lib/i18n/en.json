@@ -9,19 +9,19 @@
   "seo": {
     "home": {
       "title": "Gerardo Martínez Junco | Dark Lynx Protocol",
-      "desc": "Official site of Gerardo Martínez Junco, founder of Dark Lynx Protocol. Affordable websites in Querétaro for businesses that need fast sites, technical SEO, and custom systems."
+      "desc": "Official site of Gerardo Martínez Junco, programmer in Querétaro and founder of Dark Lynx Protocol. Affordable websites for businesses that need fast sites, technical SEO, and custom systems."
     },
     "services": {
-      "title": "Affordable websites and web services | Dark Lynx Protocol",
-      "desc": "Affordable websites for small businesses: branded landing pages, custom systems, SEO rescue, speed, direct contact, and secure integrations."
+      "title": "Programmer in Querétaro and affordable websites | Dark Lynx Protocol",
+      "desc": "Programmer in Querétaro for small businesses: affordable websites, branded landing pages, custom systems, SEO rescue, speed, and secure integrations."
     },
     "philosophy": {
       "desc": "How we work at Dark Lynx Protocol: direct communication, real speed, maintainable code, technical SEO, and web solutions built to grow without endless patches.",
       "title": "Clear, fast web development with maintainable code | Dark Lynx Protocol"
     },
     "about": {
-      "desc": "Meet Gerardo Martínez Junco, founder of Dark Lynx Protocol: fullstack web developer with over 10 years of experience in fast websites, custom systems, and business platforms.",
-      "title": "Gerardo Martínez Junco, web developer in Querétaro | Dark Lynx Protocol"
+      "desc": "Meet Gerardo Martínez Junco, programmer in Querétaro and founder of Dark Lynx Protocol: fullstack web developer with over 10 years of experience in fast websites, custom systems, and business platforms.",
+      "title": "Gerardo Martínez Junco, programmer in Querétaro | Dark Lynx Protocol"
     },
     "contact": {
       "title": "Quote your website or custom system | Dark Lynx Protocol",
@@ -55,7 +55,7 @@
     "hero": {
       "badge": "BOUTIQUE_WEB_STUDIO",
       "title": "Your business deserves to look like a <span class=\"text-accent text-glow\">brand</span>.",
-      "description": "Dark Lynx Protocol builds affordable websites that are fast, clear, with visual identity, base SEO, and direct contact flows for businesses that want to stop looking improvised online.",
+      "description": "Dark Lynx Protocol is a programmer-led studio in Querétaro that builds affordable websites that are fast, clear, with visual identity, base SEO, and direct contact flows for businesses that want to stop looking improvised online.",
       "ctaPrimary": "I want an idea for my business",
       "ctaSecondary": "See services"
     },
@@ -81,7 +81,7 @@
     "services": {
       "overline": "COMMERCIAL PATHS",
       "title": "Choose where to start",
-      "description": "Not every business needs the same thing. We help you choose a clear path based on your moment: professional presence, custom system, or rescue for a site that already exists.",
+      "description": "Not every business needs the same thing. As a programmer in Querétaro, I help you choose a clear path based on your moment: professional presence, custom system, or rescue for a site that already exists.",
       "list": [
         {
           "icon": "Layout",
@@ -128,7 +128,7 @@
     "hero": {
       "overline": "SERVICES",
       "title": "Affordable websites without inflated packages",
-      "description": "Each service starts from a concrete problem: getting an affordable, professional website, selling better, organizing processes, or rescuing a page that no longer works as it should."
+      "description": "Each service starts from a concrete problem: working with a programmer in Querétaro to get an affordable, professional website, sell better, organize processes, or rescue a page that no longer works as it should."
     },
     "modules": [
       {
@@ -258,8 +258,8 @@
   },
   "about": {
     "profile": {
-      "role": "Fullstack web developer and technical partner",
-      "bio": "I have spent over 10 years building websites, platforms, and systems for companies and businesses. I work from Querétaro with a focus on fast sites, technical SEO, maintainable code, secure integrations, and solutions you can keep using without endless patchwork. If your business needs an online presence that actually works, not just looks pretty, reach out and let us talk.",
+      "role": "Programmer in Querétaro, fullstack web developer, and technical partner",
+      "bio": "I have spent over 10 years building websites, platforms, and systems for companies and businesses. I am a programmer in Querétaro focused on fast sites, technical SEO, maintainable code, secure integrations, and solutions you can keep using without endless patchwork. If your business needs an online presence that actually works, not just looks pretty, reach out and let us talk.",
       "secretButton": "Secret Dev Diary"
     },
     "trajectory": {

@@ -9,19 +9,19 @@
   "seo": {
     "home": {
       "title": "Gerardo Martínez Junco | Dark Lynx Protocol",
-      "desc": "Sitio oficial de Gerardo Martínez Junco, fundador de Dark Lynx Protocol. Páginas web baratas en Querétaro para negocios que necesitan sitios rápidos, SEO técnico y sistemas a medida."
+      "desc": "Sitio oficial de Gerardo Martínez Junco, programador en Querétaro y fundador de Dark Lynx Protocol. Páginas web baratas para negocios que necesitan sitios rápidos, SEO técnico y sistemas a medida."
     },
     "services": {
-      "title": "Páginas web baratas y servicios web | Dark Lynx Protocol",
-      "desc": "Páginas web baratas para pequeños negocios: landing pages con identidad, sistemas a medida, rescate SEO, velocidad, contacto directo e integraciones seguras."
+      "title": "Programador en Querétaro y páginas web baratas | Dark Lynx Protocol",
+      "desc": "Programador web en Querétaro para pequeños negocios: páginas web baratas, landing pages con identidad, sistemas a medida, rescate SEO, velocidad e integraciones seguras."
     },
     "philosophy": {
       "desc": "Así trabajamos en Dark Lynx Protocol: comunicación directa, velocidad real, código mantenible, SEO técnico y soluciones web pensadas para crecer sin depender de parches.",
       "title": "Desarrollo web claro, rápido y sin deuda técnica | Dark Lynx Protocol"
     },
     "about": {
-      "desc": "Conoce a Gerardo Martínez Junco, fundador de Dark Lynx Protocol: desarrollador web fullstack con más de 10 años de experiencia en sitios rápidos, sistemas a medida y plataformas para negocio.",
-      "title": "Gerardo Martínez Junco, desarrollador web en Querétaro | Dark Lynx Protocol"
+      "desc": "Conoce a Gerardo Martínez Junco, programador en Querétaro y fundador de Dark Lynx Protocol: desarrollador web fullstack con más de 10 años de experiencia en sitios rápidos, sistemas a medida y plataformas para negocio.",
+      "title": "Gerardo Martínez Junco, programador en Querétaro | Dark Lynx Protocol"
     },
     "contact": {
       "title": "Cotiza tu sitio web o sistema a medida | Dark Lynx Protocol",
@@ -55,7 +55,7 @@
     "hero": {
       "badge": "ESTUDIO_WEB_BOUTIQUE",
       "title": "Tu negocio merece verse como una <span class=\"text-accent text-glow\">marca</span>.",
-      "description": "Dark Lynx Protocol crea páginas web baratas, rápidas, con identidad visual, SEO base y contacto directo para negocios que quieren dejar de verse improvisados en internet.",
+      "description": "Dark Lynx Protocol es un estudio de un programador en Querétaro que crea páginas web baratas, rápidas, con identidad visual, SEO base y contacto directo para negocios que quieren dejar de verse improvisados en internet.",
       "ctaPrimary": "Quiero una idea para mi negocio",
       "ctaSecondary": "Ver servicios"
     },
@@ -81,7 +81,7 @@
     "services": {
       "overline": "RUTAS COMERCIALES",
       "title": "Elige por dónde quieres empezar",
-      "description": "No todos los negocios necesitan lo mismo. Te ayudamos a elegir una ruta clara según tu momento: presencia profesional, sistema a medida o rescate de una página que ya existe.",
+      "description": "No todos los negocios necesitan lo mismo. Como programador web en Querétaro, te ayudo a elegir una ruta clara según tu momento: presencia profesional, sistema a medida o rescate de una página que ya existe.",
       "list": [
         {
           "icon": "Layout",
@@ -128,7 +128,7 @@
     "hero": {
       "overline": "SERVICIOS",
       "title": "Páginas web baratas sin paquetes inflados",
-      "description": "Cada servicio parte de un problema concreto: tener una página web barata y profesional, vender mejor, ordenar procesos o rescatar una página que ya no funciona como debería."
+      "description": "Cada servicio parte de un problema concreto: trabajar con un programador en Querétaro para tener una página web barata y profesional, vender mejor, ordenar procesos o rescatar una página que ya no funciona como debería."
     },
     "modules": [
       {
@@ -258,8 +258,8 @@
   },
   "about": {
     "profile": {
-      "role": "Desarrollador web fullstack y socio técnico",
-      "bio": "Llevo más de 10 años construyendo páginas web, plataformas y sistemas para empresas y negocios. Trabajo desde Querétaro con foco en sitios rápidos, SEO técnico, código mantenible, integraciones seguras y soluciones que puedas seguir usando sin depender de parches eternos. Si tu negocio necesita una presencia en internet que funcione de verdad, no solo que se vea bonita, me escribes y platicamos.",
+      "role": "Programador en Querétaro, desarrollador web fullstack y socio técnico",
+      "bio": "Llevo más de 10 años construyendo páginas web, plataformas y sistemas para empresas y negocios. Soy programador en Querétaro y trabajo con foco en sitios rápidos, SEO técnico, código mantenible, integraciones seguras y soluciones que puedas seguir usando sin depender de parches eternos. Si tu negocio necesita una presencia en internet que funcione de verdad, no solo que se vea bonita, me escribes y platicamos.",
       "secretButton": "Diario Secreto Dev"
     },
     "trajectory": {
