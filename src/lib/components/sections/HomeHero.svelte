@@ -1,16 +1,25 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import Badge from '$lib/components/ui/Badge.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
-	import { t } from '$lib/i18n';
+	import { locale, t } from '$lib/i18n';
+
+	let hydrated = $state(false);
+
+	onMount(() => {
+		hydrated = true;
+	});
 </script>
 
 <div class="home-hero fx-fade-in">
 	<div class="home-hero__badge">
 		<Badge dot prefix="STATUS:">{t('home.hero.badge')}</Badge>
 	</div>
-	<h1 class="home-hero__title">
-		{@html t('home.hero.title')}
-	</h1>
+	{#key `${locale.current}-${hydrated}`}
+		<h1 class="home-hero__title">
+			{@html t('home.hero.title')}
+		</h1>
+	{/key}
 	<p class="home-hero__desc">
 		{t('home.hero.description')}
 	</p>
