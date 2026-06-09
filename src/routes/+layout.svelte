@@ -23,7 +23,7 @@
 
 		const loaderTimer = setTimeout(() => {
 			showBootLoader = false;
-		}, 2100);
+		}, 2600);
 
 		return () => clearTimeout(loaderTimer);
 	});
@@ -58,7 +58,7 @@
 		background:
 			radial-gradient(circle at 50% 40%, rgba(0, 255, 65, 0.08), transparent 34rem),
 			linear-gradient(180deg, rgba(5, 8, 5, 0.98), rgba(3, 5, 3, 0.99));
-		animation: bootExit 2.1s ease forwards;
+		animation: bootExit 2.6s ease forwards;
 	}
 
 	.boot-loader__panel {
