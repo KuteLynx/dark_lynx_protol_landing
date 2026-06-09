@@ -12,14 +12,14 @@
 		{@html t('home.hero.title')}
 	</h1>
 	<p class="home-hero__desc">
-		{t('home.hero.desc')}
+		{t('home.hero.description')}
 	</p>
 	<div class="home-hero__actions">
 		<Button variant="primary" size="lg" href="/contacto">
-			{t('cta.tellMeProject')}
+			{t('home.hero.ctaPrimary')}
 		</Button>
-		<Button variant="outline" size="lg" href="/filosofia">
-			{t('cta.viewPhilosophy')}
+		<Button variant="outline" size="lg" href="/servicios">
+			{t('home.hero.ctaSecondary')}
 		</Button>
 	</div>
 </div>

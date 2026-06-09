@@ -47,7 +47,7 @@
 			</ul>
 			<div class="navbar__actions">
 				<LanguageToggle />
-				<a href="/contacto" class="btn-cta btn-cta--sm mono">{t('cta.startProtocol')}</a>
+				<a href="/contacto" class="btn-cta btn-cta--sm mono">{t('cta.requestQuote')}</a>
 			</div>
 		</nav>
 
@@ -82,7 +82,7 @@
 			</ul>
 			<div in:fly={{ y: 20, duration: 300, delay: 100 + (navItems.length * 50), easing: cubicOut }} class="navbar__cta-mobile-wrapper">
 				<a href="/contacto" class="btn-cta btn-cta--mobile mono" onclick={closeMenu}>
-					{t('cta.startProtocol')}
+					{t('cta.requestQuote')}
 				</a>
 			</div>
 		</nav>

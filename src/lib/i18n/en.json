@@ -8,12 +8,12 @@
   },
   "seo": {
     "home": {
-      "title": "Web development in Querétaro for businesses that need to sell | Dark Lynx Protocol",
-      "desc": "Web development studio in Querétaro, Mexico. We build fast websites, technical SEO, custom systems, online stores, and secure integrations for businesses."
+      "title": "Web development for businesses ready to sell | Dark Lynx Protocol",
+      "desc": "Dark Lynx Protocol builds fast websites with visual identity, base SEO, and direct contact flows for businesses that want to stop looking improvised online."
     },
     "services": {
-      "desc": "Web development services in Querétaro: fast websites, custom systems, technical SEO, Core Web Vitals, online payments, and secure integrations.",
-      "title": "Web development, technical SEO, and custom systems | Dark Lynx Protocol"
+      "title": "Web services for presence, systems, and SEO | Dark Lynx Protocol",
+      "desc": "Web services for small businesses: branded landing pages, custom systems, SEO rescue, speed, direct contact, and secure integrations."
     },
     "philosophy": {
       "desc": "How we work at Dark Lynx Protocol: direct communication, real speed, maintainable code, technical SEO, and web solutions built to grow without endless patches.",
@@ -30,15 +30,22 @@
     "journal": {
       "title": "Technical dev log | Dark Lynx Protocol",
       "desc": "Private development log with tools, projects, and lessons learned from Dark Lynx Protocol."
+    },
+    "landingPages": {
+      "title": "Branded landing pages for small businesses | Dark Lynx Protocol",
+      "description": "Fast, clear landing pages with base SEO for businesses that need to look professional and turn visitors into contacts."
     }
   },
   "cta": {
     "startProtocol": "START_PROTOCOL",
-    "tellMeProject": "Tell me about your project",
+    "tellMeProject": "I want an idea for my business",
     "viewPhilosophy": "See how we work",
-    "viewAllServices": "See everything we do",
+    "viewAllServices": "See services",
     "sendData": "TRANSMIT_DATA",
-    "sending": "TRANSMITTING..."
+    "sending": "TRANSMITTING...",
+    "viewLandingPages": "See landing pages",
+    "requestQuote": "Request a quote",
+    "talkBusiness": "I want an idea for my business"
   },
   "footer": {
     "brand": "DARK LYNX PROTOCOL",
@@ -46,9 +53,11 @@
   },
   "home": {
     "hero": {
-      "badge": "AVAILABLE_FOR_BUILD",
-      "title": "We build websites that load <span class=\"text-accent text-glow\">fast</span>, are easy to maintain, and designed to <span class=\"text-accent text-glow\">sell</span>.",
-      "desc": "Dark Lynx Protocol is a small web development studio based in Querétaro, Mexico. We build fast websites, technical SEO, custom systems, and online stores that load instantly, show up on Google, and stay easy to maintain without endless patchwork."
+      "badge": "BOUTIQUE_WEB_STUDIO",
+      "title": "Your business deserves to look like a <span class=\"text-accent text-glow\">brand</span>.",
+      "description": "Dark Lynx Protocol builds fast websites with visual identity, base SEO, and direct contact flows for businesses that want to stop looking improvised online.",
+      "ctaPrimary": "I want an idea for my business",
+      "ctaSecondary": "See services"
     },
     "problem": {
       "overline": "THE PROBLEM",
@@ -70,78 +79,109 @@
       ]
     },
     "services": {
-      "overline": "WHAT WE DO",
-      "title": "Three clear ways to help you",
-      "description": "We tailor solutions to the problem you want to solve: websites, internal systems, technical SEO, Core Web Vitals, online payments, and secure integrations. No inflated packages, no fine print: we tell you what is included, what it costs, and what you get.",
+      "overline": "COMMERCIAL PATHS",
+      "title": "Choose where to start",
+      "description": "Not every business needs the same thing. We help you choose a clear path based on your moment: professional presence, custom system, or rescue for a site that already exists.",
       "list": [
         {
           "icon": "Layout",
-          "title": "Websites that sell",
-          "description": "We design and build fast, responsive websites prepared for local SEO, made to turn visitors into contacts or customers."
+          "title": "Branded landing pages",
+          "description": "For businesses that need to look professional, explain their offer, and receive messages without building a huge platform.",
+          "href": "/servicios/landing-pages",
+          "cta": "See landing pages"
         },
         {
-          "icon": "Cpu",
-          "title": "Custom systems for your business",
-          "description": "We build platforms with admin panels, databases, automation, and integrations so your business can operate without depending on third parties."
+          "icon": "Layers",
+          "title": "Systems to operate better",
+          "description": "For processes that already eat your time: bookings, catalogs, forms, internal panels, automations, and integrations.",
+          "href": "/servicios",
+          "cta": "See services"
         },
         {
-          "icon": "Zap",
-          "title": "Faster sites, better Google ranking",
-          "description": "We review your current site, improve Core Web Vitals, fix technical SEO, and prepare it so Google understands what you offer."
+          "icon": "Search",
+          "title": "SEO and speed rescue",
+          "description": "For existing sites that load slowly, do not show up on Google, or feel patched together. We review, clean, and improve what is worth keeping.",
+          "href": "/servicios",
+          "cta": "Review options"
         }
       ]
-    }
+    },
+    "commercialPaths": [
+      {
+        "title": "Professional presence",
+        "description": "A fast, clear landing page ready for customers to contact you.",
+        "link": "/servicios/landing-pages"
+      },
+      {
+        "title": "Business systems",
+        "description": "Internal tools, panels, and automations that reduce manual work.",
+        "link": "/servicios"
+      },
+      {
+        "title": "SEO rescue",
+        "description": "Technical improvements for pages that are slow, messy, or invisible on Google.",
+        "link": "/servicios"
+      }
+    ]
   },
   "services": {
     "hero": {
       "overline": "SERVICES",
-      "title": "What we can do for your business",
-      "description": "Focused services to improve your online presence: web development, custom systems, technical SEO, speed, online payments, and secure integrations. Each project is quoted separately and delivered on a clear timeline."
+      "title": "Web services without inflated packages",
+      "description": "Each service starts from a concrete problem: looking professional, selling better, organizing processes, or rescuing a page that no longer works as it should."
     },
     "modules": [
       {
-        "icon": "Globe",
-        "title": "Websites and corporate sites",
-        "description": "We build your site from scratch, designed to turn visits into customers and perform better in local search. No generic templates: everything is tailored to your brand and business.",
+        "icon": "Layout",
+        "title": "Branded landing pages",
+        "description": "A focused page that explains your offer, builds trust, and moves visitors toward contact. Ideal for local businesses, professional services, and specific campaigns.",
         "tags": [
-          "Custom design",
-          "Fast",
-          "Mobile-ready",
-          "Base SEO"
-        ]
+          "Visual identity",
+          "Base SEO",
+          "Direct contact",
+          "Mobile first"
+        ],
+        "href": "/servicios/landing-pages",
+        "cta": "See details"
       },
       {
         "icon": "Layers",
-        "title": "Complete platforms and systems",
-        "description": "If your business needs more than an informational page: a booking system, a catalog with payments, an employee panel, or internal automation, we build the whole thing and hand it over ready to use.",
+        "title": "Custom systems and platforms",
+        "description": "Bookings, catalogs, admin panels, advanced forms, and integrations when your business needs more than an informational page.",
         "tags": [
-          "Bookings",
-          "Catalogs",
-          "Online payments",
-          "Admin panels"
-        ]
+          "Admin panel",
+          "Database",
+          "Automations",
+          "Integrations"
+        ],
+        "href": "/contacto",
+        "cta": "Talk through my case"
       },
       {
         "icon": "Search",
-        "title": "Technical SEO, speed, and current site fixes",
-        "description": "We take your existing site, review performance, indexing, structure, metadata, and content, then fix what is holding back your sales or search ranking without throwing everything away.",
+        "title": "Technical SEO and speed",
+        "description": "We review performance, structure, metadata, indexing, and content so your site loads better and Google understands what you offer.",
         "tags": [
-          "Diagnostics",
           "Core Web Vitals",
-          "Google ranking",
-          "Lower costs"
-        ]
+          "Metadata",
+          "Indexing",
+          "Diagnostics"
+        ],
+        "href": "/contacto",
+        "cta": "Request review"
       },
       {
         "icon": "Shield",
-        "title": "Online payments and secure connections",
-        "description": "We connect your site to card and bank transfer payment services, customer login systems, APIs, and the tools you already use. All with good security practices from the start.",
+        "title": "Secure payments and integrations",
+        "description": "We connect forms, payments, APIs, CRMs, or tools you already use while keeping security, maintenance, and technical clarity in mind from the start.",
         "tags": [
-          "Card payments",
-          "Logins",
-          "Integrations",
+          "Payments",
+          "APIs",
+          "Forms",
           "Security"
-        ]
+        ],
+        "href": "/contacto",
+        "cta": "Quote integration"
       }
     ],
     "tech": {
@@ -295,5 +335,130 @@
     "subtitle": "Notes on projects, tools, and things I'm learning along the way.",
     "badge": "ACCESS_GRANTED",
     "emptyState": "No entries found in the archive."
+  },
+  "landingPages": {
+    "hero": {
+      "overline": "LANDING PAGES",
+      "title": "Branded landing pages for small businesses",
+      "description": "A focused, fast, clear page so your business looks professional, explains what it offers, and turns visits into real messages."
+    },
+    "included": {
+      "overline": "WHAT IS INCLUDED",
+      "title": "The essentials to look professional from the first click",
+      "items": [
+        {
+          "icon": "Palette",
+          "title": "Applied visual identity",
+          "description": "Colors, hierarchy, sections, and visual style aligned with your brand, not a generic template."
+        },
+        {
+          "icon": "Smartphone",
+          "title": "Mobile first design",
+          "description": "The page is designed for phones first, because that is where most customers arrive."
+        },
+        {
+          "icon": "Search",
+          "title": "Base SEO",
+          "description": "Title, description, semantic structure, Open Graph, canonical, and clear content for local searches."
+        },
+        {
+          "icon": "MessageCircle",
+          "title": "Direct contact",
+          "description": "Visible CTA toward a form, WhatsApp, or the channel that makes the most sense for your business."
+        }
+      ]
+    },
+    "packages": {
+      "overline": "PACKAGES",
+      "title": "Three levels based on your moment",
+      "items": [
+        {
+          "name": "Presence",
+          "price": "From a focused landing page",
+          "description": "For validating an offer, launching your professional presence, or replacing an improvised page.",
+          "features": [
+            "Clear hero",
+            "Base sections",
+            "Initial SEO",
+            "Form or direct CTA"
+          ]
+        },
+        {
+          "name": "Conversion",
+          "price": "Complete landing page to sell",
+          "description": "For campaigns, services that need more explanation, or businesses that need more trust before contact.",
+          "features": [
+            "Commercial copy",
+            "Trust blocks",
+            "FAQ",
+            "CTA optimization"
+          ]
+        },
+        {
+          "name": "Protocol",
+          "price": "Landing page + light system",
+          "description": "For when the landing page needs advanced forms, automations, or data connections.",
+          "features": [
+            "Integrations",
+            "Conversion events",
+            "Initial automation",
+            "Technical documentation"
+          ]
+        }
+      ]
+    },
+    "process": {
+      "overline": "PROCESS",
+      "title": "How we work without making it heavy",
+      "steps": [
+        {
+          "number": "01",
+          "title": "We understand your offer",
+          "description": "We clarify what you sell, who you talk to, and what action the visitor should take."
+        },
+        {
+          "number": "02",
+          "title": "We design the route",
+          "description": "We define sections, messages, CTAs, and visual structure before writing code."
+        },
+        {
+          "number": "03",
+          "title": "We build and tune",
+          "description": "We create the landing page, review mobile, speed, base SEO, and conversion details."
+        },
+        {
+          "number": "04",
+          "title": "We hand over control",
+          "description": "You get the page ready, clear, and documented so you do not depend on weird patches."
+        }
+      ]
+    },
+    "faq": {
+      "overline": "FAQ",
+      "title": "Common questions",
+      "items": [
+        {
+          "question": "Does this work if I am just starting?",
+          "answer": "Yes. A good landing page helps explain your offer and build trust even if you do not need a big site yet."
+        },
+        {
+          "question": "Can I add more sections later?",
+          "answer": "Yes. The idea is to start focused and grow without throwing the previous work away."
+        },
+        {
+          "question": "Does it include domain and hosting?",
+          "answer": "I can guide you through domain, hosting, and deployment. We define it case by case so you do not buy what you do not need."
+        },
+        {
+          "question": "Can it connect to WhatsApp or a form?",
+          "answer": "Yes. The CTA can go to WhatsApp, a form, email, or a more advanced integration."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Want a landing page that actually feels like your business?",
+      "description": "Tell me what you sell and I will propose a simple route to start without inflating the project.",
+      "button": "I want an idea for my business"
+    }
   }
 }

@@ -21,6 +21,7 @@
 				</div>
 				<h3 class="service-preview-card__title mono">{service.title}</h3>
 				<p class="service-preview-card__desc">{service.description}</p>
+				<a class="service-preview-card__link mono" href={service.href}>{service.cta}</a>
 			</Card>
 		{/each}
 	</div>
@@ -48,20 +49,31 @@
 		gap: var(--space-4);
 	}
 
-	.service-preview-card {
-		&__icon {
-			margin-bottom: var(--space-2);
-		}
+	:global(.service-preview-card__icon) {
+		margin-bottom: var(--space-2);
+	}
 
-		&__title {
-			font-size: var(--font-size-card-title);
-			margin: 0;
-		}
+	:global(.service-preview-card__title) {
+		font-size: var(--font-size-card-title);
+		margin: 0;
+	}
 
-		&__desc {
-			font-size: var(--font-size-small);
-			line-height: 1.6;
-			margin: 0;
-		}
+	:global(.service-preview-card__desc) {
+		font-size: var(--font-size-small);
+		line-height: 1.6;
+		margin: 0;
+		flex-grow: 1;
+	}
+
+	:global(.service-preview-card__link) {
+		color: var(--color-accent);
+		font-size: var(--font-size-xs);
+		font-weight: 700;
+		text-decoration: none;
+		margin-top: auto;
+	}
+
+	:global(.service-preview-card__link:hover) {
+		text-shadow: var(--shadow-glow);
 	}
 </style>

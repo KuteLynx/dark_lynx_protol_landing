@@ -2,26 +2,40 @@
 	import Card from '$lib/components/ui/Card.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 	import { t } from '$lib/i18n';
+
+	interface Props {
+		title?: string;
+		description?: string;
+		buttonLabel?: string;
+		href?: string;
+	}
+
+	let {
+		title = t('services.cta.title'),
+		description = t('services.cta.description'),
+		buttonLabel = t('cta.requestQuote'),
+		href = '/contacto'
+	}: Props = $props();
 </script>
 
 <div class="cta-panel">
 	<Card glow class="cta-card">
 		<div class="cta-card__content">
-			<h2 class="cta-card__title">{t('services.cta.title')}</h2>
+			<h2 class="cta-card__title">{title}</h2>
 			<p class="cta-card__desc">
-				{t('services.cta.description')}
+				{description}
 			</p>
 		</div>
 		<div class="cta-card__actions">
-			<Button variant="primary" size="lg" href="/contacto">
-				{t('cta.startProtocol')}
+			<Button variant="primary" size="lg" {href}>
+				{buttonLabel}
 			</Button>
 		</div>
 	</Card>
 </div>
 
 <style lang="scss">
-	.cta-card {
+	:global(.cta-card) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -36,29 +50,29 @@
 			justify-content: space-between;
 			padding: var(--space-12) var(--space-16) !important;
 		}
+	}
 
-		&__content {
-			display: flex;
-			flex-direction: column;
-			gap: var(--space-3);
-			max-width: 650px;
-		}
+	:global(.cta-card__content) {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-3);
+		max-width: 650px;
+	}
 
-		&__title {
-			font-size: var(--font-size-section-title);
-			margin: 0;
-			letter-spacing: -0.01em;
-		}
+	:global(.cta-card__title) {
+		font-size: var(--font-size-section-title);
+		margin: 0;
+		letter-spacing: -0.01em;
+	}
 
-		&__desc {
-			font-size: var(--font-size-small);
-			color: var(--color-text-muted);
-			margin: 0;
-			line-height: 1.6;
-		}
+	:global(.cta-card__desc) {
+		font-size: var(--font-size-small);
+		color: var(--color-text-muted);
+		margin: 0;
+		line-height: 1.6;
+	}
 
-		&__actions {
-			flex-shrink: 0;
-		}
+	:global(.cta-card__actions) {
+		flex-shrink: 0;
 	}
 </style>
