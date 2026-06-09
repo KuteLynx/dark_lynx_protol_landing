@@ -1,14 +1,21 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import Badge from '$lib/components/ui/Badge.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 	import { locale, t } from '$lib/i18n';
+
+	let hydrated = $state(false);
+
+	onMount(() => {
+		hydrated = true;
+	});
 </script>
 
 <div class="home-hero fx-hero-enter">
 	<div class="home-hero__badge">
 		<Badge dot prefix="STATUS:">{t('home.hero.badge')}</Badge>
 	</div>
-	{#key locale.current}
+	{#key `${locale.current}-${hydrated}`}
 		<h1 class="home-hero__title">
 			{@html t('home.hero.title')}
 		</h1>
