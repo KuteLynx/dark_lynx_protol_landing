@@ -9,11 +9,11 @@
   "seo": {
     "home": {
       "title": "Gerardo Martínez Junco | Dark Lynx Protocol",
-      "desc": "Sitio oficial de Gerardo Martínez Junco, fundador de Dark Lynx Protocol. Desarrollo web en Querétaro para negocios que necesitan páginas rápidas, SEO técnico y sistemas a medida."
+      "desc": "Sitio oficial de Gerardo Martínez Junco, fundador de Dark Lynx Protocol. Páginas web baratas en Querétaro para negocios que necesitan sitios rápidos, SEO técnico y sistemas a medida."
     },
     "services": {
-      "title": "Servicios web para presencia, sistemas y SEO | Dark Lynx Protocol",
-      "desc": "Servicios web para pequeños negocios: landing pages con identidad, sistemas a medida, rescate SEO, velocidad, contacto directo e integraciones seguras."
+      "title": "Páginas web baratas y servicios web | Dark Lynx Protocol",
+      "desc": "Páginas web baratas para pequeños negocios: landing pages con identidad, sistemas a medida, rescate SEO, velocidad, contacto directo e integraciones seguras."
     },
     "philosophy": {
       "desc": "Así trabajamos en Dark Lynx Protocol: comunicación directa, velocidad real, código mantenible, SEO técnico y soluciones web pensadas para crecer sin depender de parches.",
@@ -32,8 +32,8 @@
       "desc": "Bitácora privada de desarrollo, herramientas y aprendizajes de Dark Lynx Protocol."
     },
     "landingPages": {
-      "title": "Landing pages con identidad para pequeños negocios | Dark Lynx Protocol",
-      "description": "Landing pages rápidas, claras y preparadas para SEO base. Pensadas para negocios que necesitan verse profesionales y convertir visitas en contactos."
+      "title": "Páginas web baratas para pequeños negocios | Dark Lynx Protocol",
+      "description": "Páginas web baratas, rápidas y preparadas para SEO base. Landing pages pensadas para negocios que necesitan verse profesionales y convertir visitas en contactos."
     }
   },
   "cta": {
@@ -55,7 +55,7 @@
     "hero": {
       "badge": "ESTUDIO_WEB_BOUTIQUE",
       "title": "Tu negocio merece verse como una <span class=\"text-accent text-glow\">marca</span>.",
-      "description": "Dark Lynx Protocol crea páginas rápidas, con identidad visual, SEO base y contacto directo para negocios que quieren dejar de verse improvisados en internet.",
+      "description": "Dark Lynx Protocol crea páginas web baratas, rápidas, con identidad visual, SEO base y contacto directo para negocios que quieren dejar de verse improvisados en internet.",
       "ctaPrimary": "Quiero una idea para mi negocio",
       "ctaSecondary": "Ver servicios"
     },
@@ -85,8 +85,8 @@
       "list": [
         {
           "icon": "Layout",
-          "title": "Landing pages con identidad",
-          "description": "Para negocios que necesitan verse profesionales, explicar su oferta y recibir mensajes sin armar una plataforma gigante.",
+          "title": "Páginas web baratas con identidad",
+          "description": "Para negocios que necesitan una página web barata, verse profesionales, explicar su oferta y recibir mensajes sin armar una plataforma gigante.",
           "href": "/servicios/landing-pages",
           "cta": "Ver landing pages"
         },
@@ -109,7 +109,7 @@
     "commercialPaths": [
       {
         "title": "Presencia profesional",
-        "description": "Una landing rápida, clara y lista para que tus clientes te contacten.",
+        "description": "Una página web barata, rápida y clara, lista para que tus clientes te contacten.",
         "link": "/servicios/landing-pages"
       },
       {
@@ -127,14 +127,14 @@
   "services": {
     "hero": {
       "overline": "SERVICIOS",
-      "title": "Servicios web sin paquetes inflados",
-      "description": "Cada servicio parte de un problema concreto: verte profesional, vender mejor, ordenar procesos o rescatar una página que ya no funciona como debería."
+      "title": "Páginas web baratas sin paquetes inflados",
+      "description": "Cada servicio parte de un problema concreto: tener una página web barata y profesional, vender mejor, ordenar procesos o rescatar una página que ya no funciona como debería."
     },
     "modules": [
       {
         "icon": "Layout",
-        "title": "Landing pages con identidad",
-        "description": "Una página enfocada en explicar tu oferta, transmitir confianza y llevar al visitante al contacto. Ideal para negocios locales, servicios profesionales y campañas específicas.",
+        "title": "Páginas web baratas con identidad",
+        "description": "Una página web barata enfocada en explicar tu oferta, transmitir confianza y llevar al visitante al contacto. Ideal para negocios locales, servicios profesionales y campañas específicas.",
         "tags": [
           "Identidad visual",
           "SEO base",
@@ -341,8 +341,8 @@
   "landingPages": {
     "hero": {
       "overline": "LANDING PAGES",
-      "title": "Landing pages con identidad para pequeños negocios",
-      "description": "Una página enfocada, rápida y clara para que tu negocio se vea profesional, explique qué ofrece y convierta visitas en mensajes reales."
+      "title": "Páginas web baratas para pequeños negocios",
+      "description": "Una página web barata, enfocada, rápida y clara para que tu negocio se vea profesional, explique qué ofrece y convierta visitas en mensajes reales."
     },
     "included": {
       "overline": "QUÉ INCLUYE",
@@ -376,8 +376,8 @@
       "items": [
         {
           "name": "Presencia",
-          "price": "Desde una landing enfocada",
-          "description": "Para validar una oferta, lanzar tu presencia profesional o reemplazar una página improvisada.",
+          "price": "Desde una página web barata y enfocada",
+          "description": "Para validar una oferta, lanzar tu presencia profesional o reemplazar una página improvisada sin inflar el presupuesto.",
           "features": [
             "Hero claro",
             "Secciones base",

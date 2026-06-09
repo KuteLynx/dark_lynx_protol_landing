@@ -9,11 +9,11 @@
   "seo": {
     "home": {
       "title": "Gerardo Martínez Junco | Dark Lynx Protocol",
-      "desc": "Official site of Gerardo Martínez Junco, founder of Dark Lynx Protocol. Web development in Querétaro for businesses that need fast websites, technical SEO, and custom systems."
+      "desc": "Official site of Gerardo Martínez Junco, founder of Dark Lynx Protocol. Affordable websites in Querétaro for businesses that need fast sites, technical SEO, and custom systems."
     },
     "services": {
-      "title": "Web services for presence, systems, and SEO | Dark Lynx Protocol",
-      "desc": "Web services for small businesses: branded landing pages, custom systems, SEO rescue, speed, direct contact, and secure integrations."
+      "title": "Affordable websites and web services | Dark Lynx Protocol",
+      "desc": "Affordable websites for small businesses: branded landing pages, custom systems, SEO rescue, speed, direct contact, and secure integrations."
     },
     "philosophy": {
       "desc": "How we work at Dark Lynx Protocol: direct communication, real speed, maintainable code, technical SEO, and web solutions built to grow without endless patches.",
@@ -32,8 +32,8 @@
       "desc": "Private development log with tools, projects, and lessons learned from Dark Lynx Protocol."
     },
     "landingPages": {
-      "title": "Branded landing pages for small businesses | Dark Lynx Protocol",
-      "description": "Fast, clear landing pages with base SEO for businesses that need to look professional and turn visitors into contacts."
+      "title": "Affordable websites for small businesses | Dark Lynx Protocol",
+      "description": "Affordable websites that are fast, clear, and prepared with base SEO. Landing pages for businesses that need to look professional and turn visitors into contacts."
     }
   },
   "cta": {
@@ -55,7 +55,7 @@
     "hero": {
       "badge": "BOUTIQUE_WEB_STUDIO",
       "title": "Your business deserves to look like a <span class=\"text-accent text-glow\">brand</span>.",
-      "description": "Dark Lynx Protocol builds fast websites with visual identity, base SEO, and direct contact flows for businesses that want to stop looking improvised online.",
+      "description": "Dark Lynx Protocol builds affordable websites that are fast, clear, with visual identity, base SEO, and direct contact flows for businesses that want to stop looking improvised online.",
       "ctaPrimary": "I want an idea for my business",
       "ctaSecondary": "See services"
     },
@@ -85,8 +85,8 @@
       "list": [
         {
           "icon": "Layout",
-          "title": "Branded landing pages",
-          "description": "For businesses that need to look professional, explain their offer, and receive messages without building a huge platform.",
+          "title": "Affordable websites with identity",
+          "description": "For businesses that need an affordable website, a professional look, clear offers, and messages without building a huge platform.",
           "href": "/servicios/landing-pages",
           "cta": "See landing pages"
         },
@@ -109,7 +109,7 @@
     "commercialPaths": [
       {
         "title": "Professional presence",
-        "description": "A fast, clear landing page ready for customers to contact you.",
+        "description": "An affordable, fast, clear website ready for customers to contact you.",
         "link": "/servicios/landing-pages"
       },
       {
@@ -127,14 +127,14 @@
   "services": {
     "hero": {
       "overline": "SERVICES",
-      "title": "Web services without inflated packages",
-      "description": "Each service starts from a concrete problem: looking professional, selling better, organizing processes, or rescuing a page that no longer works as it should."
+      "title": "Affordable websites without inflated packages",
+      "description": "Each service starts from a concrete problem: getting an affordable, professional website, selling better, organizing processes, or rescuing a page that no longer works as it should."
     },
     "modules": [
       {
         "icon": "Layout",
-        "title": "Branded landing pages",
-        "description": "A focused page that explains your offer, builds trust, and moves visitors toward contact. Ideal for local businesses, professional services, and specific campaigns.",
+        "title": "Affordable websites with identity",
+        "description": "An affordable website focused on explaining your offer, building trust, and moving visitors toward contact. Ideal for local businesses, professional services, and specific campaigns.",
         "tags": [
           "Visual identity",
           "Base SEO",
@@ -341,8 +341,8 @@
   "landingPages": {
     "hero": {
       "overline": "LANDING PAGES",
-      "title": "Branded landing pages for small businesses",
-      "description": "A focused, fast, clear page so your business looks professional, explains what it offers, and turns visits into real messages."
+      "title": "Affordable websites for small businesses",
+      "description": "An affordable, focused, fast, clear website so your business looks professional, explains what it offers, and turns visits into real messages."
     },
     "included": {
       "overline": "WHAT IS INCLUDED",
@@ -376,8 +376,8 @@
       "items": [
         {
           "name": "Presence",
-          "price": "From a focused landing page",
-          "description": "For validating an offer, launching your professional presence, or replacing an improvised page.",
+          "price": "From an affordable, focused website",
+          "description": "For validating an offer, launching your professional presence, or replacing an improvised page without inflating the budget.",
           "features": [
             "Clear hero",
             "Base sections",
