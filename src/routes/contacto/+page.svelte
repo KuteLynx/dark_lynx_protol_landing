@@ -221,6 +221,10 @@
 		margin-top: var(--space-4);
 		display: flex;
 		justify-content: flex-end;
+
+		@media (max-width: 767px) {
+			justify-content: center;
+		}
 	}
 
 	.contact-success {

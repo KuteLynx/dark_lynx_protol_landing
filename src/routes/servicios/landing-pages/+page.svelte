@@ -58,6 +58,13 @@
 		gap: var(--space-4);
 		margin-top: var(--space-8);
 
+		@media (max-width: 767px) {
+			:global(.btn--lg) {
+				padding: var(--space-3) var(--space-5);
+				font-size: var(--font-size-small);
+			}
+		}
+
 		@media (min-width: 640px) {
 			flex-direction: row;
 		}

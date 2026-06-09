@@ -20,6 +20,10 @@
 
 		const currentVariant = variant;
 
+		// No iniciar animación en móvil (< 768px)
+		const isMobile = window.matchMedia('(max-width: 767px)').matches;
+		if (isMobile) return;
+
 		const ctx = canvas.getContext('2d');
 		if (!ctx) return;
 
@@ -321,6 +325,10 @@
 		height: 100vh;
 		z-index: calc(var(--z-background) + 1);
 		pointer-events: none;
+
+		@media (max-width: 767px) {
+			display: none;
+		}
 	}
 	
 	/* Hide static CSS backgrounds when canvas is active to avoid doubling */

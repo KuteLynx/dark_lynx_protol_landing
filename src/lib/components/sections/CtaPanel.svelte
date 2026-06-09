@@ -74,5 +74,12 @@
 
 	:global(.cta-card__actions) {
 		flex-shrink: 0;
+
+		@media (max-width: 767px) {
+			:global(.btn--lg) {
+				padding: var(--space-3) var(--space-5);
+				font-size: var(--font-size-small);
+			}
+		}
 	}
 </style>

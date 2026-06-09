@@ -46,20 +46,21 @@
 </div>
 
 <style lang="scss">
-	:global(.comp-card) {
+	:global(.comparison-card) {
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-6);
 		height: 100%;
+		padding: var(--space-8);
 
-		&.comp-card--red {
+		&.comparison-card--bad {
 			border-color: rgba(255, 180, 171, 0.2);
 			&:hover {
 				border-color: var(--color-danger);
 			}
 		}
 
-		&.comp-card--green {
+		&.comparison-card--good {
 			border-color: rgba(0, 255, 65, 0.2);
 			&:hover {
 				border-color: var(--color-accent);
@@ -67,48 +68,43 @@
 		}
 	}
 
-	.comp-card {
-		&__header {
+	:global(.comparison-card__title) {
+		font-size: var(--font-size-card-title);
+		font-weight: 700;
+		margin: 0 0 var(--space-4) 0;
+		letter-spacing: -0.01em;
+	}
+
+	:global(.comparison-list) {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-4);
+
+		li {
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 			gap: var(--space-3);
+			font-size: var(--font-size-small);
+			color: var(--color-text-muted);
+			line-height: 1.5;
 		}
+	}
 
-		&__title {
-			font-size: var(--font-size-card-title);
-			margin: 0;
-		}
+	:global(.comparison-list__icon) {
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		margin-top: 3px;
+	}
 
-		&__list {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			display: flex;
-			flex-direction: column;
-			gap: var(--space-4);
+	:global(.comparison-list--bad) li :global(.comparison-list__icon) {
+		color: var(--color-danger);
+	}
 
-			li {
-				position: relative;
-				padding-left: var(--space-6);
-				font-size: var(--font-size-small);
-				color: var(--color-text-muted);
-				line-height: 1.5;
-
-				&::before {
-					content: '•';
-					position: absolute;
-					left: var(--space-2);
-					top: 0;
-				}
-			}
-		}
-
-		&--red &__list li::before {
-			color: var(--color-danger);
-		}
-
-		&--green &__list li::before {
-			color: var(--color-accent);
-		}
+	:global(.comparison-list--good) li :global(.comparison-list__icon) {
+		color: var(--color-accent);
 	}
 </style>
