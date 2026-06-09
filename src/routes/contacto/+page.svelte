@@ -164,8 +164,14 @@
 					</Button>
 				</div>
 			</form>
-		{/if}
-	</Card>
+
+			<p class="contact-direct mono">
+			  {t('contact.form.directLineBefore')}
+			  <a href="mailto:contact@darklynxprotocol.com" class="text-accent">contact@darklynxprotocol.com</a>
+			  {t('contact.form.directLineAfter')}
+			</p>
+			{/if}
+			</Card>
 </Section>
 
 <style lang="scss">
@@ -229,5 +235,25 @@
 		border: 1px solid var(--color-danger);
 		background: rgba(255, 180, 171, 0.1);
 		border-radius: var(--radius-sm);
+	}
+
+	.contact-direct {
+		margin-top: var(--space-6);
+		padding-top: var(--space-4);
+		border-top: 1px solid var(--color-border);
+		font-size: var(--font-size-xs);
+		color: var(--color-text-muted, rgba(255, 255, 255, 0.5));
+		text-align: center;
+		line-height: 1.6;
+
+		a {
+			color: var(--color-accent);
+			text-decoration: underline;
+			text-underline-offset: 2px;
+
+			&:hover {
+				text-shadow: 0 0 8px rgba(0, 255, 65, 0.4);
+			}
+		}
 	}
 </style>

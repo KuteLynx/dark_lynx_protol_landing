@@ -326,6 +326,8 @@
       "email": "CORREO_ENCRIPTADO (Email)",
       "subject": "CÓDIGO_ASUNTO",
       "message": "PAYLOAD (Mensaje)",
+      "directLineBefore": "o si lo prefieres contáctame directo a",
+      "directLineAfter": "— respondemos en menos de 24 horas",
       "success": "PROTOCOLO COMPLETADO. Mensaje transmitido con éxito.",
       "error": "ERROR_DE_TRANSMISIÓN. Intenta nuevamente."
     }

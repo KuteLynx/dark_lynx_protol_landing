@@ -326,6 +326,8 @@
       "email": "ENCRYPTED_MAIL (Email)",
       "subject": "SUBJECT_CODE",
       "message": "PAYLOAD (Message)",
+      "directLineBefore": "or if you prefer, reach us directly at",
+      "directLineAfter": "— we reply within 24 hours",
       "success": "PROTOCOL COMPLETED. Data transmitted successfully.",
       "error": "TRANSMISSION_ERROR. Please try again."
     }
