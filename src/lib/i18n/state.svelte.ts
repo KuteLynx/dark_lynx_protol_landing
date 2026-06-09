@@ -21,7 +21,9 @@ if (browser) {
 	} else if (stored === 'es' || stored === 'en') {
 		nextLocale = stored;
 	} else {
-		nextLocale = navigator.language.startsWith('en') ? 'en' : 'es';
+		// Default to Spanish. The site is Spanish-first; toggle and ?lang=en
+		// still let English users switch explicitly.
+		nextLocale = 'es';
 	}
 
 	currentLocale = nextLocale;
