@@ -30,7 +30,7 @@
 	}
 </script>
 
-<div class="profile-hero">
+<div class="profile-hero fx-hero-enter">
 	<div class="profile-hero__content">
 		<div class="profile-hero__badge badge text-accent mono">ROOT_ACCESS_GRANTED</div>
 		<h1 class="profile-hero__name font-glow">Gerardo Martínez</h1>

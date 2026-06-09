@@ -44,6 +44,11 @@
   animation: fadeIn 0.8s ease forwards;
 }
 
+.fx-hero-enter {
+  opacity: 0;
+  animation: heroSlideDown 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 .fx-slide-up {
   opacity: 0;
   animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -66,6 +71,27 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes heroSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fx-fade-in,
+  .fx-slide-up,
+  .fx-hero-enter {
+    opacity: 1;
+    animation: none;
+    transform: none;
   }
 }
 

@@ -11,7 +11,7 @@
 	});
 </script>
 
-<div class="home-hero fx-fade-in">
+<div class="home-hero fx-hero-enter">
 	<div class="home-hero__badge">
 		<Badge dot prefix="STATUS:">{t('home.hero.badge')}</Badge>
 	</div>

@@ -9,7 +9,7 @@
 	let { overline = '', title, description = '', align = 'center' }: Props = $props();
 </script>
 
-<div class="page-hero page-hero--{align} fx-fade-in">
+<div class="page-hero page-hero--{align} fx-hero-enter">
 	{#if overline}
 		<span class="page-hero__overline mono text-accent">&gt;_ {overline}</span>
 	{/if}
