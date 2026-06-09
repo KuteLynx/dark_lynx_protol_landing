@@ -1,5 +1,5 @@
 <script lang="ts">
-	import profileImg from '$lib/assets/profile-hacker.png';
+	import profileImg from '$lib/assets/profile-hacker.webp';
 	import { t } from '$lib/i18n';
 	import { goto } from '$app/navigation';
 	import { grantJournalAccess } from '$lib/data/journal-access.svelte';
