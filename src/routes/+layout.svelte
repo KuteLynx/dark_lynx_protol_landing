@@ -8,10 +8,7 @@
 
 	let { children } = $props();
 
-	let isDemoRoute = $derived($page.url.pathname.startsWith('/demos'));
-
 	let background: 'grid' | 'dots' | 'cyber' | undefined = $derived.by(() => {
-		if (isDemoRoute) return 'dots';
 		const path = $page.url.pathname;
 		if (path === '/servicios') return 'grid';
 		if (path === '/sobre-mi' || path === '/diario') return 'cyber';
@@ -28,10 +25,6 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{#if isDemoRoute}
+<SiteLayout {background}>
 	{@render children()}
-{:else}
-	<SiteLayout {background}>
-		{@render children()}
-	</SiteLayout>
-{/if}
+</SiteLayout>
