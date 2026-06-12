@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount, onDestroy } from "svelte";
+  import { theme } from "$lib/themes";
 
   // --- Configuration Constants ---
   const GLITCH_INTERVAL_MS = 1500;
@@ -27,9 +28,12 @@
     if (intervalId) clearInterval(intervalId);
     // Cleanup any active glitches if component is destroyed
     if (typeof document !== "undefined") {
-      document.querySelectorAll(".glitch-active").forEach((el) => {
-        el.classList.remove("glitch-active");
-      });
+      const animClass = theme.current.effects.globalAnimationClass;
+      if (animClass) {
+        document.querySelectorAll(`.${animClass}`).forEach((el) => {
+          el.classList.remove(animClass);
+        });
+      }
     }
   });
 
@@ -46,9 +50,12 @@
     // Query all eligible elements
     const allEligible = document.querySelectorAll(GLITCH_SELECTOR);
 
+    const animClass = theme.current.effects.globalAnimationClass;
+    if (!animClass) return;
+
     // Filter out those currently glitching or on cooldown
     const available = Array.from(allEligible).filter((el) => {
-      return !el.classList.contains("glitch-active") && !cooldowns.has(el);
+      return !el.classList.contains(animClass) && !cooldowns.has(el);
     });
 
     if (available.length === 0) return;
@@ -80,11 +87,11 @@
         }
       }
 
-      el.classList.add("glitch-active");
+      el.classList.add(animClass);
 
       // Listen for animation end to clean up
       const handleAnimationEnd = () => {
-        el.classList.remove("glitch-active");
+        el.classList.remove(animClass);
         cooldowns.set(el, Date.now());
         el.removeEventListener("animationend", handleAnimationEnd);
       };
@@ -93,8 +100,8 @@
 
       // Fallback cleanup just in case animationend doesn't fire
       setTimeout(() => {
-        if (el.classList.contains("glitch-active")) {
-          el.classList.remove("glitch-active");
+        if (el.classList.contains(animClass)) {
+          el.classList.remove(animClass);
           cooldowns.set(el, Date.now());
           el.removeEventListener("animationend", handleAnimationEnd);
         }

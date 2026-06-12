@@ -6,7 +6,7 @@
 	import GlitchEngine from './GlitchEngine.svelte';
 
 	interface Props {
-		background?: 'dots' | 'grid' | 'cyber';
+		background?: 'dots' | 'grid' | 'cyber' | 'none';
 		children?: Snippet;
 	}
 

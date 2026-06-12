@@ -32,7 +32,7 @@
 
 		&:hover {
 			border-color: var(--color-accent);
-			box-shadow: 0 0 10px rgba(0, 255, 65, 0.1);
+			box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.1);
 		}
 
 		&__text {

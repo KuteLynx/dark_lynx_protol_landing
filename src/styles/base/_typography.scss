@@ -53,5 +53,5 @@ p {
 }
 
 .text-glow {
-  text-shadow: 0 0 10px rgba(0, 255, 65, 0.4);
+  text-shadow: 0 0 10px rgba(var(--accent-rgb), 0.4);
 }

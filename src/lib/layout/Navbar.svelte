@@ -4,6 +4,7 @@
 	import { fade, fly } from 'svelte/transition';
 	import { cubicOut } from 'svelte/easing';
 	import LanguageToggle from '$lib/components/ui/LanguageToggle.svelte';
+	import ThemeSelector from '$lib/components/ui/ThemeSelector.svelte';
 	import { t } from '$lib/i18n';
 
 	let isOpen = $state(false);
@@ -46,6 +47,7 @@
 				{/each}
 			</ul>
 			<div class="navbar__actions">
+				<ThemeSelector />
 				<LanguageToggle />
 				<a href="/contacto" class="btn-cta btn-cta--sm mono">{t('cta.requestQuote')}</a>
 			</div>
@@ -65,6 +67,7 @@
 	{#if isOpen}
 		<nav class="navbar__nav navbar__nav--mobile fx-glass" transition:fly={{ y: -20, duration: 300, easing: cubicOut }}>
 			<div in:fly={{ y: 20, duration: 300, delay: 50, easing: cubicOut }} class="navbar__mobile-actions">
+				<ThemeSelector />
 				<LanguageToggle />
 			</div>
 			<ul class="navbar__links">
@@ -174,6 +177,8 @@
 		&__mobile-actions {
 			display: flex;
 			justify-content: flex-end;
+			align-items: center;
+			gap: var(--space-4);
 		}
 
 		&__links {

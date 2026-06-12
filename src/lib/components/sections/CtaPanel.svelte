@@ -42,7 +42,7 @@
 		text-align: center;
 		gap: var(--space-8);
 		padding: var(--space-10) var(--space-6) !important;
-		background: radial-gradient(circle at top right, rgba(0, 255, 65, 0.05), transparent), rgba(19, 19, 19, 0.75);
+		background: linear-gradient(rgba(var(--accent-rgb), 0.05), rgba(var(--accent-rgb), 0.05)), rgba(19, 19, 19, 0.75);
 
 		@media (min-width: 768px) {
 			flex-direction: row;

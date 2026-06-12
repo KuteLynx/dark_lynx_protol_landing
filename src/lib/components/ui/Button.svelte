@@ -99,7 +99,7 @@
 			border-color: var(--color-accent);
 
 			&:hover:not(:disabled) {
-				background-color: rgba(0, 255, 65, 0.05);
+				background-color: rgba(var(--accent-rgb), 0.05);
 				box-shadow: var(--shadow-glow);
 				transform: translateY(-1px);
 			}

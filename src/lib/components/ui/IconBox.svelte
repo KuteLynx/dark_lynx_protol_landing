@@ -29,7 +29,7 @@
 		background-color: var(--color-bg-deep);
 		border: 1px solid var(--color-border);
 		border-radius: var(--radius-sm);
-		box-shadow: 0 0 10px rgba(0, 255, 65, 0.05);
+		box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.2);
 		flex-shrink: 0;
 	}
 </style>

@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { theme } from '$lib/themes';
+	import paperBg from '$lib/assets/crumpled-paper.png';
 
 	interface Props {
-		variant?: 'dots' | 'grid' | 'cyber';
+		variant?: 'dots' | 'grid' | 'cyber' | 'none' | 'paper';
 	}
 
 	let { variant = 'dots' }: Props = $props();
@@ -14,8 +16,9 @@
 		mounted = true;
 	});
 
-	// Re-run the canvas animation whenever the variant changes or the component mounts
+	// Re-run the canvas animation whenever the variant changes, the component mounts, or the theme changes
 	$effect(() => {
+		theme.id; // Subscribe to theme changes
 		if (!mounted || !canvas) return;
 
 		const currentVariant = variant;
@@ -52,7 +55,13 @@
 		
 		let animationId: number;
 
-		if (currentVariant === 'grid') {
+		if (currentVariant === 'none' || currentVariant === 'paper') {
+			ctx.clearRect(0, 0, width, height);
+			return () => {
+				window.removeEventListener('mousemove', handleMouseMove);
+				window.removeEventListener('resize', handleResize);
+			};
+		} else if (currentVariant === 'grid') {
 			// Grid variant: interactive floor tile squares that grow, pulse, and glow green on hover
 			const cellSize = 40;
 			const glowRadius = 200;
@@ -113,19 +122,19 @@
 
 						// Base border (subtle grid lines)
 						const borderOpacity = 0.08 + ambientPulse;
-						ctx.strokeStyle = `rgba(59, 75, 55, ${borderOpacity})`;
+						ctx.strokeStyle = `rgba(${theme.current.canvas.gridBorderColor}, ${borderOpacity})`;
 						ctx.lineWidth = 0.5;
 						ctx.strokeRect(x + 0.5, y + 0.5, cellSize - 1, cellSize - 1);
 
 						if (glow > 0.01) {
 							// Activated cell: fill with green glow
 							const fillOpacity = glow * 0.25;
-							ctx.fillStyle = `rgba(0, 255, 65, ${fillOpacity})`;
+							ctx.fillStyle = `rgba(${theme.current.canvas.gridFillColor}, ${fillOpacity})`;
 							ctx.fillRect(x + inset, y + inset, cellSize - inset * 2, cellSize - inset * 2);
 
 							// Bright border on active cells
 							const edgeOpacity = glow * 0.6;
-							ctx.strokeStyle = `rgba(0, 255, 65, ${edgeOpacity})`;
+							ctx.strokeStyle = `rgba(${theme.current.canvas.gridFillColor}, ${edgeOpacity})`;
 							ctx.lineWidth = 1 + glow * 1.5;
 							ctx.strokeRect(x + inset, y + inset, cellSize - inset * 2, cellSize - inset * 2);
 
@@ -133,9 +142,9 @@
 							if (glow > 0.3) {
 								const shineOpacity = (glow - 0.3) * 0.4;
 								const shineGrad = ctx.createLinearGradient(x, y, x, y + cellSize);
-								shineGrad.addColorStop(0, `rgba(0, 255, 65, ${shineOpacity})`);
-								shineGrad.addColorStop(0.5, `rgba(0, 255, 65, ${shineOpacity * 0.3})`);
-								shineGrad.addColorStop(1, `rgba(0, 255, 65, 0)`);
+								shineGrad.addColorStop(0, `rgba(${theme.current.canvas.gridFillColor}, ${shineOpacity})`);
+								shineGrad.addColorStop(0.5, `rgba(${theme.current.canvas.gridFillColor}, ${shineOpacity * 0.3})`);
+								shineGrad.addColorStop(1, `rgba(${theme.current.canvas.gridFillColor}, 0)`);
 								ctx.fillStyle = shineGrad;
 								ctx.fillRect(x + inset, y + inset, cellSize - inset * 2, cellSize - inset * 2);
 							}
@@ -206,7 +215,8 @@
 
 						ctx.beginPath();
 						ctx.arc(x, y, radius, 0, Math.PI * 2);
-						ctx.fillStyle = `rgba(0, 255, 65, ${opacity})`;
+						const { r, g, b } = theme.current.canvas.accentColor;
+						ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${opacity})`;
 						ctx.fill();
 						
 						row++;
@@ -265,17 +275,23 @@
 
 						let radius = baseRadius;
 						let opacity = 0.2;
-						let r = 59, g = 75, b = 55;
+						let r = theme.current.canvas.dotColor.r;
+						let g = theme.current.canvas.dotColor.g;
+						let b = theme.current.canvas.dotColor.b;
 
 						if (factor > 0.005) {
 							// Grow significantly bigger
 							radius += factor * 5;
 							opacity += factor * 0.8;
 							
+							const tr = theme.current.canvas.accentColor.r;
+							const tg = theme.current.canvas.accentColor.g;
+							const tb = theme.current.canvas.accentColor.b;
+
 							// Shift to bright neon green as they get closer
-							r = Math.round(59 + (0 - 59) * factor);
-							g = Math.round(75 + (255 - 75) * factor);
-							b = Math.round(55 + (65 - 55) * factor);
+							r = Math.round(theme.current.canvas.dotColor.r + (tr - theme.current.canvas.dotColor.r) * factor);
+							g = Math.round(theme.current.canvas.dotColor.g + (tg - theme.current.canvas.dotColor.g) * factor);
+							b = Math.round(theme.current.canvas.dotColor.b + (tb - theme.current.canvas.dotColor.b) * factor);
 						}
 
 						ctx.beginPath();
@@ -304,7 +320,7 @@
 
 <canvas bind:this={canvas} class="page-background-canvas" aria-hidden="true"></canvas>
 
-<div class="page-background bg-{variant}"></div>
+<div class="page-background bg-{variant}" style={variant === 'paper' ? `background-image: url(${paperBg})` : ''}></div>
 
 <style lang="scss">
 	.page-background {
@@ -336,5 +352,12 @@
 	:global(.bg-grid),
 	:global(.bg-cyber) {
 		background-image: none !important;
+	}
+
+	:global(.bg-paper) {
+		background-size: 500px 500px;
+		background-repeat: repeat;
+		opacity: 0.15;
+		mix-blend-mode: multiply;
 	}
 </style>

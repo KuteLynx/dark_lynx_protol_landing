@@ -1,14 +1,14 @@
 .fx-text-glow {
-  text-shadow: 0 0 8px rgba(0, 255, 65, 0.5);
+  text-shadow: 0 0 8px rgba(var(--accent-rgb), 0.5);
 }
 
 .fx-border-glow {
-  box-shadow: 0 0 10px rgba(0, 255, 65, 0.15);
+  box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.15);
   border-color: var(--color-accent);
 }
 
 .fx-panel-glow {
-  box-shadow: 0 0 20px rgba(0, 255, 65, 0.1), inset 0 0 10px rgba(0, 255, 65, 0.05);
+  box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.1), inset 0 0 10px rgba(var(--accent-rgb), 0.05);
 }
 
 .fx-glow-accent {

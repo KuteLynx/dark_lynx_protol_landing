@@ -42,13 +42,14 @@
 
 	:global(.problem-card.problem-card--red) {
 		border-color: rgba(255, 180, 171, 0.2);
+		border-color: rgba(var(--danger-rgb), 0.2);
 		&:hover {
 			border-color: var(--color-danger);
 		}
 	}
 
 	:global(.problem-card.problem-card--green) {
-		border-color: rgba(0, 255, 65, 0.2);
+		border-color: rgba(var(--accent-rgb), 0.2);
 		&:hover {
 			border-color: var(--color-accent);
 		}

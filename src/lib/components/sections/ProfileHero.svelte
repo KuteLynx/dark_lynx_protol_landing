@@ -1,9 +1,20 @@
 <script lang="ts">
-	import profileImg from '$lib/assets/profile-hacker.webp';
+	import { theme } from '$lib/themes';
+	import profileImgHacker from '$lib/assets/profile-hacker.webp';
+	import profileImgUrban from '$lib/assets/profile-urban.png';
+	import profileImgArtisanal from '$lib/assets/profile-artisanal.png';
 	import { t } from '$lib/i18n';
 	import { goto } from '$app/navigation';
 	import { grantJournalAccess } from '$lib/data/journal-access.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
+
+	const profileImages: Record<string, string> = {
+		hacker: profileImgHacker,
+		urban_night: profileImgUrban,
+		artisanal_sketchbook: profileImgArtisanal
+	};
+
+	let profileImg = $derived(profileImages[theme.current.assets.profileImage] || profileImgHacker);
 
 	let hoverTimer: ReturnType<typeof setTimeout> | null = null;
 	let isRevealed = $state(false);

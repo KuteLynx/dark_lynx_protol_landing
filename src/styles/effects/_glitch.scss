@@ -22,7 +22,7 @@
 
   &[data-glitch-text]::before {
     left: 2px;
-    text-shadow: -2px 0 red;
+    text-shadow: -2px 0 var(--glitch-secondary);
     animation: glitch-anim calc(var(--glitch-duration, 600ms) * 0.8) infinite linear alternate-reverse;
   }
   
