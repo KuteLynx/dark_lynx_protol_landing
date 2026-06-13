@@ -24,8 +24,8 @@
 
 		const currentVariant = variant;
 
-		// No iniciar animación en móvil (< 768px)
-		const isMobile = window.matchMedia('(max-width: 767px)').matches;
+		// No iniciar animación en móvil (< 768px) o dispositivos touch
+		const isMobile = window.matchMedia('(max-width: 767px)').matches || 'ontouchstart' in window;
 		if (isMobile) return;
 
 		const ctx = canvas.getContext('2d');
