@@ -3,7 +3,9 @@
 | Term | Definition |
 |---|---|
 | **Runes** | Svelte 5 reactive primitives ($state, $derived, $effect, $props). Used project-wide, forced via compiler option. |
-| **Warm-on-boot** | Pattern where a data fetch is triggered eagerly on app mount (non-blocking) so data is available when the relevant page loads. |
+| **Warm-on-boot** | *(Superseded)* Pattern where a data fetch was triggered eagerly on app mount. Replaced by lazy paginated feed + health ping. See ADR 0004. |
+| **Lazy paginated feed** | Current journal loading pattern: initial batch (5 entries) fetched on /diario mount, more loaded via IntersectionObserver infinite scroll. |
+| **Health ping** | Fire-and-forget GET to Render `/health` from root layout onMount to wake the free-tier server from sleep. |
 | **Single-flight** | Guard that prevents duplicate in-flight requests. If a request for the same data is already pending, new callers receive the same promise. |
 | **Theme Registry** | Static record of all theme definitions (colors, fonts, effects, assets, canvas config). |
 | **Theme Store** | Reactive Svelte 5 rune-based store that holds the current theme ID, persists to localStorage, and applies CSS custom properties. |

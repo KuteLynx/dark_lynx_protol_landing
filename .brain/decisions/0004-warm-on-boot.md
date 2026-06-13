@@ -1,7 +1,7 @@
 # ADR 0004: Warm-on-Boot Journal Fetch Pattern
 
-**Status:** Accepted  
-**Date:** 2025-2026
+**Status:** Superseded by `01abc34` (lazy paginated feed)  
+**Date:** 2025-2026 (applied), 2026-06-13 (superseded)
 
 ## Context
 
@@ -24,3 +24,13 @@ Implement a "warm-on-boot" pattern:
 - One API call per session (or until page refresh)
 - Slight overhead on initial page load (one extra fetch)
 - Same pattern can be reused for other eagerly-loaded data
+
+## Why Superseded
+
+The warm-on-boot pattern was replaced by a lazy paginated feed (`01abc34`) because:
+
+- The Render free tier spins down on inactivity, causing first-load delays regardless of warm-on-boot
+- Lazy pagination reduces initial payload (5 entries instead of all)
+- Infinite scroll with `IntersectionObserver` provides a smoother UX for a growing entry count
+- The root layout now fires a lightweight `/health` ping to wake Render instead of fetching full data
+- The full fetch is deferred until the user actually visits `/diario`

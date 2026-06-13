@@ -26,7 +26,7 @@
 | `modules/data-models.md` | Data models: navigation, services, profile, etc. |
 | `flows/` | Flow documentation |
 | `flows/theme-switching.md` | Theme switching flow (user action → store → CSS vars) |
-| `flows/journal-loading.md` | Journal warm-on-boot loading flow |
+| `flows/journal-loading.md` | Journal lazy paginated feed flow |
 | `flows/i18n-initialization.md` | i18n initialization flow (URL > localStorage > default) |
 | `decisions/` | Architecture Decision Records |
 | `decisions/0001-static-adapter.md` | ADR 0001: Use `@sveltejs/adapter-static` for GitHub Pages |

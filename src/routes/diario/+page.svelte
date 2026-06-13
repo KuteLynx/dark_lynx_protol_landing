@@ -9,13 +9,12 @@
 	import { t, locale } from '$lib/i18n';
 
 	let sentinel: HTMLDivElement | null = $state(null);
+	let observer: IntersectionObserver | null = $state(null);
 
 	onMount(() => {
 		loadInitialEntries();
 
-		if (!sentinel) return;
-
-		const observer = new IntersectionObserver(
+		observer = new IntersectionObserver(
 			(entries) => {
 				if (entries[0].isIntersecting && journalStore.hasMore && !journalStore.loadingMore) {
 					loadMore();
@@ -24,8 +23,15 @@
 			{ rootMargin: '200px' }
 		);
 
-		observer.observe(sentinel);
-		return () => observer.disconnect();
+		return () => observer?.disconnect();
+	});
+
+	$effect(() => {
+		if (!observer) return;
+		observer.disconnect();
+		if (sentinel && journalStore.hasMore) {
+			observer.observe(sentinel);
+		}
 	});
 
 	function formatDate(dateStr: string): string {
@@ -61,9 +67,9 @@
 	<div class="journal-header">
 		<div class="journal-header__badge badge text-accent mono">{t('journal.badge')}</div>
 		<h1 class="journal-header__title font-glow">{t('journal.title')}</h1>
-		<p class="journal-header__subtitle text-muted mono">
+		<div class="journal-header__subtitle text-muted mono">
 			<TerminalText text={t('journal.subtitle')} />
-		</p>
+		</div>
 	</div>
 
 	<div class="journal-feed">

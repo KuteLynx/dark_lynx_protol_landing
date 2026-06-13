@@ -2,15 +2,17 @@
 
 ## Initial bootstrapping (HEAD)
 
-- Latest commit: `d87588b` — chore: remove .brain directory from version control
-- Previous commit: `5e4abe6` — chore: add .artifacts/ and .brain/ directories to gitignore
+- Latest commit: `01abc34` — feat: added lazy loading to journal entries and waking up render
+- Previous commit: `cb0c299` — docs: initialize project knowledge base
 - Base branch: `master`
-- Active branches: `master`, `perf/a11y-improvements`, `perf/asset-optimizations`
+- Active branches: `master`
 
 ### Documented commits (recent, reverse chronological)
 
 | Commit | Type | Description |
 |---|---|---|
+| `01abc34` | feat | Lazy paginated journal feed (infinite scroll) + Render health ping on boot. Replaces warm-on-boot pattern. API now accepts `limit`/`offset` params. New i18n strings for load states. |
+| `cb0c299` | docs | Initialize project knowledge base (.brain) with architecture, modules, flows, and design decisions |
 | `d87588b` | chore | Remove .brain directory from version control |
 | `5e4abe6` | chore | Add .artifacts/ and .brain/ directories to gitignore |
 | `3af6767` | perf | Remove boot-loader entirely for instant page paint |
