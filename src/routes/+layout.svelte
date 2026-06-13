@@ -10,7 +10,7 @@
   import "../styles/app.scss";
 
   let { children } = $props();
-  let showBootLoader = $state(true);
+  let showBootLoader = $state(false);
 
   let mouseX = $state(-1000);
   let mouseY = $state(-1000);
@@ -42,21 +42,30 @@
   onMount(() => {
     ensureLoaded();
 
-    const loaderTimer = setTimeout(() => {
-      showBootLoader = false;
-    }, 2600);
-
-    const cleanupTheme = theme.onThemeChange(() => {
+    // Only show boot loader on first visit (session-based)
+    const hasVisited = sessionStorage.getItem('dlp-visited');
+    if (!hasVisited) {
       showBootLoader = true;
-      setTimeout(() => {
-        showBootLoader = false;
-      }, 2600);
-    });
+      sessionStorage.setItem('dlp-visited', '1');
 
-    return () => {
-      clearTimeout(loaderTimer);
-      cleanupTheme();
-    };
+      const loaderTimer = setTimeout(() => {
+        showBootLoader = false;
+      }, 400);
+
+      const cleanupTheme = theme.onThemeChange(() => {
+        showBootLoader = true;
+        setTimeout(() => {
+          showBootLoader = false;
+        }, 400);
+      });
+
+      return () => {
+        clearTimeout(loaderTimer);
+        cleanupTheme();
+      };
+    }
+
+    return () => {};
   });
 </script>
 
@@ -127,7 +136,7 @@
     display: grid;
     place-items: center;
     padding: var(--space-6);
-    animation: bootExit 2.6s ease forwards;
+    animation: bootExit 0.4s ease forwards;
     --color-text-muted: #ffffff;
   }
 
@@ -183,7 +192,7 @@
 
   @keyframes bootExit {
     0%,
-    78% {
+    50% {
       opacity: 1;
     }
     100% {
