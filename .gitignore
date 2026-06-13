@@ -24,4 +24,3 @@ vite.config.ts.timestamp-*
 
 # Agent file
 .artifacts/
-.brain/
