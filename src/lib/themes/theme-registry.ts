@@ -162,7 +162,7 @@ export const THEMES: Record<string, ThemeDefinition> = {
 			surfaceHighest: '#353534',
 			text: '#e5e2e1',
 			textMuted: '#a3b899',
-			textSubtle: '#6c7e68',
+			textSubtle: '#72856d',
 			accent: '#00ff41',
 			accentDim: '#00b32e',
 			accentSoft: '#72ff70',
