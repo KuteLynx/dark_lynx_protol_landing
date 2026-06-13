@@ -1,10 +1,6 @@
 import { browser } from '$app/environment';
 import { THEMES, DEFAULT_THEME_ID, type ThemeDefinition } from './theme-registry';
 
-// Callbacks for global events (like triggering the loader)
-type ThemeChangeCallback = () => void;
-const listeners = new Set<ThemeChangeCallback>();
-
 let currentThemeId = $state(DEFAULT_THEME_ID);
 
 if (browser) {
@@ -58,13 +54,7 @@ export const theme = {
 			if (browser) {
 				localStorage.setItem('theme', newThemeId);
 				applyTheme(newThemeId);
-				// Trigger the loader on change
-				listeners.forEach((cb) => cb());
 			}
 		}
-	},
-	onThemeChange(callback: ThemeChangeCallback) {
-		listeners.add(callback);
-		return () => listeners.delete(callback);
 	}
 };

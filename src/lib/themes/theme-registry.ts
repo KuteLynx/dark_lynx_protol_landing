@@ -39,12 +39,6 @@ export interface ThemeDefinition {
 		profileImage: string;
 	};
 
-	loader: {
-		eyebrowText: string;
-		typewriterText: string;
-		backgroundGradient: string;
-	};
-
 	canvas: {
 		dotColor: { r: number; g: number; b: number };
 		accentColor: { r: number; g: number; b: number };
@@ -90,11 +84,6 @@ export const THEMES: Record<string, ThemeDefinition> = {
 		assets: {
 			profileImage: 'artisanal_sketchbook'
 		},
-		loader: {
-			eyebrowText: 'ARTISANAL_MODE',
-			typewriterText: 'Sharpening pencils...',
-			backgroundGradient: 'linear-gradient(180deg, #faf9f8 0%, #f4f3f2 100%)'
-		},
 		canvas: {
 			dotColor: { r: 80, g: 96, b: 111 },
 			accentColor: { r: 220, g: 174, b: 120 },
@@ -138,11 +127,6 @@ export const THEMES: Record<string, ThemeDefinition> = {
 		assets: {
 			profileImage: 'urban_night'
 		},
-		loader: {
-			eyebrowText: 'SYSTEM_READY',
-			typewriterText: 'Loading Urban Night...',
-			backgroundGradient: 'linear-gradient(180deg, #0a0a0c 0%, #0f172a 100%)'
-		},
 		canvas: {
 			dotColor: { r: 51, g: 65, b: 85 },
 			accentColor: { r: 59, g: 130, b: 246 },
@@ -185,11 +169,6 @@ export const THEMES: Record<string, ThemeDefinition> = {
 		},
 		assets: {
 			profileImage: 'hacker'
-		},
-		loader: {
-			eyebrowText: 'SECURE_SESSION',
-			typewriterText: 'Dark Lynx Protocol login',
-			backgroundGradient: 'radial-gradient(circle at 50% 40%, rgba(var(--accent-rgb), 0.08), transparent 34rem), linear-gradient(180deg, rgba(5, 8, 5, 0.98), rgba(3, 5, 3, 0.99))'
 		},
 		canvas: {
 			dotColor: { r: 59, g: 75, b: 55 },
