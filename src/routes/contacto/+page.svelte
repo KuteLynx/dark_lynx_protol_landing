@@ -22,14 +22,33 @@
 
 		let cancelled = false;
 
-		function renderTurnstile() {
+		// Load Turnstile script dynamically (only on this page)
+		function loadTurnstileScript(): Promise<void> {
+			return new Promise((resolve, reject) => {
+				if ((window as any).turnstile) {
+					resolve();
+					return;
+				}
+				const s = document.createElement('script');
+				s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+				s.async = true;
+				s.defer = true;
+				s.onload = () => resolve();
+				s.onerror = () => reject(new Error('Failed to load Turnstile script'));
+				document.head.appendChild(s);
+			});
+		}
+
+		async function renderTurnstile() {
 			if (cancelled) return;
-			const turnstile = (window as any).turnstile;
-			if (!turnstile) {
-				// Script not yet loaded — poll until it is
-				setTimeout(renderTurnstile, 100);
+			try {
+				await loadTurnstileScript();
+			} catch {
 				return;
 			}
+			if (cancelled) return;
+			const turnstile = (window as any).turnstile;
+			if (!turnstile) return;
 			widgetId = turnstile.render(turnstileContainer, {
 				sitekey: TURNSTILE_SITE_KEY,
 				theme: 'dark'
