@@ -1,20 +1,22 @@
 <script lang="ts">
 	import { theme } from '$lib/themes';
 	import profileImgHacker from '$lib/assets/profile-hacker.webp';
-	import profileImgUrban from '$lib/assets/profile-urban.png';
-	import profileImgArtisanal from '$lib/assets/profile-artisanal.png';
+	import profileImgUrban from '$lib/assets/profile-urban.webp';
+	import profileImgUrbanPng from '$lib/assets/profile-urban.png';
+	import profileImgArtisanal from '$lib/assets/profile-artisanal.webp';
+	import profileImgArtisanalPng from '$lib/assets/profile-artisanal.png';
 	import { t } from '$lib/i18n';
 	import { goto } from '$app/navigation';
 	import { grantJournalAccess } from '$lib/data/journal-access.svelte';
 	import Button from '$lib/components/ui/Button.svelte';
 
-	const profileImages: Record<string, string> = {
-		hacker: profileImgHacker,
-		urban_night: profileImgUrban,
-		artisanal_sketchbook: profileImgArtisanal
+	const profileImages: Record<string, { webp: string; png: string }> = {
+		hacker: { webp: profileImgHacker, png: profileImgHacker },
+		urban_night: { webp: profileImgUrban, png: profileImgUrbanPng },
+		artisanal_sketchbook: { webp: profileImgArtisanal, png: profileImgArtisanalPng }
 	};
 
-	let profileImg = $derived(profileImages[theme.current.assets.profileImage] || profileImgHacker);
+	let profileImg = $derived(profileImages[theme.current.assets.profileImage] || { webp: profileImgHacker, png: profileImgHacker });
 
 	let hoverTimer: ReturnType<typeof setTimeout> | null = null;
 	let isRevealed = $state(false);
@@ -58,7 +60,10 @@
 			<div class="terminal-frame__title">admin@darklynx: ~</div>
 		</div>
 		<div class="terminal-frame__body" onmouseenter={handleMouseEnter} onmouseleave={handleMouseLeave} role="region" aria-label="Terminal Image">
-			<img src={profileImg} alt="Admin Avatar" class="terminal-frame__image" class:faded={isRevealed} />
+			<picture>
+				<source srcset={profileImg.webp} type="image/webp" />
+				<img src={profileImg.png} alt="Admin Avatar" class="terminal-frame__image" class:faded={isRevealed} />
+			</picture>
 			<div class="secret-button-wrapper" class:visible={isRevealed}>
 				<Button variant="primary" onclick={handleSecretClick}>{t('about.profile.secretButton')}</Button>
 			</div>

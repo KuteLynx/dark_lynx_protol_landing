@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { theme } from '$lib/themes';
-	import paperBg from '$lib/assets/crumpled-paper.png';
+	import paperBgWebp from '$lib/assets/crumpled-paper.webp';
+	import paperBgPng from '$lib/assets/crumpled-paper.png';
 
 	interface Props {
 		variant?: 'dots' | 'grid' | 'cyber' | 'none' | 'paper';
@@ -320,7 +321,7 @@
 
 <canvas bind:this={canvas} class="page-background-canvas" aria-hidden="true"></canvas>
 
-<div class="page-background bg-{variant}" style={variant === 'paper' ? `background-image: url(${paperBg})` : ''}></div>
+<div class="page-background bg-{variant}" style={variant === 'paper' ? `background-image: image-set(url(${paperBgWebp}) type('image/webp'), url(${paperBgPng}) type('image/png'))` : ''}></div>
 
 <style lang="scss">
 	.page-background {
