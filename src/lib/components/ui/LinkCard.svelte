@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Card from './Card.svelte';
-	import * as Icons from '@lucide/svelte';
+	import { getIconOr } from '$lib/data/icon-registry';
+	import { ExternalLink } from '@lucide/svelte';
 	import SocialIcon from './SocialIcon.svelte';
 
 	interface Props {
@@ -14,12 +15,8 @@
 
 	let { href, title, description = '', iconName, internal = false, onclick }: Props = $props();
 
-	function getIconComponent(name: string) {
-		return (Icons as any)[name] || Icons.ExternalLink;
-	}
-
 	let isSocialIcon = $derived(['github', 'linkedin', 'twitter'].includes(iconName.toLowerCase()));
-	let Icon = $derived(!isSocialIcon ? getIconComponent(iconName) : null);
+	let Icon = $derived(!isSocialIcon ? getIconOr(iconName, ExternalLink) : null);
 </script>
 
 <a {href} target={internal ? undefined : "_blank"} rel={internal ? undefined : "noopener noreferrer"} class="link-card-anchor" {onclick}>

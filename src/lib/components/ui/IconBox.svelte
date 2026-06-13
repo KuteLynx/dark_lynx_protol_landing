@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as Icons from '@lucide/svelte';
+	import { getIcon } from '$lib/data/icon-registry';
 
 	interface Props {
 		name: string;
@@ -8,11 +8,7 @@
 
 	let { name, size = 24 }: Props = $props();
 
-	function getIconComponent(iconName: string) {
-		return (Icons as any)[iconName] || Icons.HelpCircle;
-	}
-
-	let Icon = $derived(getIconComponent(name));
+	let Icon = $derived(getIcon(name));
 </script>
 
 <div class="icon-box text-accent fx-panel-glow">
