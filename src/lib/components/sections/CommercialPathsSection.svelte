@@ -8,7 +8,7 @@
 		{#each tObj<any[]>('home.commercialPaths') as path}
 			<a class="commercial-path-link" href={path.link}>
 				<Card interactive class="commercial-path-card">
-					<h3 class="commercial-path-card__title mono">{path.title}</h3>
+					<h2 class="commercial-path-card__title mono">{path.title}</h2>
 					<p class="commercial-path-card__desc">{path.description}</p>
 				</Card>
 			</a>
