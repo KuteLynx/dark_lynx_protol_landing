@@ -1,9 +1,9 @@
 /**
- * Journal store — singleton with warm-on-boot pattern.
+ * Journal store — paginated feed with explicit initial load.
  *
- * Called once from root layout on app mount. The first call to ensureLoaded()
- * triggers a single fetch to the journal API. Subsequent calls are no-ops if
- * data is already present or a request is in-flight (single-flight guard).
+ * The root layout calls healthPing() on mount to wake the Render server.
+ * The /diario page calls loadInitialEntries() and observes a sentinel to
+ * trigger loadMore() for subsequent batches.
  */
 
 export interface JournalEntry {
@@ -21,40 +21,64 @@ interface JournalState {
 	entries: JournalEntry[];
 	loading: boolean;
 	error: string | null;
-	lastFetched: number | null;
+	offset: number;
+	hasMore: boolean;
+	loadingMore: boolean;
+	moreError: string | null;
 }
+
+const LIMIT = 5;
 
 const state: JournalState = $state({
 	entries: [],
 	loading: false,
 	error: null,
-	lastFetched: null
+	offset: 0,
+	hasMore: true,
+	loadingMore: false,
+	moreError: null
 });
 
-let inflight: Promise<void> | null = null;
+let inflightMore: Promise<void> | null = null;
 
-const JOURNAL_API_URL =
-	import.meta.env.VITE_JOURNAL_API_URL || 'https://dark-lynx-protol-landing.onrender.com/api/journal';
+const BASE_URL =
+	(import.meta.env.VITE_JOURNAL_API_URL || 'https://dark-lynx-protol-landing.onrender.com/api/journal').replace(
+		/\/api\/journal\/?$/,
+		''
+	);
 
-async function fetchJournal(): Promise<void> {
-	const res = await fetch(JOURNAL_API_URL);
+async function fetchBatch(offset: number): Promise<JournalEntry[]> {
+	const res = await fetch(`${BASE_URL}/api/journal?limit=${LIMIT}&offset=${offset}`);
 	if (!res.ok) {
 		throw new Error(`HTTP ${res.status}: ${await res.text()}`);
 	}
 	const data: { entries: JournalEntry[] } = await res.json();
-	state.entries = data.entries;
-	state.lastFetched = Date.now();
+	return data.entries;
 }
 
 /**
- * Load journal entries from the API. Always fetches (no caching).
- * Use ensureLoaded() for the warm-on-boot pattern.
+ * Fire-and-forget health ping to wake the backend server.
  */
-export async function loadJournal(): Promise<void> {
+export function healthPing(): void {
+	fetch(`${BASE_URL}/health`).catch(() => {});
+}
+
+/**
+ * Load the first batch of journal entries. Resets pagination state.
+ */
+export async function loadInitialEntries(): Promise<void> {
 	state.loading = true;
 	state.error = null;
+	state.moreError = null;
+	state.entries = [];
+	state.offset = 0;
+	state.hasMore = true;
+
 	try {
-		await fetchJournal();
+		const entries = await fetchBatch(0);
+		state.entries = entries;
+		state.hasMore = entries.length === LIMIT;
+		state.offset = entries.length;
 	} catch (e) {
 		state.error = e instanceof Error ? e.message : 'Unknown error';
 	} finally {
@@ -63,24 +87,31 @@ export async function loadJournal(): Promise<void> {
 }
 
 /**
- * Warm-on-boot: fetch once on first call, then never again.
- * Single-flight: if a request is already in-flight, returns the same promise.
- * If data is already loaded, returns immediately.
+ * Load the next batch of journal entries. Guarded against concurrent calls.
  */
-export function ensureLoaded(): Promise<void> {
-	// Already have data — skip
-	if (state.entries.length > 0 || state.lastFetched !== null) {
-		return Promise.resolve();
+export async function loadMore(): Promise<void> {
+	if (inflightMore || state.loading || !state.hasMore) {
+		return;
 	}
-	// Request already in flight — reuse it
-	if (inflight) {
-		return inflight;
-	}
-	// Start a new request
-	inflight = loadJournal().finally(() => {
-		inflight = null;
-	});
-	return inflight;
+
+	state.loadingMore = true;
+	state.moreError = null;
+
+	inflightMore = fetchBatch(state.offset)
+		.then((entries) => {
+			state.entries = [...state.entries, ...entries];
+			state.hasMore = entries.length === LIMIT;
+			state.offset += entries.length;
+		})
+		.catch((e) => {
+			state.moreError = e instanceof Error ? e.message : 'Unknown error';
+		})
+		.finally(() => {
+			state.loadingMore = false;
+			inflightMore = null;
+		});
+
+	return inflightMore;
 }
 
 /** Reactive store export — components read these directly */
@@ -94,7 +125,16 @@ export const journalStore = {
 	get error() {
 		return state.error;
 	},
-	get lastFetched() {
-		return state.lastFetched;
+	get offset() {
+		return state.offset;
+	},
+	get hasMore() {
+		return state.hasMore;
+	},
+	get loadingMore() {
+		return state.loadingMore;
+	},
+	get moreError() {
+		return state.moreError;
 	}
 };

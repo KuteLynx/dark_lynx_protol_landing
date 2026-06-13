@@ -3,7 +3,7 @@
   import { onMount } from "svelte";
   import SiteLayout from "$lib/layout/SiteLayout.svelte";
   import favicon from "$lib/assets/favicon.png";
-  import { ensureLoaded } from "$lib/journal-store.svelte";
+  import { healthPing } from "$lib/journal-store.svelte";
   import { theme } from "$lib/themes";
   import MouseTrail from "$lib/layout/MouseTrail.svelte";
   import "../styles/app.scss";
@@ -36,9 +36,9 @@
     },
   );
 
-  // Warm-on-boot: fire journal fetch on app mount, non-blocking
+  // Wake backend server on app mount, non-blocking
   onMount(() => {
-    ensureLoaded();
+    healthPing();
   });
 </script>
 

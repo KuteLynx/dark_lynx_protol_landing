@@ -336,7 +336,11 @@
     "title": "Bitácora de desarrollo",
     "subtitle": "Apuntes sobre proyectos, herramientas y cosas que voy aprendiendo en el camino",
     "badge": "ACCESO_CONCEDIDO",
-    "emptyState": "No se encontraron entradas en el archivo."
+    "emptyState": "No se encontraron entradas en el archivo.",
+    "loadMore": "Cargar más",
+    "endOfFeed": "Fin de la bitácora",
+    "loadError": "Error al cargar más entradas",
+    "retry": "Reintentar"
   },
   "landingPages": {
     "hero": {

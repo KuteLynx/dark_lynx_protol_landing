@@ -336,7 +336,11 @@
     "title": "Dev log",
     "subtitle": "Notes on projects, tools, and things I'm learning along the way.",
     "badge": "ACCESS_GRANTED",
-    "emptyState": "No entries found in the archive."
+    "emptyState": "No entries found in the archive.",
+    "loadMore": "Load more",
+    "endOfFeed": "End of log",
+    "loadError": "Error loading more entries",
+    "retry": "Retry"
   },
   "landingPages": {
     "hero": {

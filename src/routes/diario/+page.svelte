@@ -1,11 +1,32 @@
 <script lang="ts">
-	import { journalStore } from '$lib/journal-store.svelte';
+	import { onMount } from 'svelte';
+	import { journalStore, loadInitialEntries, loadMore } from '$lib/journal-store.svelte';
 	import Section from '$lib/layout/Section.svelte';
 	import Card from '$lib/components/ui/Card.svelte';
 	import TagList from '$lib/components/ui/TagList.svelte';
 	import TerminalText from '$lib/components/ui/TerminalText.svelte';
 	import SeoHead from '$lib/components/SeoHead.svelte';
 	import { t, locale } from '$lib/i18n';
+
+	let sentinel: HTMLDivElement | null = $state(null);
+
+	onMount(() => {
+		loadInitialEntries();
+
+		if (!sentinel) return;
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				if (entries[0].isIntersecting && journalStore.hasMore && !journalStore.loadingMore) {
+					loadMore();
+				}
+			},
+			{ rootMargin: '200px' }
+		);
+
+		observer.observe(sentinel);
+		return () => observer.disconnect();
+	});
 
 	function formatDate(dateStr: string): string {
 		const [y, m, d] = dateStr.split('-');
@@ -89,6 +110,32 @@
 					</Card>
 				</div>
 			{/each}
+
+			{#if journalStore.loadingMore}
+				<!-- Loading more skeleton state -->
+				{#each Array(2) as _, i}
+					<div class="skeleton-wrapper" style="animation-delay: {i * 0.1}s">
+						<Card class="journal-entry skeleton-entry">
+							<div class="skeleton-line skeleton-meta"></div>
+							<div class="skeleton-line skeleton-title"></div>
+							<div class="skeleton-line skeleton-body"></div>
+							<div class="skeleton-line skeleton-body short"></div>
+						</Card>
+					</div>
+				{/each}
+			{:else if journalStore.moreError}
+				<div class="journal-feed__error mono">
+					<span class="error-icon">⚠</span>
+					<p>{t('journal.loadError')}: {journalStore.moreError}</p>
+					<button class="retry-button" onclick={() => loadMore()}>{t('journal.retry')}</button>
+				</div>
+			{:else if !journalStore.hasMore && journalStore.entries.length > 0}
+				<div class="journal-feed__end mono text-muted">
+					{t('journal.endOfFeed')}
+				</div>
+			{:else if journalStore.hasMore}
+				<div bind:this={sentinel} class="sentinel" aria-hidden="true"></div>
+			{/if}
 		{/if}
 	</div>
 </Section>
@@ -238,5 +285,36 @@
 	@keyframes shimmer {
 		0% { background-position: 200% 0; }
 		100% { background-position: -200% 0; }
+	}
+
+	.sentinel {
+		height: 1px;
+		width: 100%;
+		pointer-events: none;
+	}
+
+	.journal-feed__end {
+		text-align: center;
+		padding: var(--space-8);
+		border-top: 1px dashed var(--color-border-soft);
+		margin-top: var(--space-4);
+		font-size: var(--font-size-small);
+	}
+
+	.retry-button {
+		margin-top: var(--space-4);
+		padding: var(--space-2) var(--space-4);
+		background: transparent;
+		border: 1px solid var(--color-error, #ff4444);
+		color: var(--color-error, #ff4444);
+		border-radius: var(--radius-md);
+		cursor: pointer;
+		font-family: inherit;
+		font-size: var(--font-size-small);
+
+		&:hover {
+			background: var(--color-error, #ff4444);
+			color: var(--color-bg, #000);
+		}
 	}
 </style>

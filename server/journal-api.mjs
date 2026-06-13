@@ -66,12 +66,16 @@ function readJsonBody(req) {
 	});
 }
 
-async function handleGet(res, headers) {
+async function handleGet(url, res, headers) {
+	const limit = Math.max(1, Math.min(100, Number(url.searchParams.get('limit')) || 5));
+	const offset = Math.max(0, Number(url.searchParams.get('offset')) || 0);
+
 	try {
 		const rows = await getSql()`
 			SELECT id, date, title_es, title_en, content_es, content_en, tags, author
 			FROM journal_entries
 			ORDER BY date DESC
+			LIMIT ${limit} OFFSET ${offset}
 		`;
 		sendJson(res, 200, { entries: rows }, headers);
 	} catch (err) {
@@ -148,7 +152,7 @@ const server = createServer(async (req, res) => {
 	}
 
 	if (req.method === 'GET') {
-		await handleGet(res, headers);
+		await handleGet(url, res, headers);
 		return;
 	}
 
