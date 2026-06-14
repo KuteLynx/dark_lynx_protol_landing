@@ -5,7 +5,7 @@ services:
     plan: free
     buildCommand: corepack enable && pnpm install --frozen-lockfile
     startCommand: pnpm render:start
-    healthCheckPath: /health
+    healthCheckPath: /up
     envVars:
       - key: DATABASE_URL
         sync: false

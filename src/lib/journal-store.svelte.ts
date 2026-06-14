@@ -60,7 +60,7 @@ async function fetchBatch(offset: number): Promise<JournalEntry[]> {
  * Fire-and-forget health ping to wake the backend server.
  */
 export function healthPing(): void {
-	fetch(`${BASE_URL}/health`).catch(() => {});
+	fetch(`${BASE_URL}/up`).catch(() => {});
 }
 
 /**

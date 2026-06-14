@@ -141,7 +141,7 @@ const server = createServer(async (req, res) => {
 		return;
 	}
 
-	if (url.pathname === '/health') {
+	if (url.pathname === '/up') {
 		sendJson(res, 200, { ok: true }, headers);
 		return;
 	}
